@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+
+    <!----Fontawesome-->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/career.css"> 
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/popper.min.js"></script> 
+      <script src="js/bootstrap-4.4.1.js"></script>
+      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script src="js/starter.js"></script>
+  
+
+    
+</head>
+<body>
+<!-------------------------------------------MODAL POP UP ------------------------------------------>
+<div id="signin-popup">
+    <div class="sign-in-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN IN</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="signin-form--label password-input">
+          <label for="signin-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signin-password" placeholder="Enter password here">
+            <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+          <div class="password-element">
+            <label class="check-list"><span>Remember me</span>
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <span class="checkmark"></span>
+            </label>
+            <a href="">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign in</a>
+        <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+      </div>
+    </div><!---------------------------Sign In-form ------------------------------>
+  </div>
+  <div id="signup-popup">
+    <div class="sign-up-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN UP</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="first-last-name">
+          <div class="signin-form--label firstname-input">
+            <label for="firstname">First Name*</label>
+            <br>
+            <input type="text" placeholder="Your First Name" id="firstname">
+          </div>
+          <div class="signin-form--label lastname-input">
+            <label for="lastname">Last Name*</label>
+            <br>
+            <input type="text" placeholder="Your Last Name" id="lastname">
+          </div>
+        </div>
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="password-signup-confirm">
+          <div class="signin-form--label password-input">
+            <label for="signup-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-password" placeholder="Enter password here">
+              <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+          <div class="signin-form--label confirm-password-input">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+              <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+        </div>
+        <p>Sign up email to receive 10% off your first order.
+          <br> By signing up, you agree to ours Terms & Conditions</p>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign up</a>
+        <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+      </div>
+    </div><!---------------------------Sign Up-form ------------------------------>
+  </div>
+  
+  
+  
+  
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+  <div class="container-fluid d-none d-lg-block" id="header-desktop">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-xl-2
+                    col-lg-2">
+                    <div class="burger-menu">
+                      <div class="barline"></div>
+                    </div>
+                    <a href="#">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-xl-2 offset-xl-3
+                    col-lg-2 offset-lg-3">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-xl-3 offset-xl-2
+                    col-lg-3 offset-lg-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>
+                    <button id="signin-modal">SIGN IN</button>                       
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+    <div class="row d-none d-lg-block">
+      <div class="col-xl-5 offset-xl-7
+                  col-lg-5 offset-lg-7 img-megamenu">
+        <p class="display3-mb" >NATIVE IRON CHAIR</p>
+        <span>FEATURED PRODUCT</span>
+      </div>
+    </div>
+    <div class="container megamenu-content d-none d-lg-block">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Mega Menu List-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 search-field">
+          <p>Looking for anything special today?</p>
+          <div class="search-box">
+            <button class="search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+            <input type="text" class="search-input" placeholder="Enter keyword here...">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <div class="container-fluid d-lg-none" id="header-mobile">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-md-3
+                    col-sm-4
+                    col-4">
+                    <div class="burger-menu-mb">
+                      <div class="barlinemb"></div>
+                    </div>
+                    <a href="#">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-md-2 offset-md-2
+                    col-sm-2 offset-sm-1
+                    col-2 offset-1">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-md-2 offset-md-3
+                    col-sm-3 offset-sm-2
+                    col-3 offset-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>                     
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </div>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+    <div class="container-fluid sub-header-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8
+                      col-sm-8
+                      col-8">
+                      <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+          </div>
+          <div class="col-md-4
+                      col-sm-4
+                      col-4 left-subhead">
+                      <button id="signin-modal-mb">SIGN IN</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="megamenu-content-mb">
+      <div class="row">
+        <div class="col-6">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signin-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN IN</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="signin-form--label password-input">
+              <label for="signin-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signin-password" placeholder="Enter password here">
+                <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+              <div class="password-element">
+                <label class="check-list"><span>Remember me</span>
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+                <a href="">Forget password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign in</a>
+            <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signup-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN UP</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="first-last-name">
+              <div class="signin-form--label firstname-input">
+                <label for="firstname">First Name*</label>
+                <br>
+                <input type="text" placeholder="Your First Name" id="firstname">
+              </div>
+              <div class="signin-form--label lastname-input">
+                <label for="lastname">Last Name*</label>
+                <br>
+                <input type="text" placeholder="Your Last Name" id="lastname">
+              </div>
+            </div>
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="password-signup-confirm">
+              <div class="signin-form--label password-input">
+                <label for="signup-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-password" placeholder="Enter password here">
+                  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+              <div class="signin-form--label confirm-password-input">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+            </div>
+            <p>Sign up email to receive 10% off your first order.
+              <br> By signing up, you agree to ours Terms & Conditions</p>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign up</a>
+            <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <!-------------------------------------------CAREER HEADER ------------------------------------------>
+ <div class="container-fluid ourstudio-main-header">
+    <p class="display4-pc">CAREER</p>
+</div>
+
+
+<!-------------------JOB FEATURED Desktop------------------------->
+<div class="d-none d-lg-block">
+<div class="container-fluid blog-ft-pc">
+<div class="left-part">
+  <div class="left-title">
+    <p class="display4-pc">RECRUITMENT</p>
+  </div>
+  <div class="left-text">
+    <div class="top-left">
+      <div class="breadcrumbb">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="our story.html">About Us</a></li>
+          <li class="actived">Career</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-left">
+      <div class="blog-ft-title">
+        <h1>Product Manager, TNSL Supply Chain Solutions</h1>
+      </div>
+      <div class="blog-ft-content">
+        <p>We are looking for a brilliant product manager to build B2C and B2B applications. The job will be very dynamic and time-constrained. You will design new features for TNSL’s external clients. You will work closely with other product managers from our team. As the company is engineering a total logistics solution for e-commerce sellers that leverage operational scale, you will have to pay close attention to both the front-end and back-end. Your creation will be a proud contribution to the ever-growing e-conomy in Europe and Asia, making the lives of millions of people easier.
+        </p>
+        <a href="#" class="btn-olprimary-xl-right">APPLE NOW<i class="fa-regular fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="right-part">
+  <div class="top-right">
+    <p>FEATURED POSITION</p>
+  </div>
+  <div class="bottom-right">
+    <img src="img/career_ft.jpg" alt="ft-job">
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-------------------OUR WOODSHOP Feature Mobile------------------------->
+<div class="d-lg-none">
+<div class="container-fluid blog-ft-mb">
+<div class="top-part">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 breadcrumbb">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="OurStory.html">About Us</a></li>
+          <li class="actived">Career</li>
+        </ul>
+      </div>
+      <div class="col-6 top-right-mb">
+        <p>FEATURED POSITION</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="img-ft-mb">
+  <img src="img/career_ft.jpg" alt="Ft-job">
+</div>
+<div class="container blog-ft-content-mb">
+  <div class="row">
+    <div class="col-12">
+        <h2>Product Manager, TNSL Supply Chain Solutions</h2>
+        <p>We are looking for a brilliant product manager to build B2C and B2B applications. The job will be very dynamic and time-constrained. You will design new features for TNSL’s external clients. You will work closely with other product managers from our team. As the company is engineering a total logistics solution for e-commerce sellers that leverage operational scale, you will have to pay close attention to both the front-end and back-end. Your creation will be a proud contribution to the ever-growing e-conomy in Europe and Asia, making the lives of millions of people easier.</p>
+        <a href="#" class="btn-olprimary-xl-right">APPLE NOW<i class="fa-regular fa-arrow-right-long"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-------------------------------------OUR BENEFIT------------------------------------------->
+
+<div class="container-fluid ourprocess">
+<div class="container-fluid support-section">
+<div class="container support-title">
+  <div class="row">
+    <div class="col-6 sp-title-left">
+      <p class="display4-pc">WHY ÉTIENNE?</p>
+    </div>
+    <div class="col-6 d-none d-md-block sp-title-right">
+      <p>BE A PART OF US</p>
+    </div>
+    <div class="col-6 d-md-none sp-title-right">
+      <p>BE A PART OF US</p>
+    </div>
+  </div>
+</div>
+</div><!------ Support Title Section------->
+
+<div class="container">
+<div class="row sp-table sp-table-border">
+  <div class="col-md-6
+              col-12 sp-list">
+    <h5>01.</h5>
+    <p class="display4-mb">ENVIRONMENT</p>
+  </div>
+  <div class="col-md-6 
+              col-12 sp-content">
+    <p>We understand dedicately that the way we work is changing, and that businesses need to adapt to the needs of their employees. Yet we have everything you need to create a comfortable and productive working environment.</p>
+  </div>
+</div><!------ Row 1 Environment------->
+<div class="row sp-table sp-table-border">
+  <div class="col-12 col-md-6 sp-list">
+    <h5>02.</h5>
+    <p class="display4-mb">PEOPLE</p>
+  </div>
+  <div class="col-md-6 
+              col-12 sp-content">
+    <p>At Étienne, we believe that happy employees make for a successful company. When talented and creative designers come together, we create legacy. Therefore, people here are selected and trained to develop day by day.</p>
+  </div>
+  
+</div><!------ Row 2 people------>
+<div class="row sp-table sp-table-border">
+  <div class="col-12 col-md-6 sp-list">
+    <h5>03.</h5>
+    <p class="display4-mb">INNOVATION</p>
+  </div>
+  <div class="col-md-6
+              col-12 sp-content">
+    <p> We have an artistic working environment and promote the creativity of each individual. It's a place where we can showcase different styles in diverse ways, but most importantly: "We give you freedom to make our own work."
+    </p>
+  </div>
+</div><!------ Row 3 innovation--------->
+<div class="row sp-table">
+  <div class="col-12 col-md-6 sp-list">
+    <h5>04.</h5>
+    <p class="display4-mb">BENEFIT</p>
+  </div>
+  <div class="col-md-6
+              col-12 sp-content">
+    <p>  From our weekly company-wide lunches to our fully stocked kitchen and game room, we wanted to create a company where people would look forward to coming in each day, and that is exactly what we have done!</p>
+  </div>
+</div><!------ Row 4 benefit------->
+</div>
+
+</div>
+
+
+
+<!---------------------------------LASTEST JOB POST--------------------------------------->
+<div class="container-fluid jobpost-title">
+    <div class="jobpost-container">
+        <p class="display4-pc">OUR LASTEST JOB POSTS</p>
+    </div>
+    <div class="container joblist">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-12 joblist-title">
+                <p class="joblist-subtitle">Let us know you're a good fit and become a part of Étienne today</p>
+                <p class="display1-pc">Potential Position,<br>
+                    Leading Invovation.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-10 offset-1 job-card">
+                <div class="overlay">
+				  <div class="badge">
+					<span>New</span>
+				  </div>
+					<div class="author-info d-none d-lg-block">
+					  <div class="author">
+						<div class="author-avatar">
+						  <img src="img/author-ava.png" alt="author">
+						</div>
+						<div class="author-data">
+						  <p>Posted by <span>Étienne</span></p>
+						  <p class="date">September 15, 2022</p>
+						</div>
+					  </div>
+					  <div class="location">
+						<div class="blog-category">Stories, Styles</div>
+						<div><i class="fa-solid fa-circle-small fa-xs"></i></div>
+						<div class="blog-time">6 mins read</div>
+					  </div>
+					</div>
+				  <img src="img/blog/Blog-1.jpg" alt="" class="img-fluid">
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <!-------------------------------------------Footer Desktop ------------------------------------------>
+<div class="container-fluid d-none d-md-block" id="footerDesktop">
+    <div class="container-fluid footer-navi">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation-->
+    <div class="container footer-subscribe d-none d-lg-block">
+      <div class="row d-flex align-items-end">
+        <div class="col-xl-4 
+                    col-lg-4 email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4 media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media LG XL-->
+    <div class="container footer-subscribe d-none d-md-block d-lg-none">
+      <div class="row">
+        <div class="col-md-4
+                    offset-md-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-end">
+        <div class="col-md-6 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-md-6
+                    media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <div class="container-fluid d-md-none" id="footerMobile">
+    <div class="container-fluid footer-navi footer-navi-mb1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Upper Section-->
+    <div class="container-fluid footer-navi footer-navi-mb2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-6 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Lower Section-->
+    <div class="container footer-subscribe d-md-none">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2
+                    col-10 offset-1 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div><!-------Email Input------>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3
+                    col-6 offset-3">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div><!-------Logo------>
+      </div>
+      <div class="row">
+        <div class="col-12
+                    media-footer-mb">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                      <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  
+    
+</body>
+</html>

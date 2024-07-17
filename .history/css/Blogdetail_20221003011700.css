@@ -1,0 +1,1488 @@
+
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+/* ------------------Breadcrumb------------------------------------- */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--primary) 1px solid;
+    padding-top: 8px;
+}
+
+
+
+/* -----------------Metadata -------------------------------------- */
+.blog-metadata{
+    
+    height: 80px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.metadata .meta h5{
+    font-family: subfont;
+    color: var(--dark);
+    font-size: 16px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.metadata .meta p{
+    margin-bottom: 0px;
+    color: var(--primary);
+}
+
+.metadata{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.blog-media ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+}
+.blog-media ul li{
+    margin-left: 16px;
+    
+}
+.blog-media ul li a{
+    font-family: subfont;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary);
+    
+    height: 80px;    
+}
+ 
+
+.blog-media{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-end;
+}
+
+
+
+
+/* -----------------User comments-------------------------------------- */
+
+.comment{
+    margin-top: 40px;
+}
+
+.comment-avatar{
+    float: left;
+}
+.reply-comments{
+    margin-left: 64px;
+    margin-top: 24px;
+
+}
+
+.comment-content{
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-data{
+    display: flex;
+    align-items: baseline;
+}
+
+.comment-data h5{
+    margin-right: 8px;
+}
+
+.comment-reply button{
+    background-color: var(--transparent);
+    border: none;
+    padding: 0px;
+    color: var(--primary);
+}
+
+
+
+
+
+/* ----------RELATED ARTICLES------------------------------------------ */
+
+#border-title-related{
+    border-top: var(--shading2) 1px solid;
+    border-bottom: var(--shading2) 1px solid;
+    height: 80px;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.blogdetail--related{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+/*---------------------Blog List---------------------*/
+.blog-list-bg{
+    background-color: var(--primary);
+    padding: 0px 0px 30px 0px;
+}
+
+.blog-card{
+    margin-top: 30px;
+    padding: 15px 15px 24px 15px;
+    border: 1px solid var(--primary);
+}
+
+.blog-card .blog-title h5{
+    color: var(--primary);
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+
+.blog-card .blog-content p{
+    color: var(--primary);
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.blog-card .img-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card .img-overlay::before{
+    content: '';
+    display: block;
+    background: rgba(161, 162, 133, .5);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease .6s;
+}
+
+.blog-card .img-overlay .badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.blog-card .img-overlay .overlay-info{
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .8s;
+}
+
+.blog-card .img-overlay .overlay-info .author{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.overlay-info .author{
+    display: flex;
+    align-items: center;
+}
+
+.overlay-info .author .author-avatar{
+    height: 35px;
+    width: 35px;
+    margin-right: 8px;
+}
+
+.overlay-info .author img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-info .author .author-data p{
+    color: var(--dark);
+    margin-bottom: 0px;
+}
+
+.overlay-info .author .author-data p span{
+    font-family: subfont;
+    cursor: pointer;
+}
+
+.overlay-info .author .author-data .date{
+    font-family: captionfont;
+    font-size: 12px;
+}
+
+.overlay-info .category-time{
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: subfont;
+    font-size: 14px;
+}
+
+.overlay-info .category-time .blog-category{
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.overlay-info .category-time .blog-time{
+    margin-left: 8px;
+}
+
+
+
+
+ /*-----------------------------------ADD A COMMENT-------------------------------*/
+ .add-comment{
+    padding: 0px;
+    border-top: 1px solid var(--shading2);
+    margin-top: 40px;
+}
+
+.add-comment-title-left{
+    height: 80px;
+    border-right: 1px solid var(--shading2);
+}
+
+
+.add-comment-title-right{
+    height: 80px;
+}
+
+.add-comment-title-left p{
+    margin-top: 20px;
+}
+
+.add-comment-title-right h4{
+    margin-top: 24px;
+    text-align: right;
+}
+
+.disclaimer{
+    height: 40px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.disclaimer p{
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--shading1);
+}
+.add-comment-title-left-mb p{
+    margin-top: 20px;
+}
+
+ /*-----------------------------------Add review-------------------------------*/
+ .add-review{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.add-review input{
+    padding: 16px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--primary);
+    transition: all ease .3s;
+}
+
+.add-review input:hover{
+    background-color: rgba(224, 224, 214, .8);
+    border: 1px solid var(--shading2);
+    transition: all ease .3s;
+}
+
+.add-review input:active, .add-review input:focus, .add-review input:focus-visible{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+.add-review input::placeholder{
+    color: var(--shading1);
+}
+
+
+.submit-review-btn{
+    margin-top: 40px;
+}
+/* ------------------------- */
+.review-form--label p{
+    font-family: subfont;
+    color: var(--primary);
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.review-form--label textarea{
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--shading2);
+    color: var(--primary);
+}
+
+.review-form--label textarea:hover{
+    background-color: rgba(224, 224, 214, .8);
+    border: 1px solid var(--shading2);
+    transition: all ease .3s;
+}
+
+.review-form--label textarea::placeholder{
+    color: var(--shading2);
+}
+
+
+
+.review-form--label textarea:active, .review-form--label textarea:focus, .review-form--label textarea:focus-visible, .review-form--label textarea:focus-within{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+.review-content{
+    margin-top: 30px;
+}
+
+#the-count{
+    float: right;
+    color: #999999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.review-content .button-secondary{
+    margin-top: 25px;
+}
+
+/*---------Checkbox-------------*/
+.check-list {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--shading1);
+    transition: all ease .3s;
+}
+
+.check-list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    transition: all ease .3s;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: var(--shading2) solid 1px;
+}
+
+
+.check-list input:checked ~ .checkmark {
+    background-color: var(--primary);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-list input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-list .checkmark:after {
+    left: 6px;
+    top: 1.5px;
+    width: 5px;
+    height: 13px;
+    border: solid var(--secondary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.check-list:hover input ~ .checkmark {
+    background-color: rgb(129, 131, 92, .6);
+    transition: all ease .3s;
+}
+
+
+
+
+
+/*----------------------Extra large-------------------------------------------------------- */
+@media (min-width: 1200px){
+
+    /* -------------------Title Manhattan-------------------------------- */
+    #blogdetail--manhattan{
+        padding: 40px 15px 20px 15px;
+
+    }
+
+    .blogdetail--title-manhattan p{
+        margin-bottom: 0px;
+    }
+
+    /* -----------Blog detail card hover ------- */
+    .blog-card:hover .img-overlay::before{
+        width: 100%;
+        transition: all ease .6s;
+        transition-delay: .3s;
+    }
+    
+    .blog-card:hover .overlay-info{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease .8s;
+        transition-delay: .3s;
+    }
+
+
+    /* -----------------content ------------------------ */
+    
+    /* ------Windy City--------- */
+    .img-windycity--blogdetail{
+        height: 600px;
+        width: 100%;
+       
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img-windycity--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blogdetai--title-windycity h1{
+        margin-bottom: 0px;
+    }
+
+    .blogdetai--title-windycity p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px !important;
+        margin-bottom: 0px !important;
+    }
+
+    /* ------ Dining Room ---------*/
+    #dining-room--blogdetail{
+        margin-top: 56px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail{
+        height: 360px !important;
+        width: 100%;
+    }
+    .img-dining--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+  
+    /* ------ Living Room ---------*/
+    #livingroom--blogdetail{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .title-livingroom--blogdetail h1{
+        margin-bottom: 0px;
+        
+    }
+
+    .title-livingroom--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .img-livingroom--blogdetail{
+        height: 360px !important;
+        width: 100%;
+    
+    }
+    .img-livingroom--blogdetail img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    /* ---------- hr --------------*/
+    .hr{
+        background-color: var(--shading2);
+        
+        margin: 0px;
+        
+    
+    }
+
+    /* ---------- img 1 --------------*/
+    .img-1--blogdetail{
+        height: 700px;
+        margin-top: 60px;
+        width: 100%;
+        
+    }
+    .img-1--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ---------- img 2 --------------*/
+    .img-2--blogdetail{
+        height: 700px;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .img-2--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+    /* -----------------Comments ------------------------ */
+    .comments--blogdetail p{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #border-title-comments{
+        border-top: var(--shading2) 1px solid;
+        border-bottom: var(--shading2) 1px solid;
+        height: 80px;
+        padding-top: 20px;
+        margin-top: 60px;
+    }
+
+    
+
+    /* -----------------User comments------------------- */
+    .comment-avatar{
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .comment-avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* -----FooterDesktop----------- */
+    #footerDesktop{
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+
+/*---------------------------- large--------------------------------------------------------------- */
+@media (max-width: 1199px) and (min-width: 992px){
+
+    /* -------------------Title Manhattan-------------------------------- */
+    #blogdetail--manhattan{
+        padding: 40px 15px 20px 15px;
+
+    }
+
+    .blogdetail--title-manhattan p{
+        margin-bottom: 0px;
+    }
+
+    /* -----------Blog detail card hover ------- */
+    .blog-card:hover .img-overlay::before{
+        width: 100%;
+        transition: all ease .6s;
+        transition-delay: .3s;
+    }
+    
+    .blog-card:hover .overlay-info{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease .8s;
+        transition-delay: .3s;
+    }
+
+    /* -----------------content ---------------- */
+    
+    /* ------Windy City------------------------- */
+    .img-windycity--blogdetail{
+        height: 600px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img-windycity--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blogdetai--title-windycity h1{
+        margin-bottom: 0px;
+    }
+
+    .blogdetai--title-windycity p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px !important;
+        margin-bottom: 0px !important;
+    }
+
+    /* ------ Dining Room -------------------------*/
+    #dining-room--blogdetail{
+        margin-top: 64px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail{
+        height: 400px;
+        width: 100%;   
+    }
+    .img-dining--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+
+
+    /* ------ Living Room -------------------------*/
+    #livingroom--blogdetail{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .title-livingroom--blogdetail h1{
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .img-livingroom--blogdetail{
+        height: 400px;
+        width: 100%;
+    }
+    .img-livingroom--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ---------- hr --------------------------------*/
+    .hr{
+        background-color: var(--shading2);
+        
+        margin: 0px;
+        
+    
+    }
+
+    /* ---------- img 1 -----------------------------*/
+    .img-1--blogdetail{
+        height: 600px;
+        margin-top: 64px;
+        width: 100%;
+    }
+    .img-1--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ---------- img 2 ----------------------------*/
+    .img-2--blogdetail{
+        height: 600px;
+        width: 100%;
+        margin-top: 64px;
+    }
+    .img-2--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+    /* -----------------Comments ----------------------- */
+    .comments--blogdetail p{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #border-title-comments{
+        border-top: var(--shading2) 1px solid;
+        border-bottom: var(--shading2) 1px solid;
+        height: 80px;
+        padding-top: 20px;
+        margin-top: 64px;
+    }
+
+    /* -----------------User comments------------------ */
+    .comment-avatar{
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .comment-avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* ---------blog-card----------------------------- */
+    .blog-card{
+        margin-top: 40px;
+        padding: 15px;
+        border: 1px solid var(--primary);
+    }
+    /* -----ooterDesktop------------------------------ */
+    #footerDesktop{
+        margin-top: 40px;
+    }
+}
+
+
+
+/*----------------------medium----------------------------------------------------------------- */
+@media (max-width: 991px) and (min-width: 768px){
+
+    /* -------------------Title Manhattan-------------------------------- */
+    #blogdetail--manhattan{
+        padding: 40px 15px 20px 15px;
+
+    }
+
+    .blogdetail--title-manhattan p{
+        margin-bottom: 0px;
+    }
+    
+    .blogdetail--title-manhattan p{
+        font-family: displayfont;
+        font-size: 52.5px !important;
+    }
+
+    /* -----------------Comments ---------------------- */
+    .comments--blogdetail p{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #border-title-comments{
+        border-top: var(--shading2) 1px solid;
+        border-bottom: var(--shading2) 1px solid;
+        height: 80px;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+    /* -----------------User comments-------------------- */
+    .comment-avatar{
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .comment-avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* -----------------Metadata MD------------------------- */
+    .blog-metadata-md{
+        
+        height: 80px;
+        border-top: 1px solid var(--shading2);
+        border-bottom: 1px solid var(--shading2);
+    }
+
+    .metadata-md .meta h5{
+        font-family: subfont;
+        color: var(--dark);
+        font-size: 16px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+    }
+
+    .metadata-md .meta p{
+        margin-bottom: 0px;
+        color: var(--primary);
+    }
+
+    .metadata-md{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog-media-md{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+        
+    }
+    .icon-blog{
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .icon-blog i{
+        font-size: 20px;
+        color: var(--white);
+    }
+
+
+    /* -----------------content ------------------------ */
+    /* ------Windy City--------- */
+    .img-windycity--blogdetail{
+        height: 600px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img-windycity--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blogdetai--title-windycity h1{
+        margin-bottom: 0px;
+    }
+
+    .blogdetai--title-windycity p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* ------ Dining Room ---------*/
+    #dining-room--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail{
+        height: 500px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+
+    /* ------ Living Room ---------*/
+    #livingroom--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail h1{
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+    .img-livingroom--blogdetail{
+        height: 500px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        
+    }
+
+    /* ---------- hr --------------*/
+    .hr{
+        background-color: var(--shading2);
+        
+        margin: 0px;
+      
+    }
+
+    /* ---------- img 1 --------------*/
+    .img-1--blogdetail{
+        height: 500px;
+        margin-top: 40px;
+        width: 100%;
+
+    }
+    .img-1--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* ---------- img 2 --------------*/
+    .img-2--blogdetail{
+        height: 500px;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .img-2--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    /* -----ooterDesktop----------- */
+    #footerDesktop{
+        margin-top: 30px;
+    }
+    
+    
+
+}
+
+/*----------------------small----------------------------------------------------- */
+@media (max-width: 767px) and (min-width: 576px){
+
+    /* -------------------Title Manhattan-------------------------------- */
+    #blogdetail--manhattan{
+        padding: 40px 15px 20px 15px;
+
+    }
+
+    .blogdetail--title-manhattan p{
+        margin-bottom: 0px;
+    }
+    
+    .blogdetail--title-manhattan p{
+        font-family: displayfont;
+        font-size: 40.5px !important;
+    }
+
+
+    /* ------ Dining Room ---------*/
+    #dining-room--blogdetail{
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail img{
+        height: 400px;
+        
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+
+
+    /* -----------------Comments ---------------------- */
+    .comments--blogdetail p{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #border-title-comments{
+        border-top: var(--shading2) 1px solid;
+        border-bottom: var(--shading2) 1px solid;
+        height: 80px;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+    /* -----------------User comments--------------------- */
+    .comment-avatar{
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .comment-avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+
+    
+    /* -----------------content -------------------------- */
+    /* ------Windy City--------- */
+    .img-windycity--blogdetail{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 550px;
+        width: 100%;
+    }
+    .img-windycity--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blogdetai--title-windycity h1{
+        margin-bottom: 0px;
+    }
+
+    .blogdetai--title-windycity p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px !important;
+       margin-bottom:30px;
+    }
+
+    /* ------ Dining Room ---------*/
+    #dining-room--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail{
+        height: 500px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;   
+    }
+    .img-dining--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    /* ------ Living Room ---------*/
+    #livingroom--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail h1{
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    .img-livingroom--blogdetail{
+        height: 500px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;       
+    }
+    .img-livingroom--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ---------- hr --------------*/
+    .hr{
+        background-color: var(--shading2);
+        
+        margin: 0px;
+      
+    }
+
+    /* ---------- img 1 --------------*/
+    .img-1--blogdetail{
+        height: 500px;
+        margin-top: 30px;
+        width: 100%;
+
+    }
+    .img-1--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* ---------- img 2 --------------*/
+    .img-2--blogdetail{
+        height: 500px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .img-2--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    /* -----footerMobile----------- */
+    #footerMobile{
+        margin-top: 30px;
+    }
+
+    /* -----Media SM and XS---------------------- */
+    #blogdetail-media-sm-xs{
+        margin-top: 30px;
+    }
+    .media-sm-xs{
+        font-family: subfont;
+        font-size: 16px;
+        height: 40px;
+        color: var(--dark);
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .blog-media-sm-xs{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon-blog{
+        color: var(--white);
+        background-color: var(--primary);
+        width: 40px;
+        height: 40px;
+        display: block;
+        float: right;
+        font-size: 20px;
+        border-radius: 50%;
+        text-align: center
+    }
+    .icon-blog i{
+        margin-top: 10px;
+        color: var(--white);
+    }
+    /* ----------------------------- */
+    .review-content{
+        margin-top: 0px !important;
+    }
+    
+}
+
+
+
+/*--------------------Extra small-------------------------------------------------------------- */
+@media (max-width: 575px){
+
+
+    /* -------------------Title Manhattan-------------------------------- */
+    #blogdetail--manhattan{
+        padding: 40px 15px 20px 15px;
+
+    }
+
+    .blogdetail--title-manhattan p{
+        margin-bottom: 0px !important;
+    }
+    
+    .blogdetail--title-manhattan p{
+        font-family: displayfont;
+        font-size: 40.5px !important;
+    }
+
+    /* -----------------Comments -------------------- */
+    .comments--blogdetail p{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #border-title-comments{
+        border-top: var(--shading2) 1px solid;
+        border-bottom: var(--shading2) 1px solid;
+        height: 80px;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+    /* -----------------User comments---------------- */
+    .comment-avatar{
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .comment-avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    
+    /* -----------------content ------------------------ */
+    /* ------Windy City--------- */
+    .img-windycity--blogdetail{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 500px;
+        width: 100%;
+    }
+    .img-windycity--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blogdetai--title-windycity h1{
+        margin-bottom: 0px;
+    }
+
+    .blogdetai--title-windycity p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px !important;
+       margin-bottom:30px;
+    }
+
+    /* ------ Dining Room ---------*/
+    #dining-room--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .img-dining--blogdetail{
+        height: 450px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;   
+    }
+    .img-dining--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title-dining--blogdetail h1{
+        margin-bottom: 0px;
+
+    }
+
+    .title-dining--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    /* ------ Living Room ---------*/
+    #livingroom--blogdetail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail h1{
+        margin-bottom: 0px;
+    }
+
+    .title-livingroom--blogdetail p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    .img-livingroom--blogdetail{
+        height: 450px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;       
+    }
+    .img-livingroom--blogdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ---------- hr --------------*/
+    .hr{
+        background-color: var(--shading2);
+        
+        margin: 0px;
+      
+    }
+
+    /* ---------- img 1 --------------*/
+    .img-1--blogdetail{
+        height: 450px;
+        margin-top: 30px;
+        width: 100%;
+
+    }
+    .img-1--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* ---------- img 2 --------------*/
+    .img-2--blogdetail{
+        height: 450px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .img-2--blogdetail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    /* -----footerMobile----------- */
+    #footerMobile{
+        margin-top: 30px;
+    }
+
+    /* -----Media SM and XS---------------------- */
+    #blogdetail-media-sm-xs{
+        margin-top: 30px;
+    }
+    .media-sm-xs{
+        font-family: subfont;
+        font-size: 16px;
+        height: 40px;
+        color: var(--dark);
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .blog-media-sm-xs{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon-blog{
+        color: var(--white);
+        background-color: var(--primary);
+        width: 40px;
+        height: 40px;
+        display: block;
+        float: right;
+        font-size: 20px;
+        border-radius: 50%;
+        text-align: center
+    }
+    .icon-blog i{
+        margin-top: 10px;
+        color: var(--white);
+    }
+
+ 
+    .meta h5{
+        font-family: subfont !important;
+        font-size: 16px !important;
+    }
+    .meta p{
+        font-size: 16px;
+    }
+    /* ----------- */
+    .review-content{
+        margin-top: 0px !important;
+    }
+    
+    
+    
+    
+}

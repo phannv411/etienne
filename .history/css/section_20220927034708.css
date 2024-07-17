@@ -1,0 +1,22 @@
+
+
+/*----------------------------Story ---------------------------*/
+
+.main-section{
+    padding: 0px;
+    background-color: var(--primary);
+    height: 900px;
+    display: flex;
+}
+
+.left-section{
+    height:inherit;
+    width: 50%;
+    outline: 1px red solid;
+}
+
+.right-section{
+    height:inherit;
+    width: 50%;
+    outline: 1px red solid;
+}

@@ -1,0 +1,64 @@
+
+
+/* #accordionExample .card{
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    margin-bottom: 30px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+
+
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+
+
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    
+}

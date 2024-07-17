@@ -1,0 +1,1078 @@
+/*---------------- Header -------------*/
+.outline{
+    height:120px;
+    border-bottom: 1px var(--shading2) solid;
+    text-align:center;
+    padding-top: 40px;
+}
+
+/*---------------- Breadcrumb -------------*/
+.breadcrumbb-bg{
+    height:80px;
+    border-bottom: 1px var(--shading2)solid;
+}
+
+.breadcrumbb{
+    margin-top: 30px;
+}
+
+.breadcrumb-checkout{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.breadcrumb-checkout a{
+    margin-top: 20px;
+}
+/*---------------- Breadcrumb -------------*/
+.bg-profile-pc{
+    margin-bottom:30px;
+}
+
+.password-profile-pc{
+    margin-bottom: 8px;
+}
+
+#profile-step-pc{
+    padding:0px;
+    margin-bottom:40px;
+}
+
+.dashboard-bg{
+    margin-top:30px;
+    margin-bottom:40px;
+    padding:0px;
+    padding-right:30px;
+}
+
+.dashboard{
+    border:1px var(--shading2)solid;
+    padding:30px;
+}
+
+.dashboard-customer-name{
+    text-align: center;
+}
+
+.img-cus{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+
+.avatar-cus{
+    border-radius: 50%;
+}
+
+.dashboard-step{
+    margin-top: 30px;
+    
+}
+
+.dashboard-step button{
+    margin-bottom: 8px;
+    transition: all ease .3s;
+}
+
+.dashboard-step button:hover{
+    color: var(--primary);
+    transition: all ease .3s;
+}
+
+.profile-img h5{
+    color: var(--primary);
+    margin-top: 16px;
+}
+
+.edit-ava{
+    height: 32px;
+    width: 32px;
+    background-color: var(--shading2);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    color: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+
+.edit-ava:hover{
+    background-color: var(--primary);
+    transition: all ease .3s;
+}
+
+.profile-pc{
+    width:100%;
+    border:none;
+    background-color:var(--transparent);
+    font-family: subfont;
+    font-size:16px;
+    color:var(--primary);
+    text-align: start;
+}
+
+.orderhistory-pc, .wishlist-pc, .paymentmethod-pc, .signout-pc{
+    border:none;
+    background-color:var(--transparent);
+    font-family: subfont;
+    font-size:16px;
+    color:var(--text);
+    width:100%;
+    text-align: start;
+}
+
+
+.tagline-name{
+    font-family: subfont;
+    font-size:15px;
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.bg-firstname-pc{
+    border: 1px solid var(--shading2);
+    height: 40px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all ease .5s;
+    flex:1;
+}
+.bg-firstname-pc input:focus, .bg-firstname-pc input:focus-visible{
+    outline: none;
+}
+
+.bg-firstname-pc input{
+    background-color: transparent;
+    border: none;
+    padding-left: 16px;
+    width: 80%;
+    color: var(--shading2);
+    font-size:14px;
+    outline:none;
+}
+
+.bg-firstname-pc button{
+    padding-right: 16px;
+    color: var(--shading2);
+    font-size: 18px;
+    text-align: right;
+    width: 20%;
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    transition: all ease .5s;
+}
+
+.btn-remind{
+    font-size:12px;
+    float:right;
+    color:var(--shading1);
+    border:none;
+    background-color:var(--transparent);
+    transition: all ease .5s;
+}
+
+.btn-remind:focus{
+    outline:none;
+}
+
+.btnupdate-profile{
+    margin-top: 24px;
+}
+
+/* ---------------DROP DOWN SECTION -PC ----------------*/
+
+.gender-dropdown, .profile-country-dropdown, .profile-state-dropdown, .profile-city-dropdown{
+    width: 100%;
+}
+
+.gender-dropdown label, .profile-country-dropdown label, .profile-state-dropdown label, .profile-city-dropdown label{
+    font-family: subfont;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+#genderbtn-profilepc, #countrybtn-profilepc, #statebtn-profilepc, #citybtn-profilepc{
+    background-color: transparent;
+    color: var(--shading2);
+    font-size: 14px;
+    width: 100%;
+    padding: 9px 16px 9px 16px;
+    text-align: left;
+    border: var(--shading2) 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#genderbtn-profilepc span, #countrybtn-profilepc span, #statebtn-profilepc span, #citybtn-profilepc span{
+    color: var(--primary);
+    display: block;
+    float: right;
+    position: relative;
+    top: 1px;
+    transition: all ease .3s;
+}
+
+#genderbtn-profilepc:hover, #genderbtn-profilepc:focus, #genderbtn-profilepc:focus-visible, #genderbtn-profilepc:active {
+    outline: none;
+  }
+
+#statebtn-profilepc:hover, #statebtn-profilepc:focus, #statebtn-profilepc:focus-visible, #statebtn-profilepc:active {
+    outline: none;
+}
+
+#citybtn-profilepc:hover, #citybtn-profilepc:focus, #citybtn-profilepc:focus-visible, #citybtn-profilepc:active {
+    outline: none;
+}
+
+#countrybtn-profilepc:hover, #countrybtn-profilepc:focus, #countrybtn-profilepc:focus-visible, #countrybtn-profilepc:active {
+    outline: none;
+}
+
+
+.gender-option-field, .country-option-field, .state-option-field, .city-option-field{
+    position: relative;
+    z-index: 3;
+}
+
+.country-option-field, .state-option-field, .city-option-field{
+    width: 100%;
+    z-index: 2;
+}
+
+.dropdown-countryprofilepc-option, .dropdown-gender-option, .dropdown-stateprofilepc-option, .dropdown-cityprofilepc-option {
+    margin-top: 8px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-countryprofilepc-option  a, .dropdown-gender-option  a, .dropdown-stateprofilepc-option a, .dropdown-cityprofilepc-option a{
+    color: var(--dark);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-countryprofilepc-option  a:hover, .dropdown-gender-option  a:hover, .dropdown-stateprofilepc-option a:hover, .dropdown-cityprofilepc-option a:hover {
+    background-color: rgba(161, 162, 133, 0.5);
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.dropdown-countryprofilepc-option a:hover:first-child, .dropdown-gender-option a:hover:first-child, .dropdown-stateprofilepc-option a:hover:first-child, .dropdown-cityprofilepc-option a:hover:first-child{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown-countryprofilepc-option a:hover:last-child, .dropdown-gender-option a:hover:last-child, .dropdown-stateprofilepc-option a:hover:last-child, .dropdown-cityprofilepc-option a:hover:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.show{
+    display: block;
+}
+
+.rotateArrow{
+    transform: rotate(180deg);
+    transition: all ease .3s;
+}
+
+
+/*-------------------- Order History -------------*/
+#orderhistory-step-pc{
+    padding:0px;
+}
+table {
+    font-size:16px;
+    color: var(--dark);
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+table th{
+    font-family:subfont;
+    font-size:16px;
+    color:var(--primary);
+}
+
+.ordernumber, .orderprice{
+    font-family:subfont;
+    font-size:16px;
+    color:var(--dark);
+}
+
+th{
+    text-align: left;
+    padding: 8px; 
+}
+  td {
+    border-bottom: 1px var(--shading2)solid;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    border-bottom: 1px var(--shading2)solid;
+  }
+
+  td a{
+    color:var(--dark);
+    font-size:20px;
+    text-decoration: none;
+    float:right;
+    transition:all ease .5;
+  }
+
+  
+
+/*-------------------- Wishlist -------------*/
+#wishlist-step-pc{
+    padding:0px;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.cardproduct{
+    margin:0px;
+    padding:0px;
+    border: 1px var(--shading2) solid;
+    margin-top:30px;
+}
+
+.product{
+    padding:15px;
+}
+
+.product .img-overlay .badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.product .img-overlay{
+    position: relative;
+}
+
+.product .img-overlay .overlay-button{
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .4s;
+}
+
+.cardproduct:hover .product .img-overlay .overlay-button{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease .4s;
+}
+
+.overlay-button .zoom-button, .overlay-button .xmark-button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1.5px solid var(--shading1);
+    text-align: center;
+    padding-top: 6px;
+    color: var(--shading1);
+    transition: all ease-out .3s;
+    cursor: pointer;
+}
+
+.overlay-button .xmark-button{
+    margin-top: 10px;
+}
+
+.overlay-button{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.zoom-button:hover, .xmark-button:hover{
+    background-color: var(--shading1);
+    border: 1.5px solid var(--shading1);
+    color: var(--secondary);
+    transition: all ease-out .3s;
+}
+
+
+
+.product-name{
+    font-family: titlefont;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    color: var(--dark);
+}
+
+.product-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-type{
+    margin-top: 8px;
+}
+
+.product-type-name{
+    font-family:subfont;
+    font-size: 14px;
+    color: var(--shading1);
+}
+
+/*--------------- Product-Price ---------*/
+
+.price{
+    margin-top: 8px;
+
+}
+.product-price-discount{    
+    font-family:subfontlight;
+    font-size: 14px;
+    color: var(--shading1);
+    text-decoration-line: line-through; 
+}
+
+.product-price{
+    font-family:subfont;
+    font-size: 14px;
+    text-align: right;
+    color: var(--shading1);
+    padding-left: 4px;
+}
+
+
+
+/*-------Product-Button ---------*/
+.product-button{
+    margin:0px;
+    padding:0px;
+    height:40px;
+    border-top: 1px var(--shading2) solid;
+}
+
+.btn-addtocart{
+    display:block;
+    float:left;
+    width:50%;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    color: var(--primary);
+    font-family:subfont;
+    font-size: 14px;
+    padding-top: 10px;
+    height: inherit;
+    transition: all ease .3s;
+}
+
+.btn-buynow{
+    display:block;
+    float: right;
+    width:50%;
+    border: none;
+    border-left: 1px var(--shading2) solid;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary);
+    font-family:subfont;
+    font-size: 14px;
+    height: inherit;
+    padding-top: 10px;
+    transition: all ease .3s;
+}
+
+/*---------- MORE OF WHAT YOU LIKED ---------*/
+
+.oderlist-line{
+    margin-top:50px;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.oderlist-line p{
+    padding: 0 8px;
+    font-family: subfont;
+    font-size:16px;
+    background-color: var(--secondary);
+    color:var(--dark);
+    position:absolute;
+    z-index:1;
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+}
+
+.oderlist-line hr{
+    clear: both;
+    border-bottom: 1px solid var(--shading2);
+}
+
+/*----------------- Payment Method ------------*/
+#paymentmethod-step-pc{
+   padding:0px;
+  
+}
+
+#paymentmethod-step-pc p{
+    padding:0px;
+}
+
+.paymentmethod-creditcard{
+   border:1px var(--shading2)solid;
+   padding:30px;
+   display:flex;
+}
+
+.card-credit{
+    display:flex;
+    flex:1;
+  
+}
+.img-cardvisa{
+    width:60px;
+}
+
+.card-information p{
+    margin:0px;
+    padding:0px;
+    font-family:subfont;
+    font-size:16px;
+    color:var(--dark);
+}
+
+.card-information span{
+    font-size:16px;
+    color:var(--dark);
+}
+
+.btncredit{
+    float:right;
+}
+.btncredit button{
+    border:none;
+    background-color: var(--transparent);
+    font-size:20px;
+    padding:8px;
+    transition: all ease .5s;
+}
+
+.btn-credit:hover, .btn-credit:focus, .btn-credit:focus-visible, .btn-credit:active {
+    outline: none;
+  }
+
+
+/*------------------------ MOBILE ------------------*/
+
+/*------------ DASHBOARD-MB -----------*/
+#dashboard-mb{
+    margin-top:30px;
+    margin-bottom:30px;
+    display:flex;
+    border:1px var(--shading2)solid;
+    padding:30px;
+    align-items: baseline;
+}
+
+
+.profileimg-mb{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.profileimg-mb button{
+    border:none;
+    background-color:var(--transparent);
+    color:var(--text);
+    font-family:subfont;
+    font-size:14px;
+    margin-top:16px;
+}
+
+.list-option-mb{
+    display:flex;
+    justify-content: space-between;
+}
+
+.dashboardlist-mb{
+  text-align: start;
+  flex:1;
+  margin-left:30px;
+}
+
+.list-option-mb button{
+    background-color: transparent;
+    border: none;
+    font-family: subfont;
+    font-size: 16px
+}
+
+
+
+
+.profile-option-mb{
+    color: var(--primary) !important;
+}
+
+.avatar-cus-mb{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/*------------ PROFILE-MB -----------*/
+#profile-step-mb{
+    padding:0px;
+    margin-bottom: 30px;
+}
+
+.profile-name-mb, .gender-dropdown-mb, .btnupdate-profile-mb{
+    margin-top:30px;
+}
+
+.tagline-name-mb{
+    font-family: subfont;
+    font-size:15px;
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.bg-firstname-mb{
+    border: 1px solid var(--shading2);
+    height: 40px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all ease .5s;
+    flex:1;
+}
+.bg-firstname-mb input:focus, .bg-firstname-mb input:focus-visible{
+    outline: none;
+}
+
+.bg-firstname-mb input{
+    background-color: transparent;
+    border: none;
+    padding-left: 16px;
+    width: 80%;
+    color: var(--shading2);
+    font-size:14px;
+    outline:none;
+}
+
+.bg-firstname-mb button{
+    padding-right: 16px;
+    color: var(--shading2);
+    font-size: 18px;
+    text-align: right;
+    width: 20%;
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    transition: all ease .5s;
+}
+
+.btn-remind-mb{
+    font-size:12px;
+    float:right;
+    color:var(--shading1);
+    border:none;
+    background-color:var(--transparent);
+    transition: all ease .5s;
+}
+
+.btn-remind-mb:focus{
+    outline:none;
+}
+
+.btnupdate-profile-mb a{
+    text-align: center;
+    display: block;
+}
+
+
+/* ---------------DROP DOWN SECTION - MB ----------------*/
+
+
+.gender-dropdown-mb, .profile-country-dropdown-mb, .profile-state-dropdown-mb, .profile-city-dropdown-mb{
+    width: 100%;
+}
+
+.gender-dropdown-mb label, .profile-country-dropdown-mb label, .profile-state-dropdown-mb label, .profile-city-dropdown-mb label{
+    font-family: subfont;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+#genderbtn-profilemb, #countrybtn-profilemb, #statebtn-profilemb, #citybtn-profilemb{
+    background-color: transparent;
+    color: var(--shading2);
+    font-size: 14px;
+    width: 100%;
+    padding: 9px 16px 9px 16px;
+    text-align: left;
+    border: var(--shading2) 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#genderbtn-profilemb span, #countrybtn-profilemb span, #statebtn-profilemb span, #citybtn-profilemb span{
+    color: var(--primary);
+    display: block;
+    float: right;
+    position: relative;
+    top: 1px;
+    transition: all ease .3s;
+}
+
+#genderbtn-profilemb:hover, #genderbtn-profilemb:focus, #genderbtn-profilemb:focus-visible, #genderbtn-profilemb:active {
+    outline: none;
+  }
+
+#statebtn-profilemb:hover, #statebtn-profilemb:focus, #statebtn-profilemb:focus-visible, #statebtn-profilemb:active {
+    outline: none;
+}
+
+#citybtn-profilemb:hover, #citybtn-profilemb:focus, #citybtn-profilemb:focus-visible, #citybtn-profilemb:active {
+    outline: none;
+}
+
+#countrybtn-profilemb:hover, #countrybtn-profilemb:focus, #countrybtn-profilemb:focus-visible, #countrybtn-profilemb:active {
+    outline: none;
+}
+
+
+.gender-option-field-mb, .country-option-field-mb, .state-option-field-mb, .city-option-field-mb{
+    position: relative;
+    z-index: 3;
+}
+
+.country-option-field-mb, .state-option-field-mb, .city-option-field-mb{
+    width: 100%;
+    z-index: 2;
+}
+
+.dropdown-countryprofilemb-option, .dropdown-gender-option-mb, .dropdown-stateprofilemb-option, .dropdown-cityprofilemb-option {
+    margin-top: 8px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-countryprofilemb-option  a, .dropdown-gender-option-mb  a, .dropdown-stateprofilemb-option a, .dropdown-cityprofilemb-option a{
+    color: var(--dark);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-countryprofilemb-option  a:hover, .dropdown-gender-option-mb  a:hover, .dropdown-stateprofilemb-option a:hover, .dropdown-cityprofilemb-option a:hover {
+    background-color: rgba(161, 162, 133, 0.5);
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.dropdown-countryprofilemb-option a:hover:first-child, .dropdown-gender-option-mb a:hover:first-child, .dropdown-stateprofilemb-option a:hover:first-child, .dropdown-cityprofilemb-option a:hover:first-child{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown-countryprofilemb-option a:hover:last-child, .dropdown-gender-option-mb a:hover:last-child, .dropdown-stateprofilemb-option a:hover:last-child, .dropdown-cityprofilemb-option a:hover:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.show{
+    display: block;
+}
+
+.rotateArrow{
+    transform: rotate(180deg);
+    transition: all ease .3s;
+}
+
+/*-------------------- Order History - MB -------------*/
+#orderhistory-step-mb{
+    padding:0px;
+}
+
+#wishlist-step-mb{
+    padding:0px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/*-------------------- Wishlist - MB -------------*/
+/*---------- MORE OF WHAT YOU LIKED ---------*/
+
+.oderlist-line-mb{
+    margin-top:50px;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.oderlist-line-mb p{
+    padding: 0 8px;
+    font-family: subfont;
+    font-size:16px;
+    background-color: var(--secondary);
+    color:var(--dark);
+    position:absolute;
+    z-index:1;
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+}
+
+.oderlist-line-mb hr{
+    clear: both;
+    border-bottom: 1px solid var(--shading2);
+}
+
+/*-------------------- Paymentmethod - MB -------------*/
+#paymentmethod-step-mb{
+    padding:0px;
+   margin-bottom: 30px;
+ }
+ 
+ #paymentmethod-step-mb p{
+     padding:0px;
+ }
+ 
+ .paymentmethod-creditcard-mb{
+    border:1px var(--shading2)solid;
+    padding:30px;
+    display:flex;
+ }
+ 
+ .card-credit-mb{
+     display:flex;
+     flex:1;
+   
+ }
+ .img-cardvisa-mb{
+     width:60px;
+ }
+ 
+ .card-information-mb p{
+     margin:0px;
+     padding:0px;
+     font-family:subfont;
+     font-size:16px;
+     color:var(--dark);
+ }
+ 
+ .card-information-mb span{
+     font-size:16px;
+     color:var(--dark);
+ }
+ 
+ .btncredit-mb{
+     float:right;
+ }
+ .btncredit-mb button{
+     border:none;
+     background-color: var(--transparent);
+     font-size:20px;
+     padding:8px;
+     transition: all ease .5s;
+ }
+ 
+ .btn-credit-mb:hover, .btn-credit-mb:focus, .btn-credit-mb:focus-visible, .btn-credit-mb:active {
+     outline: none;
+   }
+
+.addmethod-mb{
+        margin-top: 30px;
+   }
+
+ 
+
+/*-------------------- Extra Large -------------*/
+@media (min-width:1200px) {
+    .bg-firstname-pc:hover {
+        background-color: rgba(161, 162, 133, .15);
+        transition: all ease .5s;
+    }
+
+    .bg-firstname-pc button:hover{
+        color: var(--primary);
+        transition: all ease .5s;
+    }
+
+    .btn-remind:hover{
+        color:var(--primary);
+        transition: all ease .5s;
+    }
+
+    .profile-img p.display4-mb{
+        position:relative;
+        left:-7px;
+      }
+
+    td a:hover{
+        color:var(--primary);
+        transition: all ease .5s;
+    }
+
+
+    /*---------------- Card Product -------------*/
+    .btn-addtocart:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+
+    .btn-buynow:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+
+    .btncredit button{
+        color:var(--shading1);
+    }
+
+    .btncredit button:hover{
+        color:var(--primary);
+        transition: all ease .5s;
+    }
+
+}
+
+/*-------------------- Large -------------*/
+@media (max-width:1199px) and (min-width:992px) {
+    .bg-firstname-pc:hover {
+        background-color: rgba(161, 162, 133, .15);
+        transition: all ease .5s;
+    }
+
+    .bg-firstname-pc button:hover{
+        color: var(--primary);
+        transition: all ease .5s;
+    }
+
+    .profile-img p.display4-mb{
+        position:relative;
+        left:-7px;
+      }
+      .btn-remind:hover{
+        color:var(--primary);
+        transition: all ease .5s;
+    }
+
+    td a:hover{
+        color:var(--primary);
+        transition:all ease .5;
+    }
+
+    /*---------------- Card Product -------------*/
+.btn-addtocart:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+
+.btn-buynow:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+
+.btncredit button{
+    color:var(--shading1);
+}
+
+.btncredit button:hover{
+    color:var(--primary);
+    transition: all ease .5s;
+}
+}
+
+/*-------------------- Medium -------------*/
+@media (max-width:991px) and (min-width:768px) {
+    .profile-img p.display4-mb{
+        position:relative;
+        left:-5px;
+      }
+
+      td a:hover{
+        color:var(--dark);
+        transition:all ease .5;
+    }
+
+    /*---------------- Card Product -------------*/
+
+.btn-addtocart:hover{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.btn-buynow:hover{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.btncredit button{
+    color: var(--primary);
+}
+
+}
+
+/*-------------------- Small -------------*/
+@media (max-width:767px) and (min-width:576px) {
+    .btn-addtocart:hover{
+        text-decoration: none;
+        color: var(--primary);
+    }
+    
+    .btn-buynow:hover{
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .btncredit-mb button{
+        color: var(--primary);
+    }
+
+}
+
+/*-------------------- Extra Small -------------*/
+@media (max-width:575px) {
+    .btn-addtocart:hover{
+        text-decoration: none;
+        color: var(--primary);
+    }
+    
+    .btn-buynow:hover{
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .btncredit-mb button{
+        color: var(--primary);
+    }
+}

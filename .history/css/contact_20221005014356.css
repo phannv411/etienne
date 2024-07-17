@@ -1,0 +1,779 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+
+/* --------------------- Visit Our Stores------------------------------------- */
+
+.title-visit p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.title-visit h5{
+    margin-bottom: 0px;
+}
+
+.line-contact hr{
+    margin: 0px;
+    background-color: var(--shading2) !important;
+}
+
+.contact-icon-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    cursor: pointer;
+ }
+.icon-contact{
+    background-color: var(--primary);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.icon-contact i{
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+
+.icon-contact:hover{
+    background-color: var(--dark);
+    color: var(--secondary);
+}
+
+
+ /*--------------ADD A COMMENT-----------------------*/
+ .add-comment{
+    padding: 0px;
+    border-top: 1px solid var(--shading2);
+    
+}
+
+.add-comment-title-left{
+    height: 80px;
+    border-right: 1px solid var(--shading2);
+}
+
+
+.add-comment-title-right{
+    height: 80px;
+}
+
+
+.disclaimer{
+    height: 40px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.disclaimer p{
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--shading1);
+}
+.contact-disclaimer{
+    padding: 0px;
+}
+
+
+  /*-----------------------------------Add review-------------------------------*/
+
+
+.add-review input{
+    padding: 16px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--primary);
+    transition: all ease .3s;
+}
+
+
+
+.add-review input:active, .add-review input:focus, .add-review input:focus-visible{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+.add-review input::placeholder{
+    color: var(--shading1);
+}
+
+
+.submit-review-btn{
+    margin-top: 40px;
+}
+
+/* ------------------- */
+
+
+
+.review-form--label textarea{
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--shading2);
+    color: var(--primary);
+}
+
+
+
+.review-form--label textarea::placeholder{
+    color: var(--shading2);
+}
+
+
+.review-form--label textarea:active, .review-form--label textarea:focus, .review-form--label textarea:focus-visible, .review-form--label textarea:focus-within{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+
+
+#the-count{
+    float: right;
+    color: #999999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.review-content .button-secondary{
+    margin-top: 25px;
+}
+
+/*---------Checkbox-------------*/
+.check-list {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--shading1);
+    transition: all ease .3s;
+}
+
+.check-list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    transition: all ease .3s;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: var(--shading2) solid 1px;
+}
+
+
+.check-list input:checked ~ .checkmark {
+    background-color: var(--primary);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-list input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-list .checkmark:after {
+    left: 6px;
+    top: 1.5px;
+    width: 5px;
+    height: 13px;
+    border: solid var(--secondary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.check-list:hover input ~ .checkmark {
+    background-color: rgb(129, 131, 92, .6);
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+    /* --------------contact-us-title-------------------------------- */
+    #contact-us-title p{
+        text-align: center;
+        margin-bottom: 0px;
+        
+
+    }
+    #contact-us-title{
+        padding-top: 20px;
+        height: 80px;
+    }
+
+    /*---- Visit Our Stores---------- */
+    .contact-visit{
+        color: var(--primary);
+        margin-top: 80px;
+    }
+    .contact-title-visit{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .title-visit h1{
+        font-family: subfont!important;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    /* --------------------- */
+    .contact-get-in-touch{
+        color: var(--primary);
+        margin-top: 40px;
+    }
+    /* -----------google map ---------- */
+    #google-map{
+        background-image: url(../img/contact-us/GoogleMap.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        
+    }
+    /* -----------JOIN US TO.... ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/Recruit-Pic.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+
+    /*-----------ADD A COMMENT----------------------------*/
+    .add-comment{
+        margin-top: 80px;
+    }
+    .add-comment-title-left p{
+        margin-top: 20px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .subject-contact{
+        margin-top: 30px;
+    }
+    .review-content{
+        margin-top: 30px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+    }
+    .add-review input:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+    .review-form--label textarea:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    
+    /* --------------contact-us-title-------------------------------- */
+    #contact-us-title p{
+        text-align: center;
+        margin-bottom: 0px;
+        
+
+    }
+    #contact-us-title{
+        padding-top: 20px;
+        height: 80px;
+    }
+    /*----Visit Our Stores---------- */
+    .contact-visit{
+        color: var(--primary);
+        margin-top: 80px;
+    }
+    .contact-title-visit{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .title-visit h1{
+        font-family: subfont!important;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    /* --------------------- */
+    .contact-get-in-touch{
+        color: var(--primary);
+        margin-top: 40px;
+    }
+    /* -----------google map ---------- */
+    #google-map{
+        background-image: url(../img/contact-us/GoogleMap.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+    }
+    /* -----------JOIN US TO.... ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/Recruit-Pic.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+    /*-----------ADD A COMMENT-----------------*/
+    .add-comment{
+        margin-top: 80px;
+    }
+    .add-comment-title-left p{
+        margin-top: 20px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .subject-contact{
+        margin-top: 30px;
+    }
+    .review-content{
+        margin-top: 30px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+    }
+    .add-review input:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+    .review-form--label textarea:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+    /* --------------contact-us-title-------------------------------- */
+    #contact-us-title p{
+        text-align: center;
+        margin-bottom: 0px;
+        
+
+    }
+    #contact-us-title{
+        padding-top: 20px;
+        height: 80px;
+    }
+
+    /*----Visit Our Stores---------- */
+    .contact-visit{
+        color: var(--primary);
+        margin-top: 56px;
+    }
+    .title-visit h5{
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    .title-visit h1{
+        font-family: subfont!important;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .contact-title-visit{
+        margin-bottom: 30px;
+    }
+    /* --------------------- */
+    .contact-get-in-touch{
+        color: var(--primary);
+        margin-top: 30px;
+    }
+    /* -----------google map ---------- */
+    #google-map{
+        background-image: url(../img/contact-us/GoogleMap.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 26px;
+        background-position: center;
+    }
+    /* -----------JOIN US TO.... ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/Recruit-Pic.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+
+    /*-----------ADD A COMMENT----------------------------*/
+    .add-comment{
+        margin-top: 56px;
+    }
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 56px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+    
+}
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+    /* --------------contact-us-title-------------------------------- */
+    #contact-us-title p{
+        text-align: center;
+        margin-bottom: 0px;
+        
+
+    }
+    #contact-us-title{
+        padding-top: 20px;
+        height: 80px;
+    }
+
+    /*----Visit Our Stores---------- */
+    .contact-visit{
+        color: var(--primary);
+        margin-top: 48px;
+        margin-bottom: 0px;
+    }
+    .title-visit h5{
+        margin-bottom: 0px !important;
+        margin-top: 30px;
+    }
+    .title-visit h1{
+        font-family: subfont;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .contact-title-visit{
+        margin-bottom: 30px;
+    }
+    /* --------------------- */
+    .contact-get-in-touch{
+        color: var(--primary);
+        margin-top: 30px;
+        margin-bottom: 0px !important;
+    }
+    /* -----------google map ---------- */
+    #google-map{
+        background-image: url(../img/contact-us/GoogleMap.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 18px;
+        background-position: center;
+    }
+
+    /* -----------JOIN US TO.... ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/Recruit-Pic.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+
+    /*-----------ADD A COMMENT----------------------------*/
+    .add-comment{
+        margin-top: 48px;
+    }
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+        font-family: titlefont;
+        font-size: 18px;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 48px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+}
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    
+    /* --------------contact-us-title-------------------------------- */
+    #contact-us-title p{
+        text-align: center;
+        margin-bottom: 0px;
+        font-family: displayfont;
+        font-size: 40.5px;
+        
+
+    }
+    #contact-us-title{
+        padding-top: 20px;
+        height: 80px;
+    }
+
+    /*----Visit Our Stores---------- */
+    .contact-visit{
+        color: var(--primary);
+        margin-top: 48px;
+        margin-bottom: 0px;
+    }
+    .title-visit h5{
+        margin-bottom: 0px !important;
+        margin-top: 30px;
+    }
+    .title-visit h1{
+        font-family: subfont;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .contact-title-visit{
+        margin-bottom: 30px;
+    }
+    /* --------------------- */
+    .contact-get-in-touch{
+        color: var(--primary);
+        margin-top: 30px;
+        margin-bottom: 0px !important;
+    }
+    /* -----------google map ---------- */
+    #google-map{
+        background-image: url(../img/contact-us/GoogleMap.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 18px;
+        background-position: center;
+    }
+
+    /* -----------JOIN US TO.... ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/Recruit-Pic.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /*-----------ADD A COMMENT----------------------------*/
+    .add-comment{
+        margin-top: 48px;
+    }
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+        font-family: titlefont;
+        font-size: 18px;
+    }
+    .add-comment-title-left-mb{
+        margin-top: 20px;
+        font-family: displayfont !important;
+        font-size: 40.5px;
+        text-align: center;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 48px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+    
+}

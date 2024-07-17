@@ -1,0 +1,78 @@
+
+
+ #accordionExample .card{
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    margin-bottom: 30px;
+    border-radius: 0px;
+}
+
+
+#accordionExample .card-header{
+    background-color: transparent;
+    border-bottom: 1px solid var(--shading2);
+}
+
+#accordionExample .card-header .btn-link i{
+    float: right;
+    font-size: 24px;
+    color: var(--dark);
+}
+
+#accordionExample .card-header .btn-link{
+    font-family: titlefont;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+
+
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+
+
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    
+}

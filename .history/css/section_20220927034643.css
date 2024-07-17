@@ -1,0 +1,19 @@
+
+
+/*----------------------------Story ---------------------------*/
+
+.main-section{
+    background-color: var(--primary);
+    height: 900px;
+}
+
+.left-section{
+    height:inherit;
+    width: 50%;
+    outline: 1px red solid;
+}
+
+.right-section{
+    width: 50%;
+    outline: 1px red solid;
+}

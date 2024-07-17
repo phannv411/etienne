@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color: #ebe6d7 !important;
+}
+
+
+.ourstudio-main-header{
+    height: 80px;
+    padding-top: 18px;
+    border-bottom: 1px solid var(--shading2);
+}
+.ourstudio-main-header p{
+    color: var(--dark);
+    text-align: center;
+}
+
+.sub1-pc{
+    font-family: subfont;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--shading2);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+}
+

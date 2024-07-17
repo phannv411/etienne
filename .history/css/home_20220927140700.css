@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hero-banner{
+    height: 100vh;
+    background-image: url(../img/Home-Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner p{
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-banner a{
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hero-banner p{
+        font-size: 67.5px;
+    }
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+}
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+}
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+}

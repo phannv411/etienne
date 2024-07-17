@@ -1,0 +1,467 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color: #ebe6d7 !important;
+}
+
+
+.ourstudio-main-header{
+    height: 80px;
+    padding-top: 18px;
+    border-bottom: 1px solid var(--shading2);
+}
+.ourstudio-main-header p{
+    color: var(--dark);
+    text-align: center;
+}
+
+.sub1-pc{
+    font-family: subfont;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--shading2);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+/*--------------------OUR WOODSHOP-PC---------------------------*/
+.blog-ft-pc{
+    padding: 0;
+    height: 700px;
+    display: flex;
+}
+
+.left-part, .right-part{
+    width: 50%;
+}
+
+.left-part{
+    height: inherit;
+    display: flex;
+}
+
+.left-part .left-title{
+    height: inherit;
+    width: 80px;
+    white-space: nowrap;
+    display: flex;
+    align-items: end;
+    border-right: 1px solid var(--shading2);
+}
+
+.left-part .left-title p{
+    color: var(--dark);
+    transform: rotate(-90deg) translate(125px, -75px);
+}
+
+.left-part .left-text{
+    width: 100%;
+}
+
+.left-part .top-left{
+    padding-top: 8px;
+    padding-left: 30px;
+    width: 100%;
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+   
+}
+
+.bottom-left{
+    height: 650px;
+    padding: 30px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.bottom-left .blog-ft-title{
+    width: 100%;
+}
+
+
+.bottom-left .blog-ft-title h1{
+    width: 60%;
+    color: var(--primary);
+}
+
+.bottom-left .blog-ft-content{
+    width: 100%;
+}
+
+.bottom-left .blog-ft-content p{
+    color: var(--dark);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.right-part{
+    border-left: 1px solid var(--shading2);
+    height: 100%;
+}
+
+
+.right-part .top-right{
+    text-align: right;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+    font-size: 16px;
+}
+
+.right-part .top-right p{
+    font-family: subfont;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bottom-right{
+    height: 660px;
+    width: 100%;
+    padding: 30px;
+}
+
+.bottom-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*---------------------OUR WOODSHOP Feature Mobile---------------------------*/
+.blog-ft-mb{
+    padding: 0px 0px 30px 0px;
+    border-bottom: 1px solid var(--shading2);
+}
+
+.blog-ft-mb .top-part{
+    overflow: hidden;
+    height: 40px;
+    
+    border-bottom: 1px solid var(--shading2);
+}
+
+.top-part .top-left-mb{
+    width: 50%;
+    border-right: 1px solid var(--shading2);
+}
+
+
+.top-part .top-right-mb p{
+    margin-top: 8px;
+    font-family: subfont;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px;
+}
+
+.img-ft-mb{
+    padding: 30px 0px;
+    height: 400px;
+}
+
+.img-ft-mb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-ft-content-mb{
+    padding-bottom: 40px;
+}
+
+
+.blog-ft-content-mb h2{
+    color: var(--primary);
+    margin-bottom: 0px;
+}
+
+.blog-ft-content-mb p{
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.top-right-mb{
+    border-left: 1px solid var(--shading2);
+    text-align: right;
+}
+
+
+/*--BREADCRUMB--*/
+
+.breadcrumbb{
+    height: inherit;
+    padding-top: 0px;
+}
+
+.blog-ft-mb .breadcrumbb{
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.img-ft-mb img{
+    object-position: 20% 40%;
+}
+
+
+
+/*---------------------OUR PROCESS--------------------*/
+.ourprocess{
+    background-color: var(--primary);
+    padding: 30px 0px;
+}
+.support-section{
+    
+    margin-bottom: 40px;
+    height: 80px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+    overflow: hidden;
+    
+}
+
+
+.support-title{
+    height: inherit;
+    overflow: hidden;
+
+}
+
+.sp-title-left{
+    height: 80px;
+    border-right: 1px solid var(--shading2);
+}
+
+.sp-title-right{
+    height: inherit;
+    text-align: right; 
+}
+
+.sp-title-left p{
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.sp-title-right p{
+    color: var(--secondary);
+    font-family: subfont;
+    font-size: 18px;
+    text-align: right;
+}
+
+.sp-table{
+    padding: 30px 0px;
+}
+
+.sp-table-border{
+    border-bottom: 1px solid var(--shading2);
+}
+
+.sp-list{
+    display: flex;
+    align-items: flex-start;
+}
+
+.sp-list p.display4-mb{
+    display: block;
+    color: var(--secondary);
+}
+
+.sp-content p{
+    color: var(--white);
+    margin-bottom: 0px;
+}
+
+
+
+
+/*---------------------LASTEST JOB POSTS--------------------*/
+.jobpost-title{
+    padding: 30px 0px;
+}
+
+.jobpost-container{
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+    .bottom-left .blog-ft-title h1{
+        width: 60%;
+        color: var(--primary);
+    }
+
+
+     /*--OUR BENEFIT--*/
+     .sp-title-right{
+        margin-top: 30px;
+    }
+    .sp-title-right a:hover::before{
+        width: 100%;
+    }
+
+    .sp-list h5{
+        color: var(--secondary);
+        margin-right: 65px;
+    }
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .bottom-left .blog-ft-title h1{
+        width: 100%;
+        color: var(--primary);
+    }
+
+    /*--OUR BENEFIT--*/
+
+    .sp-title-right{
+        margin-top: 30px;
+    }
+
+    .sp-list h5{
+        color: var(--secondary);
+        margin-right: 65px;
+    }
+
+
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+    /*--OUR BENEFIT--*/
+    .sp-title-right p{
+        padding-top: 28px;
+        text-align: right;
+    }
+    .sp-list h5{
+        color: var(--secondary);
+        margin-right: 65px;
+    }
+
+
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+    /*--OUR BENEFIT--*/
+    .sp-title-right p{
+        padding-top: 28px;
+        text-align: right;
+    }
+    .sp-title-left p.display4-pc{
+        font-size: 40.5px;
+    }
+
+    .sp-list h5{
+        color: var(--secondary);
+        margin-right: 30px;
+        }
+    
+     .insight-upper p{
+        font-size: 40.5px;
+    }
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    .blog-ft-content-mb{
+        padding: 0px 30px 40px 30px;
+    }
+
+
+    /*--OUR BENEFIT--*/
+    .sp-title-left{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sp-title-right p{
+        padding-top: 28px;
+        text-align: right;
+    }
+
+    .sp-title-left p.display4-pc{
+        font-size: 40.5px;
+        white-space: nowrap;
+   }
+
+   .sp-list h5{
+    color: var(--secondary);
+    margin-right: 30px;
+    }
+
+    .insight-upper p{
+        font-size: 40.5px;
+    }
+
+    .sp-table{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

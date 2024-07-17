@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!----Fontawesome-->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cartpage.css"> 
+  
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/popper.min.js"></script> 
+      <script src="js/bootstrap-4.4.1.js"></script>
+      <script src="js/starter.js"></script>
+  
+    <script>
+          $(document).ready(function(){
+
+
+                $("#citybtn").click(function(){
+                $(".dropdown-city-option").toggleClass("show");
+                $("#citybtn span i").toggleClass("rotateArrow");
+                });
+
+                $("#statebtn").click(function(){
+                $(".dropdown-state-option").toggleClass("show");
+                $("#statebtn span i").toggleClass("rotateArrow");
+                });
+
+                $("#countrybtn").click(function(){
+                $(".dropdown-country-option").toggleClass("show");
+                $("#countrybtn span i").toggleClass("rotateArrow");
+                });
+  
+  })
+    </script>
+    
+</head>
+<body>
+<!-------------------------------------------MODAL POP UP ------------------------------------------>
+<div id="signin-popup">
+    <div class="sign-in-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN IN</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="signin-form--label password-input">
+          <label for="signin-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signin-password" placeholder="Enter password here">
+            <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+          <div class="password-element">
+            <label class="check-list"><span>Remember me</span>
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <span class="checkmark"></span>
+            </label>
+            <a href="">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign in</a>
+        <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+      </div>
+    </div><!---------------------------Sign In-form ------------------------------>
+  </div>
+  <div id="signup-popup">
+    <div class="sign-up-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN UP</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="first-last-name">
+          <div class="signin-form--label firstname-input">
+            <label for="firstname">First Name*</label>
+            <br>
+            <input type="text" placeholder="Your First Name" id="firstname">
+          </div>
+          <div class="signin-form--label lastname-input">
+            <label for="lastname">Last Name*</label>
+            <br>
+            <input type="text" placeholder="Your Last Name" id="lastname">
+          </div>
+        </div>
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="password-signup-confirm">
+          <div class="signin-form--label password-input">
+            <label for="signup-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-password" placeholder="Enter password here">
+              <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+          <div class="signin-form--label confirm-password-input">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+              <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+        </div>
+        <p>Sign up email to receive 10% off your first order.
+          <br> By signing up, you agree to ours Terms & Conditions</p>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign up</a>
+        <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+      </div>
+    </div><!---------------------------Sign Up-form ------------------------------>
+  </div>
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+    <div class="container-fluid d-none d-lg-block header-desktop">
+      <div class="container">
+        <div class="row d-flex align-items-center header-row">
+          <div class="left-navi
+                      col-xl-2
+                      col-lg-2">
+                      <div class="burger-menu">
+                        <div class="barline"></div>
+                      </div>
+                      <a href="#">SHOP</a> 
+                      
+          </div><!--Left Navi-->
+          <div class="center-navi
+                      col-xl-2 offset-xl-3
+                      col-lg-2 offset-lg-3">
+                      <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+          </div><!--Logo-->
+          <div class="right-navi
+                      col-xl-3 offset-xl-2
+                      col-lg-3 offset-lg-2">
+                      <div class="cart-section">
+                        BAG
+                        <div class="cart-count">0</div>
+                      </div>
+                      <button id="signin-modal">SIGN IN</button>                       
+          </div><!--Right Navi-->
+        </div>
+      </div>
+    </div>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+    <div class="row d-none d-lg-block">
+      <div class="col-xl-5 offset-xl-7
+                  col-lg-5 offset-lg-7 img-megamenu">
+        <p class="display3-mb" >NATIVE IRON CHAIR</p>
+        <span>FEATURED PRODUCT</span>
+      </div>
+    </div>
+    <div class="container megamenu-content d-none d-lg-block">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Mega Menu List-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 search-field">
+          <p>Looking for anything special today?</p>
+          <div class="search-box">
+            <button class="search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+            <input type="text" class="search-input" placeholder="Enter keyword here...">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <div class="container-fluid d-lg-none header-mobile">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-md-3
+                    col-sm-4
+                    col-4">
+                    <div class="burger-menu-mb">
+                      <div class="barlinemb"></div>
+                    </div>
+                    <a href="#">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-md-2 offset-md-2
+                    col-sm-2 offset-sm-1
+                    col-2 offset-1">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-md-2 offset-md-3
+                    col-sm-3 offset-sm-2
+                    col-3 offset-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>                     
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </div>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+    <div class="container-fluid sub-header-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8
+                      col-sm-8
+                      col-8">
+                      <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+          </div>
+          <div class="col-md-4
+                      col-sm-4
+                      col-4 left-subhead">
+                      <button id="signin-modal-mb">SIGN IN</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="megamenu-content-mb">
+      <div class="row">
+        <div class="col-6">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signin-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN IN</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="signin-form--label password-input">
+              <label for="signin-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signin-password" placeholder="Enter password here">
+                <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+              <div class="password-element">
+                <label class="check-list"><span>Remember me</span>
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+                <a href="">Forget password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign in</a>
+            <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signup-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN UP</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="first-last-name">
+              <div class="signin-form--label firstname-input">
+                <label for="firstname">First Name*</label>
+                <br>
+                <input type="text" placeholder="Your First Name" id="firstname">
+              </div>
+              <div class="signin-form--label lastname-input">
+                <label for="lastname">Last Name*</label>
+                <br>
+                <input type="text" placeholder="Your Last Name" id="lastname">
+              </div>
+            </div>
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="password-signup-confirm">
+              <div class="signin-form--label password-input">
+                <label for="signup-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-password" placeholder="Enter password here">
+                  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+              <div class="signin-form--label confirm-password-input">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+            </div>
+            <p>Sign up email to receive 10% off your first order.
+              <br> By signing up, you agree to ours Terms & Conditions</p>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign up</a>
+            <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--------------------------------------- Header ------------------------------------->
+    <div class="container-fluid outline">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12
+                        col-lg-12
+                        col-md-12
+                        col-sm-12
+                        col-12 display3-pc">
+                    <div class="cart-header-checkout">
+                      <p>CHECKOUT</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div><!---------------- header ------------------>
+    <div class="container-fluid breadcrumbb-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 ">
+                        <div class="breadcrumb-checkout">
+                          <div class="breadcrumbb">
+                            <ul>
+                                <li><a href="Homepage.html">Cart</a></li>
+                                <li class="actived">Checkout</li>
+                                <li><a href="shipping.html">Shipping</a></li>
+                                <li><a href="payment.html">Payment</a></li>
+                                <li><a href="confirmation.html">Confirmation</a></li>
+                                
+                              </ul>
+                          </div>
+                          <div class="btn-bredcrumb d-none d-md-block">
+                            <a href="#" class="btn-primary-md-left"><i class="fa-regular fa-arrow-left-long"></i>CONTINUE SHOPPING</a>
+                          </div>
+                          
+                        </div>
+                </div>
+              </div>
+    
+        </div>
+    </div><!--------------------------------- breadcrumb ----------------------------------------->
+    
+    <div class="container d-none d-lg-block cart-checkout-bg">
+        <div class="row">
+            <form class="col-xl-6
+                         col-lg-6 cart-checkout-outline">
+                <div class="row">
+                    <div class="col-xl-12
+                                col-lg-12 content-left">
+                                <div class="express-pc">
+                                    <div class="express-checkout">
+                                        <p>Express Checkout</p>
+                                     </div>
+                                     <div class="express-checkout-item">
+                                        <img src="img/applepay.svg" alt="" class="express-item">
+                                     </div>
+                                 </div>
+                                 
+                                 <div  class="cart-or-line">
+                                    <div><p>OR</p></div>
+                                   <hr>
+                                 </div>
+            
+                                 
+                                 <div class="input-checkout-text">
+                                                <h5>Contact Infomation*</h5>
+                                                <label for="phone-pc">Phone*:</label>
+                                                <input type="text" name="user" placeholder="(+33-000-000-000)" id="phone-pc">
+                                               
+                                 </div> <!--contact-phonenumber-->  
+    
+                                 <div class="input-checkout-email">
+                                        <label for="email-pc">Email*:</label>
+                                        <input type="email" name="user" placeholder="example@email.com" id="email-pc">
+                                 </div><!--contact-email-->          
+                                                
+                                
+                              
+            
+                                <div class="cart-contact-pc">
+                                    <h5>Shipping Infomation*</h5>
+                                    <div class="row contact-name">
+                                        <div class="col-xl-6
+                                                    col-lg-6 input-checkout-text">
+                                                <label for="fristnam-pc">Frist name*:</label>
+                                                <input type="text" name="user" placeholder="Eg. Evans" id="fristname-pc">
+                                        </div>
+    
+                                        <div class="col-xl-6
+                                                     col-lg-6 input-checkout-text">
+                                                     <label for="lastname-pc">Last name*:</label>
+                                                     <input type="text" name="user" placeholder="Eg. Chris" id="lastname-pc">
+                                        </div>
+    
+                                    </div><!--contact-name-->
+                                   
+                                    
+                                  
+                                    
+                                    <div class="row">
+                                        <div class="col-xl-12
+                                                    col-lg-12 input-checkout-text">
+                                                    <label for="address-pc">Address*:</label>
+                                                    <input type="text" name="user" placeholder="Eg. 25 Avenue De Marlioz" id="address-pc">
+                                        </div>
+                                    </div><!--contact-address-->
+                                    
+            
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="city-dropdown">
+                                              <label for="citybtn">City*:</label>
+                                             <div class="city-option-field">
+                                                <button id="citybtn">Abbeville <span><i class="fa-light fa-angle-down fa-lg"></i></span></button>
+                                                <div class="dropdown-city-option">
+                                                    <a href="#">Agde</a>
+                                                    <a href="#">Agen</a>
+                                                    <a href="#">Aix-en-Provence</a>
+                                                    <a href="#">Aix-les-Bains</a>
+                                                    <a href="#">Ajaccio</a>
+                                                    <a href="#">Albi</a>
+                                                    <a href="#">Alençon</a>
+                                                    <a href="#">Alès</a>
+                                                </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    
+            
+                                        <div class="col-lg-4">
+                                            <div class="state-dropdown">
+                                                <label for="statebtn">State*:</label>
+                                             <div class="state-option-field">
+                                                <button id="statebtn">Brittany<span><i class="fa-light fa-angle-down fa-lg"></i></span></button>
+                                                <div class="dropdown-state-option">
+                                                    <a href="#">Corsica</a>
+                                                    <a href="#">Grand Est</a>
+                                                    <a href="#">Guadeloupe</a>
+                                                    <a href="#">Normandy</a>
+                                                    <a href="#">Occitanie</a>
+                                                    <a href="#">Réunion</a>
+                                                </div>
+                                               </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-xl-4
+                                                    col-lg-4 input-checkout-text">
+                                                        <label for="zipcode-pc">Zip code:</label>
+                                                        <input type="text" name="user" placeholder="Eg. 06600" id="zipcode-pc">
+                                        </div>
+                                    </div><!--contact-zipcode-->
+    
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="country-dropdown">
+                                                <label for="countrybtn">Country*:</label>
+                                             <div class="country-option-field">
+                                                <button id="countrybtn">France <span><i class="fa-light fa-angle-down fa-lg"></i></span></button>
+                                                <div class="dropdown-country-option">
+                                                  <a href="#">Afghanistan</a>
+                                                  <a href="#">Albania</a>
+                                                  <a href="#">Algeria</a>
+                                                  <a href="#">Andorra</a>
+                                                  <a href="#">Angola</a>
+                                                  <a href="#">Argentina</a>
+                                                  <a href="#">Armenia</a>
+                                                  <a href="#">Australia</a>
+                                                </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div><!--contact-region-->
+            
+    
+                                </div> <!--contact-shipping-->
+            
+                                <div class="row">
+                                    <div class="col-xl-12
+                                                col-lg-12 review-form--shipnote">
+                                        <p>Shipping note (optional)</p>
+                                        <textarea name="review" id="review" cols="30" rows="5" placeholder="Enter your note here...." maxlength="1000"></textarea>
+                                        <div class="the-count">
+                                            <span class="current">0</span>
+                                            <span class="maximum">/ 500</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row return-shipping">
+                                    <div class="col-xl-12
+                                                col-lg-12 btn-return-shipping">
+                                                <a href="#" class="btn-primary-md-right">COUNTINUE TO SHIPPING METHOD<i class="fa-regular fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+               
+            </form><!---------------- content-left ------------------>
+            
+            <div class="col-xl-6
+                        col-lg-6 cart-checkout-right">
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/Stool/SEDONA BAR.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>SEDONA BAR</h5>
+                                <p>Stool</p>
+                                <p>Color: Beige</p>
+                            </div><!--name--->
+    
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 650.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 650.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-01-checkout------------>
+    
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>DINNING SYNTHETIC</h5>
+                                <p>Stool</p>
+                                <p>Color: Brown</p>
+                            </div><!--name--->
+    
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 399.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 399.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-02-checkout------------>
+    
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/chair/ONYX.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>ONYX WOOD CHAIR</h5>
+                                <p>Chair</p>
+                                <p>Color: Beige</p>
+                            </div><!--name--->
+    
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 989.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 989.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-03-checkout------------>
+                    
+                    <div class="coupon-pc">
+                        <div class="checkout-coupon">
+                            <p>Apply Coupon</p>
+                         </div>
+                         <div class="checkout-couponbox">
+                            <div class="coupon--field">
+                                <input type="text" class="couponbox" placeholder="Enter coupon here">
+                                <button><i class="fa-light fa-ticket"></i></button>
+                            </div>
+    
+                            <div class="btn-updatecart">
+                                <a class="btn-primary-md">UPDATE CART</a>
+                            </div>
+                             
+                         </div>
+                     </div><!-------------Coupon ------------>
+    
+                     <div class="order-summery">
+                        <div class="display4-pc">ORDER SUMMARY</div>
+                        <div class="summery-content">
+                            <div class="summery-01">
+                                <p>Subtotal</p>
+                                <span>$ 2,038.00</span>
+                            </div>
+                            <div class="summery-02">
+                                <p>Shipping</p>
+                                <span>Calculate at next step</span>
+                            </div>
+                            <div class="summery-01">
+                                <p>Tax</p>
+                                <span>$ 203.00</span>
+                            </div>
+                            <hr>
+                            <div class="summery-01">
+                                <h5>Total</h5>
+                                <span>$ 2,241.00</span>
+                            </div>
+                        </div>
+                     </div>
+                       
+    
+            </div><!---------------- content-right ------------------>
+        </div>
+    </div><!---------------- CART CHECKOUT - PC------------------>
+    
+    <!---------------- Cart-checkout-mobile ------------------>
+    <div class="container-fluid checkout-fluid-mb d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 checkout-product-mb">
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/Stool/SEDONA BAR.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>SEDONA BAR</h5>
+                                <p>Stool</p>
+                                <p>Color: Beige</p>
+                            </div><!--name--->
+        
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 650.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 650.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-01-checkout------------>
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>DINNING SYNTHETIC</h5>
+                                <p>Stool</p>
+                                <p>Color: Brown</p>
+                            </div><!--name--->
+        
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 399.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 399.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-01-checkout------------>
+                    <div class="cart-checkout-product">
+                        <div class="checkout-product">
+                            <img src="img/shopall/chair/ONYX.jpg">
+                        </div>
+                        <div class="checkout-product-content">
+                            <div class="product-data">
+                                <h5>ONYX WOOD CHAIR</h5>
+                                <p>Chair</p>
+                                <p>Color: Beige</p>
+                            </div><!--name--->
+        
+                            <div class="button-remove">
+                                <button href="#" type="button">Remove</button>
+                            </div><!--removebtn-->
+                            <hr>
+                            <div class="product-price-getbuy">
+                                <div class="pricebf">$ 989.00</div>
+                                <div class="product-getbuy">
+                                    <div class="checkout-quantity-order">
+                                        <div class="checkout-counter">
+                                          <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                                          <input type="text" value="1">
+                                          <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="priceat">$ 989.00</div>
+                            </div><!-------------Quantity & Price------------>
+                        </div>
+                    </div><!-------------Cardproduct-01-checkout------------>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div class="coupon-mb">
+                        <div class="checkout-coupon-mb">
+                            <p>Apply Coupon</p>
+                         </div>
+                         <div class="checkout-couponbox-mb">
+                            <div class="coupon--field">
+                                <input type="text" class="couponbox" placeholder="Enter coupon here">
+                                <button><i class="fa-light fa-ticket"></i></button>
+                            </div>
+                            <div class="btn-updatecart">
+                                <a class="btn-primary-md">UPDATE CART</a>
+                            </div>
+                         </div>
+                     </div><!-------------Coupon ------------>
+                </div>
+            </div>
+            <hr>
+            <div class="order-summery">
+                <div class="display4-pc">ORDER SUMMARY</div>
+                <div class="summery-content">
+                    <div class="summery-01">
+                        <p>Subtotal</p>
+                        <span>$ 2,038.00</span>
+                    </div>
+                    <div class="summery-02">
+                        <p>Shipping</p>
+                        <span>Calculate at next step</span>
+                    </div>
+                    <div class="summery-01">
+                        <p>Tax</p>
+                        <span>$ 203.00</span>
+                    </div>
+                    <hr>
+                    <div class="summery-01">
+                        <h5>Total</h5>
+                        <span>$ 2,241.00</span>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="express-pc">
+                        <div class="express-checkout">
+                                            <p>Express Checkout</p>
+                        </div>
+                        <div class="express-checkout-item">
+                            <img src="img/applepay.svg" alt="" class="express-item">
+                        </div>
+                    </div>
+                                     
+                    <div  class="cart-or-line">
+                        <div><p>OR</p></div>
+                        <hr>
+                    </div>
+                
+                                     
+                    <div class="input-checkout-text">
+                        <h5>Contact Infomation*</h5>
+                        <label for="phone-mb">Phone*:</label>
+                        <input type="text" name="user" placeholder="(+33-000-000-000)" id="phone-mb">
+                                                   
+                    </div> <!--contact-phonenumber-->  
+        
+                                     <div class="input-checkout-email">
+                                            <label for="email-mb">Email*:</label>
+                                            <input type="text" name="user" placeholder="example@email.com" id="email-mb">
+                                     </div><!--contact-email-->  
+                                     <div class="cart-contact-pc">
+    
+                                        <h5>Shipping Infomation*</h5>
+    
+                                        <div class="row">
+                                            <div class="col-6 input-checkout-text">
+                                                    <label for="fristname-mb">Frist name*:</label>
+                                                    <input type="text" name="user" placeholder="Eg. Evans" id="fristname-mb">
+                                            </div>
+        
+                                            <div class="col-6 input-checkout-text">
+                                                         <label for="lastname-mb">Last name*:</label>
+                                                         <input type="text" name="user" placeholder="Eg. Chris" id="lastname-mb">
+                                            </div>
+        
+                                        </div><!--contact-name-->
+                                       
+                                        
+                                      
+                                        
+                                        <div class="row">
+                                            <div class="col-12 input-checkout-text">
+                                                        <label for="address-mb">Address*:</label>
+                                                        <input type="text" name="user" placeholder="Ex: 25 Avenue De Marlioz" id="address-mb">
+                                            </div>
+                                        </div><!--contact-address-->
+                                        
+                
+                                        <div class="row">
+                                            <div class="col-4">
+                                                        <div class="input-checkout-text">
+                                                                <label for="city-mb">City*:</label>
+                                                                <input type="text" name="user" placeholder="..." id="city-mb">
+                                                        </div>
+                                            </div>
+                
+                                            <div class="col-4">
+                                                        <div class="input-checkout-text">
+                                                            <label for="state-mb">State*:</label>
+                                                            <input type="text" name="user" placeholder="..." id="state-mb">
+                                                        </div>  
+                
+                                            </div>
+                
+                                            <div class="col-4">
+                                                        <div class="input-checkout-text">
+                                                            <label for="zipcode-mb">Zip code:</label>
+                                                            <input type="text" name="user" placeholder="Eg.  06600" id="zipcode-mb">
+                                                        </div>  
+                                            </div>
+                                        </div><!--contact-zipcode-->
+        
+                                        <div class="row">
+                                            <div class="col-12 input-checkout-text">
+                                                        <label for="region-mb">Country/Region*:</label>
+                                                        <input type="text" name="user" placeholder="..." id="region-mb">
+                                            </div>
+                                        </div><!--contact-region-->
+                
+        
+                                    </div> <!--contact-shipping-->
+                
+                                    <div class="row">
+                                        <div class="col-xl-12
+                                                    col-lg-12 review-form--shipnote">
+                                            <p>Shipping note (optional)</p>
+                                            <textarea name="review" id="review" cols="30" rows="5" placeholder="Enter your note here...." maxlength="1000"></textarea>
+                                            <div class="the-count">
+                                                <span class="current">0</span>
+                                                <span class="maximum">/ 500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row return-shipping">
+                                        <div class="col-12 btn-return-shipping">
+                                                    <a href="#" class="btn-primary-md-right">COUNTINUE TO SHIPPING METHOD<i class="fa-regular fa-arrow-right-long"></i></a>
+                                        </div>
+                                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+  
+  <!-------------------------------------------Footer Desktop ------------------------------------------>
+<div class="container-fluid d-none d-md-block" id="footerDesktop">
+    <div class="container-fluid footer-navi">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation-->
+    <div class="container footer-subscribe d-none d-lg-block">
+      <div class="row d-flex align-items-end">
+        <div class="col-xl-4 
+                    col-lg-4 email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4 media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media LG XL-->
+    <div class="container footer-subscribe d-none d-md-block d-lg-none">
+      <div class="row">
+        <div class="col-md-4
+                    offset-md-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-end">
+        <div class="col-md-6 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-md-6
+                    media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <div class="container-fluid d-md-none" id="footerMobile">
+    <div class="container-fluid footer-navi footer-navi-mb1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Upper Section-->
+    <div class="container-fluid footer-navi footer-navi-mb2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-6 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Lower Section-->
+    <div class="container footer-subscribe d-md-none">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2
+                    col-10 offset-1 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div><!-------Email Input------>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3
+                    col-6 offset-3">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div><!-------Logo------>
+      </div>
+      <div class="row">
+        <div class="col-12
+                    media-footer-mb">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                      <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  
+    
+</body>
+</html>

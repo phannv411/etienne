@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>detail</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/starter.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/blogdetail.css">
+	<link rel="stylesheet" href="css/common.css">
+
+
+
+	<!----Fontawesome-->
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+
+
+
+  </head>
+
+
+  <body>
+<!-------------------------------------------MODAL POP UP ------------------------------------------>
+<div id="signin-popup">
+  <div class="sign-in-form">
+    <div class="popup-title">
+      <p class="display3-pc">SIGN IN</p>
+    </div>
+    <div class="x-mark">
+      <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="popup-form">
+      <div class="signin-form--label usename-input">
+                      <label for="username">Email</label>
+                      <br>
+                      <input type="text" placeholder="example@email.com" id="username">
+      </div>
+      <div class="signin-form--label password-input">
+        <label for="signin-password">Password</label>
+        <div class="password-input--field">
+          <input type="password" id="signin-password" placeholder="Enter password here">
+          <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+        </div>
+        <div class="password-element">
+          <label class="check-list"><span>Remember me</span>
+            <input type="checkbox" name="saveinfo" id="saveinfo">
+            <span class="checkmark"></span>
+          </label>
+          <a href="">Forget password?</a>
+        </div>
+      </div>
+    </div>
+    <div class="signin-btn">
+      <a href="#" class="btn-primary-xl">sign in</a>
+      <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+    </div>
+  </div><!---------------------------Sign In-form ------------------------------>
+</div>
+<div id="signup-popup">
+  <div class="sign-up-form">
+    <div class="popup-title">
+      <p class="display3-pc">SIGN UP</p>
+    </div>
+    <div class="x-mark">
+      <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="popup-form">
+      <div class="first-last-name">
+        <div class="signin-form--label firstname-input">
+          <label for="firstname">First Name*</label>
+          <br>
+          <input type="text" placeholder="Your First Name" id="firstname">
+        </div>
+        <div class="signin-form--label lastname-input">
+          <label for="lastname">Last Name*</label>
+          <br>
+          <input type="text" placeholder="Your Last Name" id="lastname">
+        </div>
+      </div>
+      <div class="signin-form--label usename-input">
+                      <label for="username">Email</label>
+                      <br>
+                      <input type="text" placeholder="example@email.com" id="username">
+      </div>
+      <div class="password-signup-confirm">
+        <div class="signin-form--label password-input">
+          <label for="signup-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signup-password" placeholder="Enter password here">
+            <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+        </div>
+        <div class="signin-form--label confirm-password-input">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+            <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+        </div>
+      </div>
+      <p>Sign up email to receive 10% off your first order.
+        <br> By signing up, you agree to ours Terms & Conditions</p>
+    </div>
+    <div class="signin-btn">
+      <a href="#" class="btn-primary-xl">sign up</a>
+      <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+    </div>
+  </div><!---------------------------Sign Up-form ------------------------------>
+</div>
+
+
+
+
+
+<!-------------------------------------------Header Desktop ------------------------------------------>
+<div class="container-fluid d-none d-lg-block" id="header-desktop">
+  <div class="container">
+    <div class="row d-flex align-items-center header-row">
+      <div class="left-navi
+                  col-xl-2
+                  col-lg-2">
+                  <div class="burger-menu">
+                    <div class="barline"></div>
+                  </div>
+                  <a href="#">SHOP</a> 
+                  
+      </div><!--Left Navi-->
+      <div class="center-navi
+                  col-xl-2 offset-xl-3
+                  col-lg-2 offset-lg-3">
+                  <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+      </div><!--Logo-->
+      <div class="right-navi
+                  col-xl-3 offset-xl-2
+                  col-lg-3 offset-lg-2">
+                  <div class="cart-section">
+                    BAG
+                    <div class="cart-count">0</div>
+                  </div>
+                  <button id="signin-modal">SIGN IN</button>                       
+      </div><!--Right Navi-->
+    </div>
+  </div>
+</div>
+<!-------------------------------------------Blackscreen ------------------------------------------>
+<div class="container-fluid" id="blackscreen"></div>
+<div class="container-fluid" id="blackscreen2"></div>
+<div class="container-fluid" id="blackscreen3"></div>
+
+<!-------------------------------------------Megamenu Desktop ------------------------------------------>
+<div class="container-fluid" id="megamenu-desktop">
+  <div class="row d-none d-lg-block">
+    <div class="col-xl-5 offset-xl-7
+                col-lg-5 offset-lg-7 img-megamenu">
+      <p class="display3-mb" >NATIVE IRON CHAIR</p>
+      <span>FEATURED PRODUCT</span>
+    </div>
+  </div>
+  <div class="container megamenu-content d-none d-lg-block">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+        <div class="menu-section">
+          <span class="display4-pc">ÉTIENNE</span>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">LOOKBOOK</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SHOP</span>
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">SEATING</a></li>
+            <li><a href="#">DESK & TABLE</a></li>
+            <li><a href="#">DECOR</a></li>
+            <li><a href="#">ORGANISATION</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">WARRANTY</a></li>
+            <li><a href="#">RETURN & REFUND</a></li>
+            <li><a href="#">PAYMENT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> <!--Mega Menu List-->
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 search-field">
+        <p>Looking for anything special today?</p>
+        <div class="search-box">
+          <button class="search-btn">
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </button>
+          <input type="text" class="search-input" placeholder="Enter keyword here...">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------------------------Header Mobile ------------------------------------------>
+<div class="container-fluid d-lg-none" id="header-mobile">
+  <div class="container">
+    <div class="row d-flex align-items-center header-row">
+      <div class="left-navi
+                  col-md-3
+                  col-sm-4
+                  col-4">
+                  <div class="burger-menu-mb">
+                    <div class="barlinemb"></div>
+                  </div>
+                  <a href="#">SHOP</a> 
+                  
+      </div><!--Left Navi-->
+      <div class="center-navi
+                  col-md-2 offset-md-2
+                  col-sm-2 offset-sm-1
+                  col-2 offset-1">
+                  <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+      </div><!--Logo-->
+      <div class="right-navi
+                  col-md-2 offset-md-3
+                  col-sm-3 offset-sm-2
+                  col-3 offset-2">
+                  <div class="cart-section">
+                    BAG
+                    <div class="cart-count">0</div>
+                  </div>                     
+      </div><!--Right Navi-->
+    </div>
+  </div>
+</div>
+
+<!-------------------------------------------Megamenu Mobile ------------------------------------------>
+<div id="mega-menu-mb" class="d-lg-none">
+  <div class="container-fluid sub-header-mb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8
+                    col-sm-8
+                    col-8">
+                    <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+        </div>
+        <div class="col-md-4
+                    col-sm-4
+                    col-4 left-subhead">
+                    <button id="signin-modal-mb">SIGN IN</button>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="megamenu-content-mb">
+    <div class="row">
+      <div class="col-6">
+        <div class="menu-section">
+          <span class="display4-pc">ÉTIENNE</span>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">LOOKBOOK</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SHOP</span>
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">SEATING</a></li>
+            <li><a href="#">DESK & TABLE</a></li>
+            <li><a href="#">DECOR</a></li>
+            <li><a href="#">ORGANISATION</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">WARRANTY</a></li>
+            <li><a href="#">RETURN & REFUND</a></li>
+            <li><a href="#">PAYMENT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="signin-mb">
+    <div class="row">
+      <div class="col-12">
+        <div class="popup-title">
+          <p class="display3-pc">SIGN IN</p>
+        </div>
+        <div class="return-mark-mb return-mark-mb-xs">
+          <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="popup-form">
+          <div class="signin-form--label usename-input">
+                          <label for="username">Email</label>
+                          <br>
+                          <input type="text" placeholder="example@email.com" id="username">
+          </div>
+          <div class="signin-form--label password-input">
+            <label for="signin-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signin-password" placeholder="Enter password here">
+              <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+            <div class="password-element">
+              <label class="check-list"><span>Remember me</span>
+                <input type="checkbox" name="saveinfo" id="saveinfo">
+                <span class="checkmark"></span>
+              </label>
+              <a href="">Forget password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="signin-btn">
+          <a href="#" class="btn-primary-xl">sign in</a>
+          <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="signup-mb">
+    <div class="row">
+      <div class="col-12">
+        <div class="popup-title">
+          <p class="display3-pc">SIGN UP</p>
+        </div>
+        <div class="return-mark-mb return-mark-mb-xs">
+          <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="popup-form">
+          <div class="first-last-name">
+            <div class="signin-form--label firstname-input">
+              <label for="firstname">First Name*</label>
+              <br>
+              <input type="text" placeholder="Your First Name" id="firstname">
+            </div>
+            <div class="signin-form--label lastname-input">
+              <label for="lastname">Last Name*</label>
+              <br>
+              <input type="text" placeholder="Your Last Name" id="lastname">
+            </div>
+          </div>
+          <div class="signin-form--label usename-input">
+                          <label for="username">Email</label>
+                          <br>
+                          <input type="text" placeholder="example@email.com" id="username">
+          </div>
+          <div class="password-signup-confirm">
+            <div class="signin-form--label password-input">
+              <label for="signup-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signup-password" placeholder="Enter password here">
+                <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+            </div>
+            <div class="signin-form--label confirm-password-input">
+              <label for="signup-confirm-password">Confirm Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+            </div>
+          </div>
+          <p>Sign up email to receive 10% off your first order.
+            <br> By signing up, you agree to ours Terms & Conditions</p>
+        </div>
+        <div class="signin-btn">
+          <a href="#" class="btn-primary-xl">sign up</a>
+          <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+  <!---------------------------------------Breadcrumb ----------------------------------------->
+  <div class="container-fluid breadcrumbb-bg">
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-12
+                      col-lg-12
+                      col-md-12
+                      col-sm-12 breadcrumbb d-none d-sm-block">
+                      <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Blog</a></li>
+                        
+                        <li class="actived">Manhattan pied-à-terre for a new apartment</li>
+                      </ul>
+          </div>
+		  <div class="col-12 breadcrumbb d-sm-none">
+                      <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Blog</a></li>
+                        
+                        <li class="actived">Manhattan pied-à-terre...</li>
+                      </ul>
+          </div>
+        </div>
+      </div>
+</div><!---------------------------------------Breadcrumb ----------------------------------------->
+
+
+  <!---------------------------------------Title Manhattan ----------------------------------------->
+  	<div class="container" id="blogdetail--manhattan">
+		<div class="row">
+			<div class="col-xl-12
+						col-lg-12 
+						col-md-12
+						col-sm-12
+						col-12 blogdetail--title-manhattan">
+				<p class="display3-pc">MANHATTAN PIED-À-TERRE FOR A NEW APARTMENT</p>
+			</div>
+		</div>
+	</div>
+
+<!---------------------------------------Metadata ----------------------------------------->
+<div class="container-fluid blog-metadata d-md-none d-lg-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-8 
+						col-lg-8 
+						
+						col-sm-12 
+						col-12 metadata">
+				<div class="meta">
+					<h5>CATEGORY</h5>
+					<p>Article</p>
+				</div>
+				<div class="meta">
+					<h5>Date</h5>
+					<p>19.09.22</p>
+				</div>
+				<div class="meta">
+					<h5>Author</h5>
+					<p>Christopher Jade</p>
+				</div>
+				<div class="meta">
+					<h5>Read time</h5>
+					<p>6 mins</p>
+				</div>
+			</div>
+			<div class="col-xl-4 
+						col-lg-4 blog-media ">									
+					<ul>
+					  <li><a href="#">Facebook</a></li>
+					  <li><a href="#">Instagram</a></li>
+					  <li><a href="#">Twitter</a></li>
+					</ul>		
+			</div>
+			
+		</div>
+	</div>
+</div><!---------------------------------------Metadata ----------------------------------------->
+
+<!---------------------------------------Metadata MD ----------------------------------------->
+<div class="container-fluid blog-metadata-md d-none d-md-block d-lg-none">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 metadata-md">
+				<div class="meta">
+					<h5>CATEGORY</h5>
+					<p>Article</p>
+				</div>
+				<div class="meta">
+					<h5>Date</h5>
+					<p>19.09.22</p>
+				</div>
+				<div class="meta">
+					<h5>Author</h5>
+					<p>Christopher Jade</p>
+				</div>
+				<div class="meta">
+					<h5>Read time</h5>
+					<p>6 mins</p>
+				</div>
+			</div>
+			<div class="offset-md-1 col-md-3 blog-media-md">									
+				<div class="icon-blog"><i class="fa-brands fa-facebook-f"></i></div>	
+				<div class="icon-blog"><i class="fa-brands fa-instagram"></i></div>
+				<div class="icon-blog"><i class="fa-brands fa-twitter"></i></div>	
+			</div>
+
+		</div>
+	</div>
+</div> <!---------------------------------------Metadata MD ----------------------------------------->
+
+
+  <!---------------------------------------content ----------------------------------------->
+  	<div class="container" >
+		<div class="row" id="windycity--blogdetail">
+			<div class="col-12 img-windycity--blogdetail">
+				<img src="img/Blogdetail/Dining-Table.jpg" >
+			</div>
+			<div class="col-12 blogdetai--title-windycity">
+				<h1>HERE'S HOW SHE REIMAGINED A HOME FOR A NEW PHASE OF LIFE IN THE WINDY CITY.</h1>
+				<p>Interior designer Sarah Vaile remembers eyeing a New York City apartment—one with bold colors and a personality as distinct as its chic owner—in a 2014 issue of House Beautiful, and tucking it away for future design inspiration. Years later, in a serendipitous turn of events, the woman she’d seen in the magazine—a stylish figure now in her 30s—just so happened to move to Chicago, where Vaile is based. And, as fate would have it—in the woman's quest to find someone to help translate her Manhattan residence to her new home in the Windy City—she found Vaile. In New York, the homeowner had relied on punchy and daring décor elements: think everything from an amethyst jeweled mirror hanging in the foyer, to a brown lacquered living room. Vaile and lead designer Lindsay Baker later took that initial design as the muse for this two-bedroom project, located in a historic Gold Coast building.</p>
+			</div>
+		</div><!---------Windy City --------------->
+
+		<hr class="hr d-lg-none">
+
+		<div class="row" id="dining-room--blogdetail">
+			<div class="col-xl-6
+						col-lg-6 
+						col-md-12 
+						col-sm-12 
+						col-12 img-dining--blogdetail">
+				<img src="img/Blogdetail/dining-room.jpg" >
+			</div>
+			<div class="col-xl-6
+						col-lg-6 
+						col-md-12 
+						col-sm-12 
+						col-12 title-dining--blogdetail">
+				<h1>DINING ROOM</h1>
+				<p>The apartment already had a well-designed galley kitchen, which Vaile kept mostly the same, down to the Farrow & Ball Blackened paint.
+                    “The client said her favorite part of the new apartment is this custom de Gournay Le Eden mural,” says Vaile. “We actually talked her into doing it!” Vaile and her team found the vintage brass chandeliers at South Loop Loft and “learned the hard way” not to touch them directly. “We spent more time trying to get fingerprints off the brass than we did designing the apartment,” jokes Vaile. A black-painted MegMade buffet and 1stdibs regency mirror add to the whimsy, while a Fibreworks rug grounds the space.</p>
+			</div>
+		</div> <!---------Dining Room --------------->
+
+		<hr class="hr d-lg-none">
+
+		<div class="row" id="livingroom--blogdetail">
+			<div class="col-xl-6 
+						col-lg-6 
+						col-md-12 order-12 order-lg-1
+						col-sm-12
+						col-12 title-livingroom--blogdetail">
+				<h1>LIVING ROOM</h1>
+				<p>Vaile swathed the walls with Farrow & Ball Borrowed Light, which changes in tone from pale blue to soft gray throughout the day. A 1970s Mastercraft vintage brass chest, sourced from South Loop Loft, grounds the design. “We like to mix time periods in our décor,” says Vaile. Soft lighting, including table lamps and white palm sconces from Chelsea House, make the space feel more urbane. “The client said her favorite part of the new apartment is this custom de Gournay Le Eden mural,” says Vaile. “We actually talked her into doing it!” Vaile and her team found the vintage brass chandeliers at South Loop Loft and “learned the hard way” not to touch them directly. “We spent more time trying to get fingerprints off the brass than we did designing the apartment,” jokes Vaile. A black-painted MegMade buffet and 1stdibs regency mirror add to the whimsy, while a Fibreworks rug grounds the space.</p>
+			</div>
+			<div class="col-xl-6 
+						col-lg-6 
+						col-md-12 order-1 order-lg-12
+						col-sm-12
+						col-12 img-livingroom--blogdetail">
+				<img src="img/Blogdetail/living-room.jpg" >
+
+			</div>
+		
+		</div><!---------Living Room --------------->
+
+
+		<hr class="hr">
+
+
+		<div class="row">
+			<div class="col-12 img-1--blogdetail">
+				<img src="img/Blogdetail/blogdetail-1.jpg"  >
+			</div><!---------Img 1 --------------->
+
+			<div class="col-12 img-2--blogdetail">
+				<img src="img/Blogdetail/blogdetail-2.jpg" >
+			</div><!---------Img 2 --------------->
+		</div>
+	</div> <!---------------------------------------content ----------------------------------------->
+
+	<!---------------------------------------Media SM and XS ----------------------------------------->
+	<div class="container d-md-none" id="blogdetail-media-sm-xs">
+		<div class="row">
+			
+			<div class="offset-sm-5 col-sm-2 
+						offset-5 col-2 media-sm-xs">
+				<p >SHARE: </p>
+			</div>
+			<div class="col-sm-5
+						col-5 blog-media-sm-xs">
+						
+						<a href="#" class="icon-blog"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#" class="icon-blog"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="icon-blog"><i class="fa-brands fa-facebook-f"></i></a>
+						
+			</div>
+		</div>
+	</div><!---------------------------------------Media SM and XS ----------------------------------------->
+
+
+
+	<!---------------------------------------Comments ----------------------------------------->
+	<div class="container-fluid" id="border-title-comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 comments--blogdetail">
+					<p class="display4-pc">COMMENTS</p>
+				</div>
+			</div>
+		</div>
+	</div><!---------------------------------------Comments ----------------------------------------->
+
+
+	<!---------------------------------------User comments ----------------------------------------->
+	<div class="container">
+        <div class="row">
+            <div class="col-xl-12 
+						col-lg-12
+						col-md-12
+						col-sm-12
+						col-12 comment">
+                <div class="comment-avatar">
+                    <img src="img/Blogdetail/user-1.jpg" alt="avatar">
+                </div>
+                <div class="comment-content">
+                    <div class="comment-data">
+                        <h5>Van Selin</h5>
+                        <p>July 09<span>th</span>, 2022</p>
+                    </div>
+                    <div class="comment-text">
+                        <p>The furniture looks very nice and luxurious, I must buy a set.</p>
+                    </div>
+                    <div class="comment-reply">
+                        <button href="Home.html" type="button">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-------------User 1 -------------------------------->
+		<div class="row">
+            <div class="col-12 comment reply-comments">
+                <div class="comment-avatar ">
+                    <img src="img/Blogdetail/user-3.jpg" alt="avatar">
+                </div>
+                <div class="comment-content ">
+                    <div class="comment-data ">
+                        <h5>Van Selin</h5>
+                        <p>September 20<span>th</span>, 2022</p>
+                    </div>
+                    <div class="comment-text ">
+                        <p>yes, i'm going to buy them too, they seem to be friendly with my kids</p>
+                    </div>
+                    <div class="comment-reply ">
+                        <button href="Home.html" type="button">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-------------User 2 -------------------------------->
+		<div class="row">
+            <div class="col-xl-12 
+						col-lg-12
+						col-md-12
+						col-sm-12
+						col-12 comment">
+                <div class="comment-avatar ">
+                    <img src="img/Blogdetail/user-2.jpg" alt="avatar">
+                </div>
+                <div class="comment-content ">
+                    <div class="comment-data ">
+                        <h5>Van Selin</h5>
+                        <p>Octave 15<span>th</span>, 2022</p>
+                    </div>
+                    <div class="comment-text ">
+                        <p>These furniture models are very suitable for my home, I love them.</p>
+                    </div>
+                    <div class="comment-reply ">
+                        <button href="Home.html" type="button">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-------------User 3 -------------------------------->
+    </div><!---------------------------------------User comments ----------------------------------------->
+	
+	
+
+
+	<!------------------------------------------- ADD A COMMENT --------------------------------------------->
+<div class="container-fluid add-comment">
+	<div class="container d-none d-md-block">
+	  <div class="row">
+		<div class="col-md-6 add-comment-title-left">
+		  <p class="display4-pc">ADD A COMMENT</p>
+		</div>
+		<div class="col-md-6 add-comment-title-right">
+		  <h4>SHARE YOUR THOUGHT</h4>
+		</div>
+	  </div>
+	</div><!--------Title Desktop-------->
+	<div class="container d-md-none">
+	  <div class="row">
+		<div class="col-12 add-comment-title-left-mb">
+		  <p class="display4-pc">ADD A COMMENT</p>
+		</div>
+	  </div>
+	</div><!--------Title Mobile-------->
+  </div>
+  <div class="container-fluid disclaimer">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 ">
+		  <p>Your email address will not be publish. Required fields are marked *</p>
+		</div>
+	  </div>
+	</div>
+  </div><!--------Disclaimer-------->
+
+<!-----------------------------------Add review Desktop--------------------------------->
+
+<form class="container add-review d-none d-md-block">
+		<div class="row">
+			<div class="col-xl-6
+						col-lg-6 
+						col-md-6 review-form--label">
+						<p>Your Name*</p>
+						<input type="text" placeholder="Full name">
+			</div>
+			<div class="col-xl-6
+						col-lg-6 
+						col-md-6 review-form--label">
+						<p>Your Email*</p>
+						<input type="email" placeholder="example@email.com">
+			</div>
+			
+	</div>
+	<div class="row review-content">
+		<div class="col-xl-12
+					col-lg-12 review-form--label">
+					<p>Your Review*</p>
+					<textarea name="review" id="review" cols="30" rows="5" placeholder="Enter your comment here...." maxlength="1000"></textarea>
+					<div id="the-count">
+					<span id="current">0</span>
+					<span id="maximum">/ 500</span>
+					</div>
+					<label class="check-list">Save my name, email in this browser for the next time I comment
+					<input type="checkbox" name="saveinfo" id="saveinfo">
+					<span class="checkmark"></span>
+					</label>
+		</div>
+		<div class="col-xl-12 submit-review-btn">
+			<a href="#" class="btn-primary-xl-right">SUBMIT REVIEW<i class="fa-regular fa-arrow-right-long"></i></a>
+		</div>
+	</div>
+</form><!-----------------------------------Add review Desktop--------------------------------->
+
+<!-----------------------------------Add review Mobile--------------------------------->
+
+<form class="container add-review d-md-none">
+	<div class="row">
+		<div class="col-sm-12
+					col-12 review-form--label">
+					<p>Your Name*</p>
+					<input type="text" placeholder="Full name">
+		</div>
+		
+		<div class="col-sm-12
+					col-12 review-form--label form-label--email">
+					<p>Your Email*</p>
+					<input type="email" placeholder="example@email.com">
+		</div>
+		
+	</div>
+	<div class="row review-content">
+		<div class="col-xl-12
+					col-lg-12 review-form--label">
+					<p>Your Review*</p>
+					<textarea name="review" id="review" cols="30" rows="5" placeholder="Enter your comment here...." maxlength="1000"></textarea>
+					<div id="the-count">
+						<span id="current">0</span>
+						<span id="maximum">/ 500</span>
+					</div>
+					<label class="check-list">Save my name, email in this browser for the next time I comment
+						<input type="checkbox" name="saveinfo" id="saveinfo">
+						<span class="checkmark"></span>
+					</label>
+		</div>
+		<div class="col-xl-12 submit-review-btn">
+			<a href="#" class="btn-primary-xl-right">SUBMIT REVIEW<i class="fa-regular fa-arrow-right-long"></i></a>
+		</div>
+	</div>
+</form><!-----------------------------------Add review Mobile--------------------------------->
+
+
+
+
+	<!---------------------------------------RELATED ARTICLES ----------------------------------------->
+	<div class="container-fluid" id="border-title-related">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 blogdetail--related">
+					<p class="display4-pc">RELATED ARTICLES</p>
+				</div>
+			</div>
+		</div>
+	</div><!---------------------------------------RELATED ARTICLES ----------------------------------------->
+	
+
+	<!-------------------------------------------- Card blog -------------------------------------------->
+	<div class="container">
+		<div class="row">
+		  <div class="col-xl-4 offset-xl-0
+					  col-lg-4 offset-lg-0
+					  col-md-6 offset-md-0
+					  col-sm-10 offset-sm-1
+					  col-10 offset-1">
+			  <div class="blog-card">
+				<div class="img-overlay">
+				  <div class="badge">
+					<span>Hot</span>
+				  </div>
+					<div class="overlay-info d-none d-lg-block">
+					  <div class="author">
+						<div class="author-avatar">
+						  <img src="img/author-ava.png" alt="author">
+						</div>
+						<div class="author-data">
+						  <p>Posted by <span>Étienne</span></p>
+						  <p class="date">September 15, 2022</p>
+						</div>
+					  </div>
+					  <div class="category-time">
+						<div class="blog-category">Stories, Styles</div>
+						<div><i class="fa-solid fa-circle-small fa-xs"></i></div>
+						<div class="blog-time">6 mins read</div>
+					  </div>
+					</div>
+				  <img src="img/blog/Blog-1.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="blog-title">
+				  <h5>Let look inside a bohemian beach house on Martha's Vineyard</h5>
+				</div>
+				<div class="blog-content">
+				  <p>"I would follow Jessica to the end of the Earth” Johanna Hynes says, referring to her designer, Jessica Stambaugh...</p>
+				</div>
+				<a href="#" class="btn-olprimary-sm-right">Read more<i class="fa-regular fa-arrow-right-long"></i></a>
+			  </div>
+		  </div><!------ Blog 1------->
+		  <div class="col-xl-4 offset-xl-0
+					  col-lg-4 offset-lg-0
+					  col-md-6 offset-md-0
+					  col-sm-10 offset-sm-1
+					  col-10 offset-1">
+			  <div class="blog-card">
+				<div class="img-overlay">
+				  <div class="badge">
+					<span>Hot</span>
+				  </div>
+					<div class="overlay-info d-none d-lg-block">
+					  <div class="author">
+						<div class="author-avatar">
+						  <img src="img/author-ava.png" alt="author">
+						</div>
+						<div class="author-data">
+						  <p>Posted by <span>Étienne</span></p>
+						  <p class="date">September 15, 2022</p>
+						</div>
+					  </div>
+					  <div class="category-time">
+						<div class="blog-category">Stories, Styles</div>
+						<div><i class="fa-solid fa-circle-small fa-xs"></i></div>
+						<div class="blog-time">6 mins read</div>
+					  </div>
+					</div>
+				  <img src="img/blog/Blog-2.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="blog-title">
+				  <h5>Modern Texas home is beautiful & completely kid-friendly</h5>
+				</div>
+				<div class="blog-content">
+				  <p>Making a modern home that's both kid-friendly and beautiful is no simple task. But for one family of six in...</p>
+				</div>
+				<a href="#" class="btn-olprimary-sm-right">Read more<i class="fa-regular fa-arrow-right-long"></i></a>
+			  </div>
+		  </div><!------ Blog 2------->
+		  <div class="col-xl-4 offset-xl-0
+					  col-lg-4 offset-lg-0
+					  col-md-6 offset-md-0
+					  col-sm-10 offset-sm-1
+					  col-10 offset-1 d-none d-lg-block">
+			  <div class="blog-card">
+				<div class="img-overlay">
+				  <div class="badge">
+					<span>Hot</span>
+				  </div>
+					<div class="overlay-info d-none d-lg-block">
+					  <div class="author">
+						<div class="author-avatar">
+						  <img src="img/author-ava.png" alt="author">
+						</div>
+						<div class="author-data">
+						  <p>Posted by <span>Étienne</span></p>
+						  <p class="date">September 15, 2022</p>
+						</div>
+					  </div>
+					  <div class="category-time">
+						<div class="blog-category">Stories, Styles</div>
+						<div><i class="fa-solid fa-circle-small fa-xs"></i></div>
+						<div class="blog-time">6 mins read</div>
+					  </div>
+					</div>
+				  <img src="img/blog/Blog-3.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="blog-title">
+				  <h5>Tudor-style home in Chicago's North Shore is chock-full</h5>
+				</div>
+				<div class="blog-content">
+				  <p>From a white carved mantel & twin vanities to a pair of bar stools and an ebonized dining table. Like many...</p>
+				</div>
+				<a href="#" class="btn-olprimary-sm-right">Read more<i class="fa-regular fa-arrow-right-long"></i></a>
+			  </div>
+		  </div><!------ Blog 3------->
+		</div>
+
+	</div><!-------------------------------------------- Card blog -------------------------------------------->
+	
+
+
+
+
+
+
+	<!-------------------------------------------Footer Desktop ------------------------------------------>
+<div class="container-fluid d-none d-md-block" id="footerDesktop">
+	<div class="container-fluid footer-navi">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+			<span>HOME</span>
+			<ul>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">Lookbook</a></li>
+			  <li><a href="#">Contact</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+			<span>SHOP</span>
+			<ul>
+			  <li><a href="#">Seating</a></li>
+			  <li><a href="#">Desk & Table</a></li>
+			  <li><a href="#">Decor</a></li>
+			  <li><a href="#">Organisation</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+			<span>SUPPORT</span>
+			<ul>
+			  <li><a href="#">FAQs</a></li>
+			  <li><a href="#">Return & Refund</a></li>
+			  <li><a href="#">Warranty</a></li>
+			  <li><a href="#">Payments</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+			<span>MISC</span>
+			<ul>
+			  <li><a href="#">Sign in</a></li>
+			  <li><a href="#">Career</a></li>
+			  <li><a href="#">Privacy Policy</a></li>
+			  <li><a href="#">Terms</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation-->
+	<div class="container footer-subscribe d-none d-lg-block">
+	  <div class="row d-flex align-items-end">
+		<div class="col-xl-4 
+					col-lg-4 email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms & Conditions</p>
+		</div>
+		<div class="col-xl-4
+					col-lg-4">
+					<div class="logo-footer">
+					  <a href=""><img src="img/Logo Footer.png" alt=""></a>
+					</div>
+		</div>
+		<div class="col-xl-4
+					col-lg-4 media-footer">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					<ul>
+					  <li><a href="#">Facebook</a></li>
+					  <li><a href="#">Instagram</a></li>
+					  <li><a href="#">Twitter</a></li>
+					</ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media LG XL-->
+	<div class="container footer-subscribe d-none d-md-block d-lg-none">
+	  <div class="row">
+		<div class="col-md-4
+					offset-md-4">
+					<div class="logo-footer">
+					  <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+					</div>
+		</div>
+	  </div>
+	  <div class="row d-flex align-items-end">
+		<div class="col-md-6 
+					email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms & Conditions</p>
+		</div>
+		<div class="col-md-6
+					media-footer">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					<ul>
+					  <li><a href="#">Facebook</a></li>
+					  <li><a href="#">Instagram</a></li>
+					  <li><a href="#">Twitter</a></li>
+					</ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media MD-->
+	<div class="container-fluid d-flex align-items-center justify-content-center copyright">
+		  <p>Copyright © 2022 The Étienne. All rights reserved</p>
+	</div><!--Footer Copyright-->
+	<div class="container-fluid footer-exceed"></div>
+  </div>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <div class="container-fluid d-md-none" id="footerMobile">
+	<div class="container-fluid footer-navi footer-navi-mb1">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-6 home-footer">
+			<span>HOME</span>
+			<ul>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">Lookbook</a></li>
+			  <li><a href="#">Contact</a></li>
+			</ul>
+		  </div>
+		  <div class="col-6 shop-footer">
+			<span>SHOP</span>
+			<ul>
+			  <li><a href="#">Seating</a></li>
+			  <li><a href="#">Desk & Table</a></li>
+			  <li><a href="#">Decor</a></li>
+			  <li><a href="#">Organisation</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation Upper Section-->
+	<div class="container-fluid footer-navi footer-navi-mb2">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-6 support-footer">
+			<span>SUPPORT</span>
+			<ul>
+			  <li><a href="#">FAQs</a></li>
+			  <li><a href="#">Return & Refund</a></li>
+			  <li><a href="#">Warranty</a></li>
+			  <li><a href="#">Payments</a></li>
+			</ul>
+		  </div>
+		  <div class="col-6 misc-footer">
+			<span>MISC</span>
+			<ul>
+			  <li><a href="#">Sign in</a></li>
+			  <li><a href="#">Career</a></li>
+			  <li><a href="#">Privacy Policy</a></li>
+			  <li><a href="#">Terms</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation Lower Section-->
+	<div class="container footer-subscribe d-md-none">
+	  <div class="row">
+		<div class="col-sm-8 offset-sm-2
+					col-10 offset-1 
+					email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms & Conditions</p>
+		</div><!-------Email Input------>
+	  </div>
+	  <div class="row">
+		<div class="col-sm-6 offset-sm-3
+					col-6 offset-3">
+					<div class="logo-footer">
+					  <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+					</div>
+		</div><!-------Logo------>
+	  </div>
+	  <div class="row">
+		<div class="col-12
+					media-footer-mb">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					  <ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+					  </ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media MD-->
+	<div class="container-fluid d-flex align-items-center justify-content-center copyright">
+		  <p>Copyright © 2022 The Étienne. All rights reserved</p>
+	</div><!--Footer Copyright-->
+	<div class="container-fluid footer-exceed"></div>
+  </div>
+
+
+ 
+  </body>
+</html>

@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our story</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <!-- CSS-->
+  <link href="css/ourstory.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/locomotive-scroll.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  
+  <!-- font-awesome--> 
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+
+
+
+  <!-- Javascript--> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        loop: true,
+        autoplayEachtime: 1500,
+        responsive:{
+          0:{
+            items: 1,
+            center: true,
+            stagePadding: 60,
+          },
+          576:{
+            items: 1,
+            center: true,
+            stagePadding: 105,
+          },
+          768:{
+            items: 1,
+            center: true,
+            stagePadding: 200,
+          },
+          992:{
+            items: 3,
+            autoplayHoverPause: true,
+          },
+          1200:{
+            items: 4,
+            autoplayHoverPause: true,
+          },
+        }
+      })
+    });
+
+    </script>
+
+</head>
+  <body>
+   <!-------------------------------------------MODAL POP UP ------------------------------------------>
+   <div id="signin-popup">
+    <div class="sign-in-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN IN</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="signin-form--label password-input">
+          <label for="signin-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signin-password" placeholder="Enter password here">
+            <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+          <div class="password-element">
+            <label class="check-list"><span>Remember me</span>
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <span class="checkmark"></span>
+            </label>
+            <a href="#">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signin-btn">
+        <a href="Profile.html" class="btn-primary-xl">sign in</a>
+        <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+      </div>
+    </div>
+  </div><!---------------------------Sign In-form ------------------------------>
+  <div id="signup-popup">
+    <div class="sign-up-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN UP</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="first-last-name">
+          <div class="signin-form--label firstname-input">
+            <label for="firstname">First Name*</label>
+            <br>
+            <input type="text" placeholder="Your First Name" id="firstname">
+          </div>
+          <div class="signin-form--label lastname-input">
+            <label for="lastname">Last Name*</label>
+            <br>
+            <input type="text" placeholder="Your Last Name" id="lastname">
+          </div>
+        </div>
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="password-signup-confirm">
+          <div class="signin-form--label password-input">
+            <label for="signup-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-password" placeholder="Enter password here">
+              <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+          <div class="signin-form--label confirm-password-input">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+              <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+        </div>
+        <p>Sign up email to receive 10% off your first order.
+          <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign up</a>
+        <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+      </div>
+    </div>
+  </div><!---------------------------Sign Up-form ------------------------------>
+  
+      <!------------------------------------------- CART POP UP ------------------------------------------>
+      <div class="container-fluid cart-modal">
+        <div class="cart-modal-title">
+          <p class="display4-pc">ORDER SUMMARY</p>
+        </div>
+        <div class="x-mark">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-modal-flex">
+          <div class="container cart-modal-slide">
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/Stool/SEDONA BAR.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>SEDONA BAR</h5>
+                      <p>Stool</p>
+                      <p>Color: Beige</p>
+                      <div class="modal-button-remove">
+                        <button href="#" type="button">Remove</button>
+                    </div><!--removebtn-->
+                  </div><!--name--->
+  
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 650.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 650.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>DINNING SYNTHETIC</h5>
+                      <p>Stool</p>
+                      <p>Color: Brown</p>
+                  </div><!--name--->
+    
+                  <div class="modal-button-remove">
+                      <button href="#" type="button">Remove</button>
+                  </div><!--removebtn-->
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 399.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 399.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/Stool/SEDONA BAR.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>ONYX WOOD CHAIR</h5>
+                      <p>Chair</p>
+                      <p>Color: Beige</p>
+                  </div><!--name--->
+    
+                  <div class="modal-button-remove">
+                      <button href="#" type="button">Remove</button>
+                  </div><!--removebtn-->
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 989.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 989.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+          </div>
+          <div class="container cart-modal-bottom">
+            <div class="modal-grand-total">
+              <hr>
+              <div class="grand-total-price">
+                <h5 class="grand-text">Grand Total Incl. Tax</h5>
+                <p class="grand-price">$ 1,087.00</p>
+              </div>
+            </div>
+            <div class="modal-cart-btn">
+              <a href="ShopAll.html" class="btn-olprimary-lg">continue shopping</a>
+              <a href="Cart-page.html" class="btn-primary-lg">Proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+    <header class="container-fluid d-none d-lg-block header-desktop">
+      <div class="container">
+        <div class="row d-flex align-items-center header-row">
+          <div class="left-navi
+                      col-xl-2
+                      col-lg-2">
+                      <div class="burger-menu">
+                        <div class="barline"></div>
+                      </div>
+                      <a href="ShopAll.html">SHOP</a> 
+                      
+          </div><!--Left Navi-->
+          <div class="center-navi 
+                      col-xl-2 offset-xl-3
+                      col-lg-2 offset-lg-3">
+                      <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+          </div><!--Logo-->
+          <div class="right-navi
+                      col-xl-3 offset-xl-2
+                      col-lg-3 offset-lg-2">
+                      <div class="cart-section">
+                        BAG
+                        <div class="cart-count">0</div>
+                      </div>
+                      <button id="signin-modal">SIGN IN</button>                       
+          </div><!--Right Navi-->
+        </div>
+      </div>
+    </header>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+    <div class="row d-none d-lg-block">
+      <div class="col-xl-5 offset-xl-7
+                  col-lg-5 offset-lg-7 img-megamenu">
+        <p class="display3-mb" >NATIVE IRON CHAIR</p>
+        <span>FEATURED PRODUCT</span>
+      </div>
+    </div>
+    <div class="container megamenu-content d-none d-lg-block">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="OurStory.html">ABOUT</a></li>
+              <li><a href="Blog.html">JOURNAL</a></li>
+              <li><a href="Lookbook.html">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="ShopAll.html">ALL</a></li>
+              <li><a href="Seating.html">SEATING</a></li>
+              <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+              <li><a href="Seating.html">DECOR</a></li>
+              <li><a href="Seating.html">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Warranty.html">WARRANTY</a></li>
+              <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+              <li><a href="Paymentsp.html">PAYMENT</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Mega Menu List-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 search-field">
+          <p>Looking for anything special today?</p>
+          <div class="search-box">
+            <button class="search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+            <input type="text" class="search-input" placeholder="Enter keyword here...">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <header class="container-fluid d-lg-none header-mobile">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-md-3
+                    col-sm-4
+                    col-4">
+                    <div class="burger-menu-mb">
+                      <div class="barlinemb"></div>
+                    </div>
+                    <a href="ShopAll.html">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-md-2 offset-md-2
+                    col-sm-2 offset-sm-1
+                    col-2 offset-1">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-md-2 offset-md-3
+                    col-sm-3 offset-sm-2
+                    col-3 offset-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>                     
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </header>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+    <div class="container-fluid sub-header-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8
+                      col-sm-8
+                      col-8">
+                      <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+          </div>
+          <div class="col-md-4
+                      col-sm-4
+                      col-4 left-subhead">
+                      <button id="signin-modal-mb">SIGN IN</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="megamenu-content-mb">
+      <div class="row">
+        <div class="col-6">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="OurStory.html">ABOUT</a></li>
+              <li><a href="Blog.html">JOURNAL</a></li>
+              <li><a href="Lookbook.html">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="ShopAll.html">ALL</a></li>
+              <li><a href="Seating.html">SEATING</a></li>
+              <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+              <li><a href="Seating.html">DECOR</a></li>
+              <li><a href="Seating.html">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Warranty.html">WARRANTY</a></li>
+              <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+              <li><a href="Paymentsp.html">PAYMENT</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signin-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN IN</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="signin-form--label password-input">
+              <label for="signin-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signin-password" placeholder="Enter password here">
+                <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+              <div class="password-element">
+                <label class="check-list"><span>Remember me</span>
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+                <a href="#">Forget password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="signin-btn">
+            <a href="Profile.html" class="btn-primary-xl">sign in</a>
+            <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signup-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN UP</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="first-last-name">
+              <div class="signin-form--label firstname-input">
+                <label for="firstname">First Name*</label>
+                <br>
+                <input type="text" placeholder="Your First Name" id="firstname">
+              </div>
+              <div class="signin-form--label lastname-input">
+                <label for="lastname">Last Name*</label>
+                <br>
+                <input type="text" placeholder="Your Last Name" id="lastname">
+              </div>
+            </div>
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="password-signup-confirm">
+              <div class="signin-form--label password-input">
+                <label for="signup-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-password" placeholder="Enter password here">
+                  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+              <div class="signin-form--label confirm-password-input">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+            </div>
+            <p>Sign up email to receive 10% off your first order.
+              <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign up</a>
+            <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scrollTop">
+    <a href="#toppage-pc" class="toppage-pc d-none d-md-block">Top <i class="fa-light fa-arrow-right"></i></a>
+    <a href="#toppage-mb" class="toppage-mb d-md-none"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+    </div>
+  
+
+<!-------------------///////////////******Main Section*****\\\\\\\\\\\\\\\\\ ------------------------------->
+<main data-scroll-container>  
+  <section id="toppage">
+		<div id="toppage-pc"></div>
+		<div id="toppage-mb"></div>
+	  </section>
+    <!-------------------------BANNER--------------------------------------->
+    <div class="containerfluid ourstory-banner sectionBanner">
+      <div class="container ourstory-banner-content">
+        <div class="row">
+          <div class="col-xl-12
+                      col-lg-12
+                      col-md-12
+                      col-sm-12
+                      col-12 display1-pc">
+            OUR WORK <br> SPEAK FOR ITSELF
+          </div><!----ourstory-banner-slogan------->
+          <div class=" col-xl-12
+                       col-lg-12
+                       col-md-12
+                       col-sm-12
+                       col-12 ourstory-banner-text">
+            <p>ETIENNE is a unique collection of premium furniture masterpieces rooted in international design and craft traditions. Spanning generations and continents, exclusive designs from the 1950s to the present day share harmonious proportions and a simple sensibility.</p>
+          </div><!----ourstory-banner-slogan------->
+        </div><!--- row------->
+      </div>
+    </div><!----ourstory-banner------->
+
+
+
+
+    <!--------------------------------------------------OUR STORY Section Desktop------------------------------------------------->
+  <div class="d-none d-lg-block">
+    <div class="container-fluid main-section">
+      <div class="left-section">
+        <div class="left-title">
+          <p class="display4-pc">OURSTORY</p>
+        </div>
+        <div class="left-content">
+          <div>
+            <h2>CREATED BASED ON THE <br>CONCEPT OF EXCLUSIVITY</h2>
+            <p class="sub1-pc">Our furniture is imagined and designed to be part of your life for years to come.</p>
+          </div>
+          
+          <div class="content-info">
+            <p>Étienne features timeless furniture, with natural fabrics, curved lines, plenty of mirrors and classic design, which can be incorporated into any decor project. The pieces enchant for their sobriety, to last for generations, faithful to the shapes of each period, with a touch of the present.
+              <br><br>
+              The pieces stand out for their contemporary straight lines and imposing presence. Current, following the world trend of the great masters, the furniture stands out for its noble and innovative materials, composing sophisticated and exclusive environments.</p>
+            
+          </div>
+        </div>
+      </div><!-------------------Left Section------------------------->
+      <div class="right-section">
+        <div class="upper-section">
+          <div class="upper-left">
+            <p>THE ÉTIENNE</p>
+          </div>
+          <div class="upper-right">
+            <p>ESTABLISHED</p>
+          </div>
+        </div><!-------------------Upper Section------------------------>
+        <div class="img-section">
+          <div class="main-img">
+            <img src="img/ourstory/ourstory-img.jpg" alt=" ourstory">
+          </div>
+          <div class="img-info">
+            <span>OUR SPACE</span>
+            <span>PARIS</span>
+          </div>
+        </div><!-------------------Img Section------------------------>
+        <div class="lower-section">
+          <div class="data-section">
+            <p>FOUNDED YEAR:</p>
+            <p>November 4, 2014</p>
+          </div>
+          <div class="data-section">
+            <p>BASED LOCATION:</p>
+            <p>Lyon, Paris</p>
+          </div>
+          <div class="data-section">
+            <p>SPECIALTY:</p>
+            <p>intérior, furniture, decór</p>
+          </div>
+        </div><!-------------------Lower Section------------------------>
+      </div><!-------------------Right Section------------------------->
+    </div>
+  </div>
+
+  <!--------------------------------------------------Main Section Mobile------------------------------------------------->
+  <div class="container-fluid main-section-mb d-lg-none">
+    <div class="title-mb">
+      <p class="display3-mb">OUR STORY</p>
+    </div><!-------------------Title Section------------------------->
+    <div class="info-mb">
+      <p>The pieces stand out for their contemporary straight lines and imposing presence. Current, following the world trend of the great masters, the furniture stands out for its noble and innovative materials, composing sophisticated and exclusive environments.</p>
+      
+    </div><!-------------------Info Section------------------------->
+    <div class="container-fluid upper-section-mb">
+      <div class="container hidden-upper-section">
+        <div class="row">
+          <div class="col-6 upper-left-mb">
+            <p>THE ÉTIENNE</p>
+          </div>
+          <div class="col-6 upper-right-mb">
+            <p>ESTABLISHED</p>
+          </div>
+        </div>
+      </div>
+    </div><!-------------------Data section------------------------->
+    <div class="container-fluid lower-section-mb">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 data-section-mb-left">
+              <p>FOUNDED YEAR:</p>
+            </div>
+            <div class="col-6 data-section-mb-right">
+              <p>NOVEMBER 4, 2014</p>
+          </div>
+        </div>
+      </div>
+    </div><!-------------------Data section------------------------->
+    <div class="container-fluid lower-section-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 data-section-mb-left">
+            <p>BASED LOCATION:</p>
+          </div>
+          <div class="col-6 data-section-mb-right">
+            <p>LYON, PARIS</p>
+        </div>
+      </div>
+    </div>
+  </div><!-------------------Data section------------------------->
+  <div class="container-fluid lower-section-mb">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 data-section-mb-left">
+        <p>SPECIALTY:</p>
+      </div>
+      <div class="col-6 data-section-mb-right">
+        <p class="overflow-text">INTÉRIOR, FURNITURE, DECÓR</p>
+      </div>
+    </div>
+  </div>
+</div><!-------------------Data section------------------------->
+</div><!-------------------IUpper Section------------------------->
+<div class="container-fluid img-section-mb d-lg-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1
+                  col-12 main-img-mb">
+                  <img src="img/ourstory/ourstory-img.jpg" alt="">
+                  <div class="img-info-mb">
+                    <a href="#">OUR SPACE</a>
+                    <a href="#">PARIS</a>
+                  </div>
+      </div>
+    </div>
+  </div> 
+</div><!-------------------Image Section------------------------->
+
+
+
+
+  <!----------------------------------------------------VISIT OUR STUDIO SECTION---------------------------------------------->
+<div class="container-fluid visit-our-studio">
+    <div class="visit-our-studio-header">
+        <p class="display4-pc">VISIT OUR STUDIO</p>
+    </div>
+
+    <div class="visit-our-studio-img-mb d-lg-none">
+        <img src="img/OURSTORY/ourstory-visit-studio-pc.jpg" alt="">
+    </div>
+
+    <div class="container visit-our-studio-content">
+        <div class="row">
+            <div class="col-lg-6 visit-our-studio-img d-none d-lg-block">
+                <img src="img/OURSTORY/ourstory-visit-studio-pc.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-5 offset-xl-1 col-lg-6 col-12 visit-our-studio-text">
+                <h2>We believe that good design tells a story.</h2>
+                <p>Studio Étienne is a full-service interior design firm that designs homes from concept to completion all over the France. We have garnered a reputation for beautifully balanced spaces that feel refreshingly modern and endlessly classic. We create custom interiors for full new builds and renovations that stand the test of time.</p>
+                <div class="visit-our-studio-button">
+                    <a href="Ourstudio.html" class="btn-olprimary-xl">FIND OUT MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+  <!-------------------------INSIGHT PC----------------------------------------------->
+ 
+    <div class="d-none d-lg-block">
+      <div class="container-fluid  ourstory-insight">
+          <div class="left-noidung">
+              <div class="top-left-noidung">
+                <p>INSIGHTS</p>
+              </div>
+              <div class="mid-left-noidung">
+                <p class="display3-pc">SOME NOTES FROM
+                  THE CREATORS </p>
+              </div>
+              <div class="bottom-left-noidung">
+                  <div class="noidung-trai">
+                    <p>We understand that your furniture is there when you make your own precious memories. It’s there when you host your dinner parties and discuss future plans with your children. Our goal is to help you create beautiful and comfortable living spaces to build those memories in.
+                        We also want to make sure that what you get is. 
+                      </p>
+                  </div>
+                  <div class="noidung-phai">
+                      <p>
+                          FURNITURE THAT OFFER INTELLIGENT SOLUTIONS, INTEGRATING SUSTAINABILITY, QUALITY, DESIGN, BETTER COST AND, MOST IMPORTANTLY, WELL-BEING.
+                      </p>
+                      <div class="noidung-phai-img">
+                          <img src="img/ourstory/Signature.svg" alt="">
+                      </div>
+                      <span>Jacob N. Sullivan</span>
+                  </div>
+              </div>
+          </div>
+          <div class="right-noidung">
+              <div class="right-noidung-big">
+                  <div class="top-noidung-big">
+                    <p>the idea of making life beautiful.</p>
+                  </div>
+                  <div class="bottom-noidung-big">
+                      <img src="img/ourstory/ourstory-insight.jpg" alt="" class="">
+                  </div>
+              </div>
+              <div class="right-noidung-small">
+                <p class="display4-pc"> INSIGHT</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+   <!-------------------------- Insight- mobile--------------------------->
+    
+    <div class="d-lg-none">
+      <div class="container-fluid ourstory-insight-mobile">
+        <div class="insight-upper">
+          <p class="display4-mb"> NOTES FROM CREATOR </p>
+        </div>
+        <div class="container-fluid  job-opp-mb-subtitle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 job-opp-mb-subtitle-left">
+                        <p>INSIGHTS </p>
+                    </div>
+                    <div class="col-6 job-opp-mb-subtitle-right">
+                        <p>IDEAS FROM SCRATCH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="insight-img">
+          <div class="insight-img-pic">
+            <img src="img/ourstory/ourstory-insight.jpg" class="img-fluid" alt="insight-img-pic">
+          </div>
+        </div>
+
+        <div class="insight-lower">
+          <div class="insight-lower-trai">
+            <p>
+              FURNITURE THAT OFFER INTELLIGENT SOLUTIONS, INTEGRATING SUSTAINABILITY, QUALITY, DESIGN, BETTER COST AND, MOST IMPORTANTLY, WELL-BEING.
+            </p>
+            <div class="insight-lower-trai-img">
+              <img src="img/ourstory/Signature.svg" alt="">
+            </div>
+             <span>Jacob N. Sullivan</span>
+          </div>
+
+
+          <div class="insight-lower-phai">
+            <p>We understand that your furniture is there when you make your own precious memories. It’s there when you host your dinner parties and discuss future plans with your children. 
+            </p>
+          </div>
+        </div>
+      </div>
+   
+   
+  
+   
+
+      <!-------------------------------------------DESIGNERS LIST desktop------------------------------------------>
+      <div class="container-fluid" id="designer-list-bg">
+        <div class="designer-list-title">
+          <p class="display4-pc">OUR DESIGNERS</p>
+        </div><!------ Designer Title ------->
+        <div class="container desginer-name d-none d-lg-block">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 designer-row row1">
+              <div class="designer-card">
+                <p class="display2-pc">Christopher Jade</p>
+                <span>Product Designer</span>
+                <div class="designer-img">
+                  <img src="img/designer/christopher-jade.jpg" alt="christoper">
+                </div>
+              </div><!------ Designer 1 ------->
+              <div class="designer-card">
+                <p class="display2-pc">Sarah Stainer</p>
+                <span>Interior Designer</span>
+                <div class="designer-img img2">
+                  <img src="img/designer/Sarah-stainer.jpg" alt="sarah">
+                </div>
+              </div><!------ Designer 2 ------->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 designer-row row2">
+              <div class="designer-card">
+                <p class="display2-pc">Dustin Mock</p>
+                <span>Product Designer</span>
+                <div class="designer-img">
+                  <img src="img/designer/dustin-mock.jpg" alt="dustin">
+                </div>
+              </div><!------ Designer 3 ------->
+              <div class="designer-card">
+                <p class="display2-pc">Dasia Lovewell</p>
+                <span>Industrial Designer</span>
+                <div class="designer-img img2">
+                  <img src="img/designer/dasia-lovewell.jpg" alt="dasia">
+                </div>
+              </div><!------ Designer 4 ------->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 designer-row row3">
+              <div class="designer-card">
+                <p class="display2-pc">Mark Rickson</p>
+                <span>Product Decorator</span>
+                <div class="designer-img">
+                  <img src="img/designer/mark-rickson.jpg" alt="mark">
+                </div>
+              </div><!------ Designer 5 ------->
+              <div class="designer-card">
+                <p class="display2-pc">Laura Norson</p>
+                <span>Industrial Designer</span>
+                <div class="designer-img img2">
+                  <img src="img/designer/laura-norson.jpg" alt="laura">
+                </div>
+              </div><!------ Designer 6 ------->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 designer-row row4">
+              <div class="designer-card">
+                <p class="display2-pc">Lisa Chavez</p>
+                <span>Product Decorator</span>
+                <div class="designer-img">
+                  <img src="img/designer/Lisa-chavez.jpg" alt="Lisa">
+                </div>
+              </div><!------ Designer 7 ------->
+              <div class="designer-card">
+                <p class="display2-pc">Carmen Glass</p>
+                <span>Industrial Designer</span>
+                <div class="designer-img">
+                  <img src="img/designer/Carmen-glass.jpg" alt="carmen">
+                </div>
+              </div><!------ Designer 8 ------->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 offset-xl-4 designer-btn">
+              <a href="Ourdesigner.html" class="btn-secondary-xl-right">all designers<i class="fa-regular fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      <!-------------------------------------------DESIGNERS LIST Mobile------------------------------------------>
+        <div class="container-fluid d-lg-none" id="designer-list-mb">
+          <div class="owl-carousel">
+            <div class="designer-mb-card card-down">
+              <div class="designer-img-mb">
+                <img src="img/designer/christopher-jade.jpg" alt="Christopher">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Christopher Jade</p>
+                <span>Product Designer</span>
+              </div>
+            </div><!------ Designer 1 ------->
+            <div class="designer-mb-card">
+              <div class="designer-img-mb">
+                <img src="img/designer/Sarah-stainer.jpg" alt="sarah">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Sarah Stainer</p>
+                <span>Interior Designer</span>
+              </div>
+            </div><!------ Designer 2 ------->
+            <div class="designer-mb-card card-down">
+              <div class="designer-img-mb">
+                <img src="img/designer/dustin-mock.jpg" alt="dustin">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Dustin Mock</p>
+                <span>Product Designer</span>
+              </div>
+            </div><!------ Designer 3 ------->
+            <div class="designer-mb-card">
+              <div class="designer-img-mb">
+                <img src="img/designer/dasia-lovewell.jpg" alt="dasia">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Dasia Lovewell</p>
+                <span>Industrial Designer</span>
+              </div>
+            </div><!------ Designer 4 ------->
+            <div class="designer-mb-card card-down">
+              <div class="designer-img-mb">
+                <img src="img/designer/mark-rickson.jpg" alt="mark">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Mark Rickson</p>
+                <span>Interior Decorator</span>
+              </div>
+            </div><!------ Designer 5 ------->
+            <div class="designer-mb-card">
+              <div class="designer-img-mb">
+                <img src="img/designer/laura-norson.jpg" alt="laura">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Laura Norson</p>
+                <span>Industrial Designer</span>
+              </div>
+            </div><!------ Designer 6 ------->
+            <div class="designer-mb-card card-down">
+              <div class="designer-img-mb">
+                <img src="img/designer/Lisa-chavez.jpg" alt="Lisa">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Lisa Chavez</p>
+                <span>Technical Designer</span>
+              </div>
+            </div><!------ Designer 7 ------->
+            <div class="designer-mb-card">
+              <div class="designer-img-mb">
+                <img src="img/designer/Carmen-glass.jpg" alt="Carmen">
+              </div>
+              <div class="designer-info-mb">
+                <p class="display4-mb">Carmen Glass</p>
+                <span>Interior Designer</span>
+              </div>
+            </div><!------ Designer 8 ------->      
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 designer-mb-bottom">
+                <div class="designer-mb-bottom-text">
+                  <h5>We've Got More</h5>
+                  <p>Take a look at all designers we collab with</p>
+                </div>
+                <div class="designer-mb-bottom-button">
+                  <a href="Ourdesigner.html" class="btn-secondary-lg-right">all designers<i class="fa-regular fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+  <!-------------------------JOB OPPORTUNITY-PC----------------------->
+<div class="d-none d-lg-block">
+    <div class="container-fluid job-opp-pc">
+        <div class="job-opp-trai">
+            <div class="job-opp-trai-upper"></div>
+            <div class="job-opp-trai-mid">
+                <p>CAREER</p>
+            </div>
+            <div class="job-opp-trai-lower">
+                <div class="job-opp-trai-lower-top">
+                    <h2>BE PART OF THE
+                        NEW ERA OF INTERIOR DESIGN</h2>
+                    <a href="Career.html" class="btn-primary-xl">SEE OPENING POSITION</a>
+                </div>
+                <div class="job-opp-trai-lower-bottom">
+                    <p>We are seeking a fully qualified Interior Designer to join our small team at Lyon Paris Studio - a retail store offering interior design services. You will be able to manage projects from start to finish, as well as working directly with clients, trades and suppliers. You are bubbly, self-motivated and can emulate our signature style, as well as work to the needs of clients. We are looking for a full-time candidate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="job-opp-phai">
+            <div class="job-opp-phai-upper">
+                <p class="display4-pc">JOB OPPORTUNITY</p>
+            </div>
+            <div class="job-opp-phai-lower">
+                <img src="img/OURSTORY/ourstory-job.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!--------------------------JOB OPPORTURNITY- mobile--------------------------->
+  
+<div class="d-lg-none">
+    <div class="container-fluid job-opp-mb">
+        <div class="job-opp-mb-title">
+            <p class="display4-pc">JOB OPPORTUNITY</p>
+        </div>
+        <div class="container-fluid  job-opp-mb-subtitle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 job-opp-mb-subtitle-left">
+                        <p>Be part of us</p>
+                    </div>
+                    <div class="col-6 job-opp-mb-subtitle-right">
+                        <p>CAREER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="job-opp-mb-img">
+            <img src="img/OURSTORY/ourstory-job.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 job-opp-mb-content">
+                    <h2>BE PART OF THE
+                        NEW ERA OF INTERIOR DESIGN</h2>
+                    <p>We are seeking a fully qualified Interior Designer to join our small team at Lyon Paris Studio - a retail store offering interior design services. You will be able to manage projects from start to finish, as well as working directly with clients, trades and suppliers. You are bubbly, self-motivated and can emulate our signature style, as well as work to the needs of clients. We are looking for a full-time candidate.</p>
+                    <a href="Career.html" class="btn-primary-xl">SEE OPENING POSITION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<footer class="container-fluid d-none d-md-block" id="footerDesktop">
+  <div class="container-fluid footer-navi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#" id="signin-btn-footer">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Term.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation-->
+  <div class="container footer-subscribe d-none d-lg-block">
+    <div class="row d-flex align-items-end">
+      <div class="col-xl-4 
+                  col-lg-4 email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4 media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media LG XL-->
+  <div class="container footer-subscribe d-none d-md-block d-lg-none">
+    <div class="row">
+      <div class="col-md-4
+                  offset-md-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-end">
+      <div class="col-md-6 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-md-6
+                  media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+<!-------------------------------------------Footer Mobile------------------------------------------>
+<footer class="container-fluid d-md-none" id="footerMobile">
+  <div class="container-fluid footer-navi footer-navi-mb1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Upper Section-->
+  <div class="container-fluid footer-navi footer-navi-mb2">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-6 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#" id="signin-btn-footermb">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Lower Section-->
+  <div class="container footer-subscribe d-md-none">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2
+                  col-10 offset-1 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div><!-------Email Input------>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3
+                  col-6 offset-3">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div><!-------Logo------>
+    </div>
+    <div class="row">
+      <div class="col-12
+                  media-footer-mb">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+</main>
+
+<script src="js/locomotive-scroll.min.js"></script>
+
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
+    </script>
+    <script src="js/starter.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
+  </body>
+</html>

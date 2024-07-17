@@ -1,0 +1,23 @@
+
+.hero-container{
+    background-color: #FDF0EE;
+}
+
+.hero-section{
+    height: 900px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hero-content{
+    width: 40%;
+}
+
+.hero-slider{
+    width: 60%;
+}
+
+.hero-banner{
+    width: 60%;
+}

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+    
+	<!-- css -->
+	<link rel="stylesheet" href="css/faq.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/locomotive-scroll.css">
+
+	<!----Fontawesome-->
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+    
+
+  </head>
+
+<body>
+
+ <!-------------------------------------------MODAL POP UP ------------------------------------------>
+ <div id="signin-popup">
+	<div class="sign-in-form">
+	  <div class="popup-title">
+		<p class="display3-pc">SIGN IN</p>
+	  </div>
+	  <div class="x-mark">
+		<i class="fa-sharp fa-solid fa-xmark"></i>
+	  </div>
+	  <div class="popup-form">
+		<div class="signin-form--label usename-input">
+						<label for="username">Email</label>
+						<br>
+						<input type="text" placeholder="example@email.com" id="username">
+		</div>
+		<div class="signin-form--label password-input">
+		  <label for="signin-password">Password</label>
+		  <div class="password-input--field">
+			<input type="password" id="signin-password" placeholder="Enter password here">
+			<button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+		  </div>
+		  <div class="password-element">
+			<label class="check-list"><span>Remember me</span>
+			  <input type="checkbox" name="saveinfo" id="saveinfo">
+			  <span class="checkmark"></span>
+			</label>
+			<a href="#">Forget password?</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="signin-btn">
+		<a href="Profile.html" class="btn-primary-xl">sign in</a>
+		<p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+	  </div>
+	</div>
+  </div><!---------------------------Sign In-form ------------------------------>
+  <div id="signup-popup">
+	<div class="sign-up-form">
+	  <div class="popup-title">
+		<p class="display3-pc">SIGN UP</p>
+	  </div>
+	  <div class="x-mark">
+		<i class="fa-sharp fa-solid fa-xmark"></i>
+	  </div>
+	  <div class="popup-form">
+		<div class="first-last-name">
+		  <div class="signin-form--label firstname-input">
+			<label for="firstname">First Name*</label>
+			<br>
+			<input type="text" placeholder="Your First Name" id="firstname">
+		  </div>
+		  <div class="signin-form--label lastname-input">
+			<label for="lastname">Last Name*</label>
+			<br>
+			<input type="text" placeholder="Your Last Name" id="lastname">
+		  </div>
+		</div>
+		<div class="signin-form--label usename-input">
+						<label for="username">Email</label>
+						<br>
+						<input type="text" placeholder="example@email.com" id="username">
+		</div>
+		<div class="password-signup-confirm">
+		  <div class="signin-form--label password-input">
+			<label for="signup-password">Password</label>
+			<div class="password-input--field">
+			  <input type="password" id="signup-password" placeholder="Enter password here">
+			  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+			</div>
+		  </div>
+		  <div class="signin-form--label confirm-password-input">
+			<label for="signup-confirm-password">Confirm Password</label>
+			<div class="password-input--field">
+			  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+			  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+			</div>
+		  </div>
+		</div>
+		<p>Sign up email to receive 10% off your first order.
+		  <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+	  </div>
+	  <div class="signin-btn">
+		<a href="#" class="btn-primary-xl">sign up</a>
+		<p>Already have an account? <button id="signin-btn">Sign In</button></p>
+	  </div>
+	</div>
+  </div><!---------------------------Sign Up-form ------------------------------>
+  
+	  <!------------------------------------------- CART POP UP ------------------------------------------>
+	  <div class="container-fluid cart-modal">
+		<div class="cart-modal-title">
+		  <p class="display4-pc">ORDER SUMMARY</p>
+		</div>
+		<div class="x-mark">
+		  <i class="fa-sharp fa-solid fa-xmark"></i>
+		</div>
+		<div class="cart-modal-flex">
+		  <div class="container cart-modal-slide">
+			<div class="cart-checkout-slide">
+			  <div class="checkout-slide">
+				  <img src="img/shopall/Stool/SEDONA BAR.jpg">
+			  </div>
+			  <div class="cartmodal-product-content">
+				  <div class="modal-product-data">
+					  <h5>SEDONA BAR</h5>
+					  <p>Stool</p>
+					  <p>Color: Beige</p>
+					  <div class="modal-button-remove">
+						<button href="#" type="button">Remove</button>
+					</div><!--removebtn-->
+				  </div><!--name--->
+  
+				  <hr>
+				  <div class="cartmodal-price-quantity">
+					  <p class="cartmodal-single-price">$ 650.00</p>
+					  <div class="modal-checkout-quantity">
+							  <div class="checkout-counter">
+								<span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+								<input type="text" value="1">
+								<span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+							  </div>
+					  </div>
+					  <p class="cartmodal-total-price">$ 650.00</p>
+				  </div><!-------------Quantity &amp; Price------------>
+			  </div>
+			</div><!-------------Cardproduct-01-checkout------------>
+			<div class="cart-checkout-slide">
+			  <div class="checkout-slide">
+				  <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+			  </div>
+			  <div class="cartmodal-product-content">
+				  <div class="modal-product-data">
+					  <h5>DINNING SYNTHETIC</h5>
+					  <p>Stool</p>
+					  <p>Color: Brown</p>
+				  </div><!--name--->
+	
+				  <div class="modal-button-remove">
+					  <button href="#" type="button">Remove</button>
+				  </div><!--removebtn-->
+				  <hr>
+				  <div class="cartmodal-price-quantity">
+					  <p class="cartmodal-single-price">$ 399.00</p>
+					  <div class="modal-checkout-quantity">
+							  <div class="checkout-counter">
+								<span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+								<input type="text" value="1">
+								<span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+							  </div>
+					  </div>
+					  <p class="cartmodal-total-price">$ 399.00</p>
+				  </div><!-------------Quantity &amp; Price------------>
+			  </div>
+			</div><!-------------Cardproduct-01-checkout------------>
+			<div class="cart-checkout-slide">
+			  <div class="checkout-slide">
+				  <img src="img/shopall/chair/ONYX.jpg">
+			  </div>
+			  <div class="cartmodal-product-content">
+				  <div class="modal-product-data">
+					  <h5>ONYX WOOD CHAIR</h5>
+					  <p>Chair</p>
+					  <p>Color: Beige</p>
+				  </div><!--name--->
+	
+				  <div class="modal-button-remove">
+					  <button href="#" type="button">Remove</button>
+				  </div><!--removebtn-->
+				  <hr>
+				  <div class="cartmodal-price-quantity">
+					  <p class="cartmodal-single-price">$ 989.00</p>
+					  <div class="modal-checkout-quantity">
+							  <div class="checkout-counter">
+								<span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+								<input type="text" value="1">
+								<span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+							  </div>
+					  </div>
+					  <p class="cartmodal-total-price">$ 989.00</p>
+				  </div><!-------------Quantity &amp; Price------------>
+			  </div>
+			</div><!-------------Cardproduct-01-checkout------------>
+		  </div>
+		  <div class="container cart-modal-bottom">
+			<div class="modal-grand-total">
+			  <hr>
+			  <div class="grand-total-price">
+				<h5 class="grand-text">Grand Total Incl. Tax</h5>
+				<p class="grand-price">$ 1,087.00</p>
+			  </div>
+			</div>
+			<div class="modal-cart-btn">
+			  <a href="ShopAll.html" class="btn-olprimary-lg">continue shopping</a>
+			  <a href="Cart-page.html" class="btn-primary-lg">Proceed to checkout</a>
+			</div>
+		  </div>
+		</div>
+	</div>
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+	<header class="container-fluid d-none d-lg-block header-desktop">
+	  <div class="container">
+		<div class="row d-flex align-items-center header-row">
+		  <div class="left-navi
+					  col-xl-2
+					  col-lg-2">
+					  <div class="burger-menu">
+						<div class="barline"></div>
+					  </div>
+					  <a href="ShopAll.html">SHOP</a> 
+					  
+		  </div><!--Left Navi-->
+		  <div class="center-navi
+					  col-xl-2 offset-xl-3
+					  col-lg-2 offset-lg-3">
+					  <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+		  </div><!--Logo-->
+		  <div class="right-navi
+					  col-xl-3 offset-xl-2
+					  col-lg-3 offset-lg-2">
+					  <div class="cart-section">
+						BAG
+						<div class="cart-count">0</div>
+					  </div>
+					  <button id="signin-modal">SIGN IN</button>                       
+		  </div><!--Right Navi-->
+		</div>
+	  </div>
+	</header>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+	<div class="row d-none d-lg-block">
+	  <div class="col-xl-5 offset-xl-7
+				  col-lg-5 offset-lg-7 img-megamenu">
+		<p class="display3-mb" >NATIVE IRON CHAIR</p>
+		<span>FEATURED PRODUCT</span>
+	  </div>
+	</div>
+	<div class="container megamenu-content d-none d-lg-block">
+	  <div class="row">
+		<div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+		  <div class="menu-section">
+			<span class="display4-pc">ÉTIENNE</span>
+			<ul>
+			  <li><a href="Home.html">HOME</a></li>
+			  <li><a href="OurStory.html">ABOUT</a></li>
+			  <li><a href="Blog.html">JOURNAL</a></li>
+			  <li><a href="Lookbook.html">LOOKBOOK</a></li>
+			</ul>
+		  </div>
+  
+		  <div class="menu-section">
+			<span class="display4-pc">SHOP</span>
+			<ul>
+			  <li><a href="ShopAll.html">ALL</a></li>
+			  <li><a href="Seating.html">SEATING</a></li>
+			  <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+			  <li><a href="Seating.html">DECOR</a></li>
+			  <li><a href="Seating.html">ORGANISATION</a></li>
+			</ul>
+		  </div>
+  
+		  <div class="menu-section">
+			<span class="display4-pc">SUPPORT</span>
+			<ul>
+			  <li><a href="FAQ.html">FAQs</a></li>
+			  <li><a href="Warranty.html">WARRANTY</a></li>
+			  <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+			  <li><a href="Paymentsp.html">PAYMENT</a></li>
+			  <li><a href="Contact.html">CONTACT</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div> <!--Mega Menu List-->
+	  <div class="row">
+		<div class="col-xl-4 col-lg-4 search-field">
+		  <p>Looking for anything special today?</p>
+		  <div class="search-box">
+			<button class="search-btn">
+			  <i class="fa-regular fa-magnifying-glass"></i>
+			</button>
+			<input type="text" class="search-input" placeholder="Enter keyword here...">          
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <header class="container-fluid d-lg-none header-mobile">
+	<div class="container">
+	  <div class="row d-flex align-items-center header-row">
+		<div class="left-navi
+					col-md-3
+					col-sm-4
+					col-4">
+					<div class="burger-menu-mb">
+					  <div class="barlinemb"></div>
+					</div>
+					<a href="ShopAll.html">SHOP</a> 
+					
+		</div><!--Left Navi-->
+		<div class="center-navi
+					col-md-2 offset-md-2
+					col-sm-2 offset-sm-1
+					col-2 offset-1">
+					<a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+		</div><!--Logo-->
+		<div class="right-navi
+					col-md-2 offset-md-3
+					col-sm-3 offset-sm-2
+					col-3 offset-2">
+					<div class="cart-section">
+					  BAG
+					  <div class="cart-count">0</div>
+					</div>                     
+		</div><!--Right Navi-->
+	  </div>
+	</div>
+  </header>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+	<div class="container-fluid sub-header-mb">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-8
+					  col-sm-8
+					  col-8">
+					  <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+		  </div>
+		  <div class="col-md-4
+					  col-sm-4
+					  col-4 left-subhead">
+					  <button id="signin-modal-mb">SIGN IN</button>  
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="container" id="megamenu-content-mb">
+	  <div class="row">
+		<div class="col-6">
+		  <div class="menu-section">
+			<span class="display4-pc">ÉTIENNE</span>
+			<ul>
+			  <li><a href="Home.html">HOME</a></li>
+			  <li><a href="OurStory.html">ABOUT</a></li>
+			  <li><a href="Blog.html">JOURNAL</a></li>
+			  <li><a href="Lookbook.html">LOOKBOOK</a></li>
+			</ul>
+		  </div>
+  
+		  <div class="menu-section">
+			<span class="display4-pc">SHOP</span>
+			<ul>
+			  <li><a href="ShopAll.html">ALL</a></li>
+			  <li><a href="Seating.html">SEATING</a></li>
+			  <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+			  <li><a href="Seating.html">DECOR</a></li>
+			  <li><a href="Seating.html">ORGANISATION</a></li>
+			</ul>
+		  </div>
+  
+		  <div class="menu-section">
+			<span class="display4-pc">SUPPORT</span>
+			<ul>
+			  <li><a href="FAQ.html">FAQs</a></li>
+			  <li><a href="Warranty.html">WARRANTY</a></li>
+			  <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+			  <li><a href="Paymentsp.html">PAYMENT</a></li>
+			  <li><a href="Contact.html">CONTACT</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="container" id="signin-mb">
+	  <div class="row">
+		<div class="col-12">
+		  <div class="popup-title">
+			<p class="display3-pc">SIGN IN</p>
+		  </div>
+		  <div class="return-mark-mb return-mark-mb-xs">
+			<i class="fa-sharp fa-solid fa-arrow-left"></i>
+		  </div>
+		  <div class="popup-form">
+			<div class="signin-form--label usename-input">
+							<label for="username">Email</label>
+							<br>
+							<input type="text" placeholder="example@email.com" id="username">
+			</div>
+			<div class="signin-form--label password-input">
+			  <label for="signin-password">Password</label>
+			  <div class="password-input--field">
+				<input type="password" id="signin-password" placeholder="Enter password here">
+				<button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+			  </div>
+			  <div class="password-element">
+				<label class="check-list"><span>Remember me</span>
+				  <input type="checkbox" name="saveinfo" id="saveinfo">
+				  <span class="checkmark"></span>
+				</label>
+				<a href="#">Forget password?</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="signin-btn">
+			<a href="Profile.html" class="btn-primary-xl">sign in</a>
+			<p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="container" id="signup-mb">
+	  <div class="row">
+		<div class="col-12">
+		  <div class="popup-title">
+			<p class="display3-pc">SIGN UP</p>
+		  </div>
+		  <div class="return-mark-mb return-mark-mb-xs">
+			<i class="fa-sharp fa-solid fa-arrow-left"></i>
+		  </div>
+		  <div class="popup-form">
+			<div class="first-last-name">
+			  <div class="signin-form--label firstname-input">
+				<label for="firstname">First Name*</label>
+				<br>
+				<input type="text" placeholder="Your First Name" id="firstname">
+			  </div>
+			  <div class="signin-form--label lastname-input">
+				<label for="lastname">Last Name*</label>
+				<br>
+				<input type="text" placeholder="Your Last Name" id="lastname">
+			  </div>
+			</div>
+			<div class="signin-form--label usename-input">
+							<label for="username">Email</label>
+							<br>
+							<input type="text" placeholder="example@email.com" id="username">
+			</div>
+			<div class="password-signup-confirm">
+			  <div class="signin-form--label password-input">
+				<label for="signup-password">Password</label>
+				<div class="password-input--field">
+				  <input type="password" id="signup-password" placeholder="Enter password here">
+				  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+				</div>
+			  </div>
+			  <div class="signin-form--label confirm-password-input">
+				<label for="signup-confirm-password">Confirm Password</label>
+				<div class="password-input--field">
+				  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+				  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+				</div>
+			  </div>
+			</div>
+			<p>Sign up email to receive 10% off your first order.
+			  <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+		  </div>
+		  <div class="signin-btn">
+			<a href="#" class="btn-primary-xl">sign up</a>
+			<p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+  <!-------------------------------------------Scroll To Top ------------------------------------------>
+<div id="scrollTop">
+	<a href="#toppage-pc" class="toppage-pc d-none d-md-block">Top <i class="fa-light fa-arrow-right"></i></a>
+	<a href="#toppage-mb" class="toppage-mb d-md-none"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+  </div>
+
+<!-------------------///////////////******Main Section*****\\\\\\\\\\\\\\\\\ ------------------------------->
+<main data-scroll-container>
+	<section id="toppage">
+		<div id="toppage-pc"></div>
+		<div id="toppage-mb"></div>
+	  </section>
+<!---------------------------- Title-FAQ -------------------------------->
+
+<div class="container-fluid" id="Title-faq-title">
+	<div class="container" >
+		<div class="Title-faq-title-pc d-none d-md-block">
+			<p class="display4-pc ">FREQUENTLY ASKED QUESTIONS</p>
+		</div>
+		
+		<div class="Title-faq-title-mb d-md-none">
+			<p class="display4-mb ">FAQ</p>
+			<span>(Frequently Asked Questions)</span>
+		</div>
+	</div>
+</div>
+
+
+<!---------------------------- Title-FAQ -------------------------------->
+
+
+<!---------------------------------------Breadcrumb ----------------------------------------->
+<div class="container-fluid breadcrumbb-bg">
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-12
+                      col-lg-12
+                      col-md-12
+                      col-sm-12 breadcrumbb ">
+                      <ul>
+                        <li><a href="Home.html">Home</a></li>   
+                        <li class="actived">FAQs</li>
+                      </ul>
+          </div>
+		  
+        </div>
+      </div>
+</div><!---------------------------------------Breadcrumb ----------------------------------------->
+
+<!---------------------------------------faq-item MD ----------------------->
+<div class="container d-none d-md-block d-lg-none">
+	<div class="row">
+		<div class="col-md-12
+					col-sm-12
+					col-12  ">
+				<div class="faq-mobile">
+
+					<h3>FAQs</h3>
+					<div class="faq-mobile-flex">
+						<div class="faq-title-left">
+						
+							<div class="faq-title-mobile"><a href="#" class="title-green" >General FAQs</a></div>
+							
+							<div class="faq-title-mobile"><a href="#">Product FAQs</a></div>
+						</div>
+			
+						<div class="faq-title-left">
+							<div class="faq-title-mobile"><a href="#">Return &amp; Exchange FAQs</a><br></div>
+							<div class="faq-title-mobile"><a href="#">Payment FAQs</a></div>
+						</div>
+			
+						<div class="faq-title-left">
+							<div class="faq-title-mobile"><a href="#">Shipping &amp; Delivery FAQs</a></div>
+						</div>		
+					</div>	
+						
+							
+				</div>
+		</div>
+	</div>
+</div><!----------------------------------faq-item MD -------------------->
+
+<!---------------------------------------faq-left sm-xs----------------------->
+<div class="container d-md-none">
+	<div class="row">
+		<div class="col-md-12
+					col-sm-12
+					col-12  ">
+				<div class="faq-mobile">
+
+					<h3>FAQs</h3>
+					<div class="faq-mobile-flex">
+						<div class="faq-title-left">
+						
+							<div class="faq-title-mobile"><a href="#" class="title-green" >General FAQs</a></div>
+							<div class="faq-title-mobile"><a href="#">Product FAQs</a></div>
+							<div class="faq-title-mobile"><a href="#">Payment FAQs</a></div>
+						</div>
+			
+						<div class="faq-title-left">
+							<div class="faq-title-mobile"><a href="#">Return &amp; Exchange FAQs</a><br></div>
+							<div class="faq-title-mobile"><a href="#">Shipping &amp; Delivery FAQs</a></div>
+						</div>
+			
+								
+					</div>	
+						
+							
+				</div>
+		</div>
+	</div>
+</div><!----------------------------------faq-item sm-xs -------------------->
+
+<!------------------------------FAQs----------------------------------------->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-3
+					col-lg-3  d-none d-lg-block">
+			
+			<div class="col-12 faq-left">
+				<h3>FAQs</h3>
+				<div class="title-green">
+					<a href="#" >General FAQs</a>
+				</div>
+				<div class="faq-title-left">
+					<a href="#">Return &amp; Exchange FAQs</a>
+				</div>
+				<div class="faq-title-left">
+					<a href="#">Shipping &amp; Delivery FAQs</a>
+				</div>
+				<div class="faq-title-left">
+					<a href="#">Product FAQs</a>
+				</div>
+				<div class="faq-title-left">
+					<a href="#">Payment FAQs</a>
+				</div>		
+			</div>	
+		</div><!-------------faq-item-left Desktop-------------------->
+
+		
+		<div class="col-xl-9 
+					col-lg-9 
+					col-md-12
+					col-sm-12
+					col-12 faq-right">
+					
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+						  <div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								How do I place order?
+							  </button>
+							</h2>
+						  </div>
+					  
+						  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+							  <p>It's easy. First, click on the product image or product name to view the item details. To add an item to your order, enter the quantity you wish to purchase into the Quantity box then click the Add to Cart button.
+							  </p>
+							  <p>
+								When you are ready to checkout, you have two options to choose from. You can click the Checkout Now button right after you've added an item to your cart or you can click on the Cart or Checkout button in the upper right hand section of every page.
+							  </p>
+							</div>
+						  </div>
+						</div> <!-------------FAQ Card 1 --------------->
+						<div class="card">
+						  <div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								How do I track my order?
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="card-body">
+							  <p>You can track your order progress and delivery of items by clicking on Order Tracking. Order Tracking is also found at the bottom of every web page and in "your account" at the top of every page.</p>
+							  <p>The delivery services we use receive order numbers and tracking numbers from us at the close of business seven (7) days a week. If these delivery services do not have a record of your order, they may not have received these numbers in their systems yet. In that case, we suggest tracking your order again the following business day.</p>
+							</div>
+						  </div>
+						</div><!-------------FAQ Card 2 --------------->
+						<div class="card">
+						  <div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								How do I pay for my purchase?
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body">
+							  <p>We accept a variety of payments including PayPal, Apple Pay, Venmo, MasterCard, Visa, American Express, Discover, The Etienne Gift Card and Coupon.</p>
+							</div>
+						  </div>
+						</div><!-------------FAQ Card 3 --------------->
+						<div class="card">
+						  <div class="card-header" id="headingFour">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								How do I redeem my Gift/Shop Card online?
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+							<div class="card-body">
+							  <p>
+								It’s easy. Make your selections and proceed to Checkout as usual. On the Payment page, enter your Gift/Shop Card Number beneath the scratch-off area on the back of the card. Then click Apply Coupon/Giftcard.
+							  </p>
+							  <p>
+								If you have more than one Gift/Shop Card, enter the information for each card you wish to use. Our system will perform the appropriate calculations.
+							  </p>
+							  <p>
+								Please Note: Gift/Shop Cards may be used in combination with a credit card to complete your transaction.
+							  </p>
+							</div>
+						  </div>
+						</div><!-------------FAQ Card 4 --------------->
+						<div class="card">
+						  <div class="card-header" id="headingFive">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								How do I send items to multiple addresses?
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+							<div class="card-body">
+							  <p>
+								If you are ordering multiple quantities of the same item and wish to send them to different addresses, make sure to add each item to your cart separately. You will be able to specify the different addresses on the Shipping page in Checkout.
+							  </p>
+							</div>
+						  </div>
+						</div><!-------------FAQ Card 5 --------------->
+						<div class="card">
+							<div class="card-header" id="headingsix">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+									How will my order be packaged?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									All items that qualify (given size and bulk considerations) will be shipped in a standard Crate and Barrel logo box. During Checkout, you will be offered the option of packaging a gift in our distinguished black and white gift box with Crate and Barrel grosgrain ribbon. At $5.50 per gift box, you can choose one box for all items or individual boxes for each item.
+								</p>
+								<p>
+									Each gift box is carefully packed in a standard Crate and Barrel shipping box so it arrives in good condition. While some items may not qualify for gift boxing, we will gladly enclose a gift message free of charge with any order. And don’t worry, none of our items ship with price tags or pricing information. In fact, as a courtesy, any item(s) selected for a gift box or with a gift message will not have prices displayed on the packing slip.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 6 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingseven">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+									Do you offer financing on purchases?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									The etienne Credit Card offers convenient financing options on qualifying purchases, as well as low monthly payments and no annual fee. You may apply online, at a store near you.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 7 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingeight">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+									How much is shipping and handling? How much is delivery for furniture?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									At Etienne, our goal is to deliver your purchase in the quickest and most economical way possible. Shipping and handling costs and delivery methods may be upgraded in Checkout if consolidating items in your order will provide better shipping rates and times.
+								</p>
+								<p>
+									The exact shipping and handling amount for your entire order will be calculated and displayed during Checkout.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 8 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingnine">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+									Where can I find assembly instructions?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									You can search among the assembly instructions for all of our products here.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 9 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingten">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+									What is your return policy?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									At Etienne, we stand behind the quality of our products and want every purchase to be a positive experience. We will do our best to make things right if you are not satisfied.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 10 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingeleven">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+									Can I order a replacement for a discontinued item?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapseeleven" class="collapse" aria-labelledby="headingeleven" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									If the item is available in a store or in a warehouse, it can be ordered. Call your local store, check online or call us at 800-967-6696.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 11 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingtwelve">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+									Is the information I give you secure?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsetwelve" class="collapse" aria-labelledby="headingtwelve" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									All orders are encrypted with Secure Sockets Layer (SSL) technology on both your end and ours. SSL encrypts all of your personal information including credit card number, name, and address, so that it cannot be read as the information travels over the Internet. In order for SSL to work, you must use an SSL-enabled browser. Learn more.
+								</p>
+								<p>
+									Please note: email is not encrypted and is not considered a secure means of transmitting your credit card information. If you prefer not to order online, you can place your order by phone at 800-967-6696. Customer service hours are Mon - Fri: 8 am to 7 pm CT; Sat - Sun: 8 am to 6 pm CT.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 12 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingthirteen">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsethirteen" aria-expanded="false" aria-controls="collapsethirteen">
+									Do you offer international shipping?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsethirteen" class="collapse" aria-labelledby="headingthirteen" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									We are happy to ship furniture orders totaling more than $5000.00 USD to many locations overseas. Just fill up your shopping cart, then complete this online form to request a quote for international freight.
+								</p>
+								<p>
+									At this time, we have discontinued the option for international shipping of houseware items via Borderfree. We sincerely apologize for any inconvenience this may cause you.
+								</p>
+								<p>
+									If you prefer, we would be happy to ship your items to a freight forwarder of your choice. This can be done by placing an order online via our website and providing the address of the freight forwarding company.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 13 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingfourteen">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefourteen" aria-expanded="false" aria-controls="collapsefourteen">
+									Do you have a price match policy?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsefourteen" class="collapse" aria-labelledby="headingfourteen" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									We guarantee the best price. If you find a lower price on an identical name-brand item available at another store or website, we will happily match the price at the time of your purchase. Some exclusions and restrictions apply.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 14 --------------->
+						  <div class="card">
+							<div class="card-header" id="headingfifteen">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+									Do you charge taxes?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapsefifteen" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+							  <div class="card-body">
+								<p>
+									Taxes are calculated for each shipping address total based on the state to which the item(s) is shipped. We will add all applicable taxes to items shipped to AK, AL, AR, AZ, CA, CO, CT, DC, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, NC, ND, NE, NJ, NM, NV, NY, OH, OK, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, and WY.
+								</p>
+								<p>
+									Where and when applicable, we collect sales tax on shipping and handling.
+								</p>
+								<p>
+									Taxes also apply to Gift Boxes. This amount will be included in your Total Tax at Checkout.
+								</p>
+								<p>
+									Online purchases picked up at The Village at Gulfstream Park store in Florida require a tax on District Improvement Fees.
+								</p>
+								<p>
+									Purchasers in some states may be responsible for reporting and paying applicable sales and/or use tax to their state.
+								</p>
+							  </div>
+							</div>
+						  </div><!-------------FAQ Card 15 --------------->
+					</div>
+
+				
+		</div><!-------------faq-right -------------------->
+	</div><!-------------row -------------------->
+</div><!--------------------------FAQs----------------------------------------->
+
+
+<div class="container">
+	<div class="row">
+		<div class="offset-xl-3 col-xl-9
+					offset-lg-3 col-lg-9
+					col-md-12
+					col-sm-12
+					col-12">
+			<div class="row justify-content-center">
+				<div id="pagination" class="pagination-faq">
+				   <a href="#"><i class="fa-light fa-chevron-left fa-md"></i></a>
+				   <a href="#" class="active">01</a>
+				   <a href="#">02</a>
+				   <a href="#">03</a>
+				   <a href="#">04</a>
+				   <a href="#" class="unclickable">...</a>
+				   <a href="#">08</a>
+				   <a href="#">09</a>
+				   <a href="#"><i class="fa-light fa-chevron-right fa-md"></i></a>
+				</div>
+			  </div>
+		</div>
+	</div>
+</div>
+
+<!----------------------PAGINITION------------------------------------------>
+ <!----------------------PAGINITION------------------------------------------>
+
+
+
+
+
+<!----------------------------------Link Contact ---------------------------------------------->
+<div class="conteiner-fluid" id="contact-join-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 contact-careers">
+				<h5>CONTACT</h5>
+			</div>
+			<div class="col-xl-8
+						col-lg-8
+						col-md-12
+						col-sm-12
+						col-12 title-join-us">
+				<p class="display3-pc">NEED ANY FURTHER SUPPORT?<br> FEEL FREE TO CONTACT US</p>
+			</div>
+			<div class="offset-xl-1 col-xl-3
+						offset-lg-1 col-lg-3
+						col-md-12
+						col-sm-12
+						col-12 button-join-us">
+				
+				<a href="Contact.html" class="btn-secondary-xl-right">CONTACT US<i class="fa-regular fa-arrow-right-long"></i></a>
+			</div>
+		</div>
+	</div>
+  </div><!----------------------------------Link Contact ---------------------------------------------->
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<footer class="container-fluid d-none d-md-block" id="footerDesktop">
+	<div class="container-fluid footer-navi">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+			<span>HOME</span>
+			<ul>
+			  <li><a href="OurStory.html">About</a></li>
+			  <li><a href="Blog.html">Journal</a></li>
+			  <li><a href="Lookbook.html">Lookbook</a></li>
+			  <li><a href="Contact.html">Contact</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+			<span>SHOP</span>
+			<ul>
+			  <li><a href="Seating.html">Seating</a></li>
+			  <li><a href="Seating.html">Desk &amp; Table</a></li>
+			  <li><a href="Seating.html">Decor</a></li>
+			  <li><a href="Seating.html">Organisation</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+			<span>SUPPORT</span>
+			<ul>
+			  <li><a href="FAQ.html">FAQs</a></li>
+			  <li><a href="Return.html">Return &amp; Refund</a></li>
+			  <li><a href="Warranty.html">Warranty</a></li>
+			  <li><a href="Paymentsp.html">Payments</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+			<span>MISC</span>
+			<ul>
+			   <li class="d-md-none d-lg-block"><a href="#" id="signin-btn-footer">Sign in</a></li>
+			   <li class="d-lg-none"><a href="#" id="signin-btn-footermd">Sign in</a></li>
+			  <li><a href="Career.html">Career</a></li>
+			  <li><a href="Privacy.html">Privacy Policy</a></li>
+			  <li><a href="Terms.html">Terms</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation-->
+	<div class="container footer-subscribe d-none d-lg-block">
+	  <div class="row d-flex align-items-end">
+		<div class="col-xl-4 
+					col-lg-4 email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms &amp; Conditions</p>
+		</div>
+		<div class="col-xl-4
+					col-lg-4">
+					<div class="logo-footer">
+					  <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+					</div>
+		</div>
+		<div class="col-xl-4
+					col-lg-4 media-footer">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					<ul>
+					  <li><a href="#">Facebook</a></li>
+					  <li><a href="#">Instagram</a></li>
+					  <li><a href="#">Twitter</a></li>
+					</ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media LG XL-->
+	<div class="container footer-subscribe d-none d-md-block d-lg-none">
+	  <div class="row">
+		<div class="col-md-4
+					offset-md-4">
+					<div class="logo-footer">
+					  <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+					</div>
+		</div>
+	  </div>
+	  <div class="row d-flex align-items-end">
+		<div class="col-md-6 
+					email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms &amp; Conditions</p>
+		</div>
+		<div class="col-md-6
+					media-footer">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					<ul>
+					  <li><a href="#">Facebook</a></li>
+					  <li><a href="#">Instagram</a></li>
+					  <li><a href="#">Twitter</a></li>
+					</ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media MD-->
+	<div class="container-fluid d-flex align-items-center justify-content-center copyright">
+		  <p>Copyright © 2022 The Étienne. All rights reserved</p>
+	</div><!--Footer Copyright-->
+	<div class="container-fluid footer-exceed"></div>
+  </footer>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <footer class="container-fluid d-md-none" id="footerMobile">
+	<div class="container-fluid footer-navi footer-navi-mb1">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-6 home-footer">
+			<span>HOME</span>
+			<ul>
+			  <li><a href="OurStory.html">About</a></li>
+			  <li><a href="Blog.html">Journal</a></li>
+			  <li><a href="Lookbook.html">Lookbook</a></li>
+			  <li><a href="Contact.html">Contact</a></li>
+			</ul>
+		  </div>
+		  <div class="col-6 shop-footer">
+			<span>SHOP</span>
+			<ul>
+			  <li><a href="Seating.html">Seating</a></li>
+			  <li><a href="Seating.html">Desk &amp; Table</a></li>
+			  <li><a href="Seating.html">Decor</a></li>
+			  <li><a href="Seating.html">Organisation</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation Upper Section-->
+	<div class="container-fluid footer-navi footer-navi-mb2">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-6 support-footer">
+			<span>SUPPORT</span>
+			<ul>
+			  <li><a href="FAQ.html">FAQs</a></li>
+			  <li><a href="Return.html">Return &amp; Refund</a></li>
+			  <li><a href="Warranty.html">Warranty</a></li>
+			  <li><a href="Paymentsp.html">Payments</a></li>
+			</ul>
+		  </div>
+		  <div class="col-6 misc-footer">
+			<span>MISC</span>
+			<ul>
+			  <li><a href="#" id="signin-btn-footermb">Sign in</a></li>
+			  <li><a href="Career.html">Career</a></li>
+			  <li><a href="Privacy.html">Privacy Policy</a></li>
+			  <li><a href="Terms.html">Terms</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div><!--Footer Navigation Lower Section-->
+	<div class="container footer-subscribe d-md-none">
+	  <div class="row">
+		<div class="col-sm-8 offset-sm-2
+					col-10 offset-1 
+					email-footer">
+					<label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+					<div class="email-footer--field">
+					  <input type="email" id="footerMail" placeholder="example@email.com">
+					  <button><i class="fa-light fa-paper-plane"></i></button> 
+					</div>
+					<p>Sign up email to receive 10% off your first order. By signing up, 
+					  I agree to ours Terms &amp; Conditions</p>
+		</div><!-------Email Input------>
+	  </div>
+	  <div class="row">
+		<div class="col-sm-6 offset-sm-3
+					col-6 offset-3">
+					<div class="logo-footer">
+					  <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+					</div>
+		</div><!-------Logo------>
+	  </div>
+	  <div class="row">
+		<div class="col-12
+					media-footer-mb">
+					<h4>Don't miss a thing!</h4>
+					<p>Follow us on</p>
+					  <ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+					  </ul>
+		</div>
+	  </div>
+	</div><!--Footer Subscribe Media MD-->
+	<div class="container-fluid d-flex align-items-center justify-content-center copyright">
+		  <p>Copyright © 2022 The Étienne. All rights reserved</p>
+	</div><!--Footer Copyright-->
+	<div class="container-fluid footer-exceed"></div>
+  </footer>
+</main>
+	
+
+
+  <script src="js/locomotive-scroll.min.js"></script>
+
+  <script>
+	  (function () {
+		  var scroll = new LocomotiveScroll();
+	  })();
+  </script>
+
+  <script src="js/starter.js"></script>
+  <script src="js/smoothscroll.js"></script>
+
+	
+
+
+  
+  </body>
+</html>

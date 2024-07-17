@@ -1,0 +1,318 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+/* --------------Terms and Conditions-title------------------------- */
+#terms-title p{
+    text-align: center;
+    margin-bottom: 0px;
+    
+
+}
+#terms-title{
+    padding-top: 20px;
+    height: 80px;
+}
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+
+
+
+/* -----------link-contact ---------- */
+#contact-join-us{
+    background-image: url(../img/link-contact-us.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--secondary);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+/* -----------Terms and Conditions-content---------- */
+.terms-content h3{
+    margin-bottom: 0px;
+}
+.terms-content p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.terms-content-nd{
+    margin-top: 30px;
+}
+.terms-content p.size-bold{
+    font-family: subfont;
+    font-size: 16px;
+    
+    margin-bottom: 0px;
+}
+.conditions-content{
+    margin-top: 48px;
+}
+.conditions-content h3{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+     /* -----------Link Contact ---------- */
+     #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+
+    .button-join-us{
+        text-align: right;
+        margin-top: 90px;
+    }
+    
+    
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+     /* -----------Link Contact ---------- */
+     #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .title-join-us p.display3-pc{
+        white-space: nowrap;
+    }
+
+    .button-join-us{
+        text-align: right;
+        margin-top: 64px;
+    }
+    
+    
+}
+
+
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+      /* -----------Link Contact ---------- */
+      #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* ---------------------------- */
+    .conditions-content{
+        margin-top: 40px;
+    }
+    .terms-content-nd h3{
+        font-size: 24px !important;
+        
+    }
+    .conditions-content h3{
+        font-size: 24px !important;
+    }
+    .terms-content p.size-bold{
+        font-family: subfont;
+        font-size: 18px;
+        
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+/* -----------Link Contact ---------- */
+#contact-join-us{
+    background-image: url(../img/contact-us/link-contact-us.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--white);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.button-join-us{
+    margin-top: 30px;
+}
+    /* ---------------------------- */
+    .conditions-content{
+        margin-top: 40px;
+    }
+    .terms-content-nd h3{
+        font-size: 24px !important;
+        
+    }
+    .conditions-content h3{
+        font-size: 24px !important;
+    }
+    .terms-content p.size-bold{
+        font-family: subfont;
+        font-size: 18px;
+        
+        margin-bottom: 0px;
+    }
+    
+}
+
+
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    
+    /* ---------------------------- */
+    .conditions-content{
+        margin-top: 40px;
+    }
+    .terms-content-nd h3{
+        font-size: 24px !important;
+        
+    }
+    .conditions-content h3{
+        font-size: 24px !important;
+    }
+    .terms-content p.size-bold{
+        font-family: subfont;
+        font-size: 18px;
+        
+        margin-bottom: 0px;
+    }
+    
+}

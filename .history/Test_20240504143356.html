@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!----Fontawesome-->
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/locomotive-scroll.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".designer-slider").owlCarousel({
+        autoplay: true,
+        loop: true,
+        autoplayEachtime: 1500,
+        responsive:{
+          0:{
+            items: 1,
+            center: true,
+            stagePadding: 60,
+          },
+          576:{
+            items: 1,
+            center: true,
+            stagePadding: 105,
+          },
+          768:{
+            items: 1,
+            center: true,
+            stagePadding: 200,
+          },
+          992:{
+            items: 3,
+            autoplayHoverPause: true,
+          },
+          1200:{
+            items: 4,
+            autoplayHoverPause: true,
+          },
+        }
+      })
+    });
+
+    $(document).ready(function(){
+      $(".hero-slider").owlCarousel({
+        autoplay: true,
+        animateOut: 'fadeOut',
+        loop: true,
+        autoplayEachtime: 1500,
+        responsive:{
+          0:{
+            items: 1,
+            center: true,
+          },
+          576:{
+            items: 1,
+            center: true,
+          },
+          768:{
+            items: 1,
+            center: true,
+          },
+          992:{
+            items: 1,
+            nav: true,
+            autoplayHoverPause: true,
+          },
+          1200:{
+            items: 1,
+            nav: true,
+            autoplayHoverPause: true,
+          },
+        }
+      })
+    });
+
+    
+
+    </script>
+
+  
+</head>
+
+
+<body>
+
+  
+
+<!-------------------------------------------Hero Banner ------------------------------------------>
+
+<div class="hero-section">
+    <div class="hero-content">
+        <div class="hero-upper-content">
+            <p>#SA20 - 22</p>
+            <h1>Sweet home collection</h1>
+            <button class="btn-secondary-xl">Go Shopping</button>
+        </div>
+        <div class="hero-lower-content">
+            <div class="content-box">
+                <span>Rotterdarm</span>
+                <p>Graaf Florisstraat 22A,
+                    3021 CH, Netherlands</p>
+            </div>
+            <div class="content-box">
+                <span>Rotterdarm</span>
+                <p>Graaf Florisstraat 22A,
+                    3021 CH, Netherlands</p>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme hero-slider sectionBanner">
+        <div class="hero-banner item home-banner1">
+              <img src="img/Product Detail/chair-1-choco.jpg" alt="">
+        </div>
+        <div class="hero-banner item home-banner2">
+            <img src="img/Product Detail/chair-2-choco.jpg" alt="">
+        </div>
+        <div class="hero-banner item home-banner3">
+            <img src="img/Product Detail/chair-3-choco.jpg" alt="">
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<footer class="container-fluid d-none d-md-block" id="footerDesktop">
+  <div class="container-fluid footer-navi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li class="d-md-none d-lg-block"><a href="#" id="signin-btn-footer">Sign in</a></li>
+            <li class="d-lg-none"><a href="#" id="signin-btn-footermd">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation-->
+  <div class="container footer-subscribe d-none d-lg-block">
+    <div class="row d-flex align-items-end">
+      <div class="col-xl-4 
+                  col-lg-4 email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4 media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media LG XL-->
+  <div class="container footer-subscribe d-none d-md-block d-lg-none">
+    <div class="row">
+      <div class="col-md-4
+                  offset-md-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-end">
+      <div class="col-md-6 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-md-6
+                  media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div>
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+<!-------------------------------------------Footer Mobile------------------------------------------>
+<footer class="container-fluid d-md-none" id="footerMobile">
+  <div class="container-fluid footer-navi footer-navi-mb1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Upper Section-->
+  <div class="container-fluid footer-navi footer-navi-mb2">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-6 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#" id="signin-btn-footermb">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Lower Section-->
+  <div class="container footer-subscribe d-md-none">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2
+                  col-10 offset-1 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div><!-------Email Input------>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3
+                  col-6 offset-3">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div><!-------Logo------>
+    </div>
+    <div class="row">
+      <div class="col-12
+                  media-footer-mb">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+
+</main>
+
+
+<!--Bottom JavaScript-->
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/observer.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
+    </script>
+
+    <script src="js/starter.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
+

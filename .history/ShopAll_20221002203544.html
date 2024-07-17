@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop All</title>
+
+     <!----Fontawesome-->
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+	
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  
+  <!-- CSS --> 
+	<link href="css/shopall.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+    <script src="js/starter.js"></script>
+
+  
+  </head>
+  <body>
+    <!-------------------------------------------Header Desktop ------------------------------------------>
+<div class="container-fluid d-none d-lg-block" id="header-desktop">
+  <div class="container">
+    <div class="row d-flex align-items-center header-row">
+      <div class="left-navi
+                  col-xl-2
+                  col-lg-2">
+                  <div class="burger-menu">
+                    <div class="barline"></div>
+                  </div>
+                  <a href="#">SHOP</a> 
+                  
+      </div><!--Left Navi-->
+      <div class="center-navi
+                  col-xl-2 offset-xl-3
+                  col-lg-2 offset-lg-3">
+                  <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+      </div><!--Logo-->
+      <div class="right-navi
+                  col-xl-3 offset-xl-2
+                  col-lg-3 offset-lg-2">
+                  <div class="cart-section">
+                    BAG
+                    <div class="cart-count">0</div>
+                  </div>
+                  <a href="#">SIGN IN</a>                       
+      </div><!--Right Navi-->
+    </div>
+  </div>
+</div>
+<!-------------------------------------------Blackscreen ------------------------------------------>
+<div class="container-fluid" id="blackscreen"></div>
+
+<!-------------------------------------------Megamenu Desktop ------------------------------------------>
+<div class="container-fluid" id="megamenu-desktop">
+  <div class="row d-none d-lg-block">
+    <div class="col-xl-5 offset-xl-7
+                col-lg-5 offset-lg-7 img-megamenu">
+      <p class="display3-mb" >NATIVE IRON CHAIR</p>
+      <span>FEATURED PRODUCT</span>
+    </div>
+  </div>
+  <div class="container megamenu-content d-none d-lg-block">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+        <div class="menu-section">
+          <span class="display4-pc">ÉTIENNE</span>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">LOOKBOOK</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SHOP</span>
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">SEATING</a></li>
+            <li><a href="#">DESK & TABLE</a></li>
+            <li><a href="#">DECOR</a></li>
+            <li><a href="#">ORGANISATION</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">WARRANTY</a></li>
+            <li><a href="#">RETURN & REFUND</a></li>
+            <li><a href="#">PAYMENT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> <!--Mega Menu List-->
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 search-field">
+        <p>Looking for anything special today?</p>
+        <div class="search-box">
+          <button class="search-btn">
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </button>
+          <input type="text" class="search-input" placeholder="Enter keyword here...">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------------------------Header Mobile ------------------------------------------>
+<div class="container-fluid d-lg-none" id="header-mobile">
+  <div class="container">
+    <div class="row d-flex align-items-center header-row">
+      <div class="left-navi
+                  col-md-3
+                  col-sm-4
+                  col-4">
+                  <div class="burger-menu-mb">
+                    <div class="barlinemb"></div>
+                  </div>
+                  <a href="#">SHOP</a> 
+                  
+      </div><!--Left Navi-->
+      <div class="center-navi
+                  col-md-2 offset-md-2
+                  col-sm-2 offset-sm-1
+                  col-2 offset-1">
+                  <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+      </div><!--Logo-->
+      <div class="right-navi
+                  col-md-2 offset-md-3
+                  col-sm-3 offset-sm-2
+                  col-3 offset-2">
+                  <div class="cart-section">
+                    BAG
+                    <div class="cart-count">0</div>
+                  </div>                     
+      </div><!--Right Navi-->
+    </div>
+  </div>
+</div>
+
+<!-------------------------------------------Megamenu Mobile ------------------------------------------>
+<div id="mega-menu-mb" class="d-lg-none">
+  <div class="container-fluid sub-header-mb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8
+                    col-sm-8
+                    col-8">
+                    <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+        </div>
+        <div class="col-md-4
+                    col-sm-4
+                    col-4 left-subhead">
+                    <a href="#">SIGN IN</a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="megamenu-content-mb">
+    <div class="row">
+      <div class="col-6">
+        <div class="menu-section">
+          <span class="display4-pc">ÉTIENNE</span>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">LOOKBOOK</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SHOP</span>
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">SEATING</a></li>
+            <li><a href="#">DESK & TABLE</a></li>
+            <li><a href="#">DECOR</a></li>
+            <li><a href="#">ORGANISATION</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <span class="display4-pc">SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">WARRANTY</a></li>
+            <li><a href="#">RETURN & REFUND</a></li>
+            <li><a href="#">PAYMENT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!--------------------------------------- Header ------------------------------------->
+  <div class="container-fluid outline">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12
+                    col-lg-12
+                    col-md-12
+                    col-sm-12
+                    col-12 display3-pc">
+                  <p>SHOP ALL</p>
+        </div>
+      </div>
+    </div>
+  </div><!---------------- header ------------------>
+
+   <!---------------------------------------- breadcrumb --------------------------------->
+	<div class="container-fluid breadcrumbb-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6
+                    col-lg-6
+                    col-md-6
+                    col-sm-7
+                    col-7 breadcrumbb"> 
+                    <ul>
+                      <li><a href="Homepage.html">Home</a></li>
+                      <li><a href="shopall.html">Shop</a></li>
+                      <li class="actived">All</li>
+                    </ul>
+        </div>
+        <div class="offset-xl-3 col-xl-3
+                    offset-lg-3 col-lg-3
+                    offset-md-2 col-md-4 d-none d-md-block">
+                    <div class="email-footer--field">
+                      <input type="text" id="searchfill-product-pc" placeholder="Search product">
+                      <button><i class="fa-regular fa-magnifying-glass"></i></button> 
+                    </div>
+                    
+        </div> <!--------- search-pc ---------->
+
+        <div class="offset-sm-1 col-sm-4
+                    offset-1 col-4 d-md-none">
+                  <div class="filter-button">
+                    <a href="#" id="icon-filter-mb"><i class="fa-regular fa-sliders-simple"></i></a>
+                    <p>Filter</p>
+                  </div>
+                    
+        </div><!--------- filter-mobile ---------->
+      </div>
+    </div>
+  </div><!----------------breadcrumb ------------------>
+
+  <!-----------------------------------------Filter Mobile------------------------------------------>
+  <div class="container-fluid d-md-none">
+    <div class="container">
+      <div class="row">
+        <form class="col-sm-6 offset-sm-6
+                    col-6 offset-6" id="filter-mobile">
+                    <div class="filter-title-mobile">
+                      <span class="display4-mb">FILTER</span>
+                      <a href="#" id="closebtn-filter"><i class="fa-solid fa-xmark fa-lg"></i></a>
+                      <hr>
+                    </div><!--Title-->
+                    <p>Seating</p>                  
+                    <div class="cat-list">
+                      <span class="count">(6)</span>
+                      <label class="check-list">Chair & Stool
+                          <input type="checkbox" name="category" id="album">
+                          <span class="checkmark"></span>
+                      </label>
+                      <span class="count">(5)</span>
+                      <label class="check-list">Ottoman
+                          <input type="checkbox" name="category" id="single">
+                          <span class="checkmark"></span>
+                      </label>
+                      <span class="count">(5)</span>
+                      <label class="check-list">Sofa
+                          <input type="checkbox" name="category" id="device">
+                          <span class="checkmark"></span>
+                      </label>
+                  </div> <!--Filter by Seating-->
+
+                  <p>Desk & Table</p>                  
+                  <div class="cat-list">
+                    <span class="count">(6)</span>
+                    <label class="check-list">Working Desk
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Accent Table
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Dining Table
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Desk-->
+  
+                <p>Organisation</p>                  
+                  <div class="cat-list">
+                    <span class="count">(6)</span>
+                    <label class="check-list">Bookshelf
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">TV Unit
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Cabinet
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Organisation-->
+  
+                <p>Decor</p>                  
+                  <div class="cat-list">
+                    <span class="count">(9)</span>
+                    <label class="check-list">Lamp
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(9)</span>
+                    <label class="check-list">Ceramic
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Decor-->
+  
+                <p>Materials</p>                  
+                  <div class="cat-list">
+                    <span class="count">(36)</span>
+                    <label class="check-list">Wood
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(15)</span>
+                    <label class="check-list">Leather
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(15)</span>
+                    <label class="check-list">Rattan
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Organisation-->
+  
+
+                  <p>By Price</p>  
+                  <div class="slidecontainer">
+                    <input type="range" min="50" max="10000" value="0" class="slider" id="priceRangemb">
+                    <p>Price: <span id="priceShowmb"></span></p>
+                  </div><!--Filter by Price-->
+                  
+                  <div class="filter-button-mobile d-flex justify-content-end">
+                    <input type="reset" value="RESET" class="btn-filter-reset">
+                    <input type="submit" value="APPLY" class="btn-filter">
+                  </div>                  
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+   <!------------------------------------------ Products --------------------------------------->
+   <div class="container-fluid shopall-bg-productfilter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3
+                    col-lg-3
+                    col-md-4 d-none d-md-block">
+            <div class="shopall-productfilter">
+                <p>PRODUCT FILTER</p>
+            </div>
+        </div>
+        <div class="col-xl-9
+                    col-lg-9
+                    col-md-8 
+                    col-sm-12
+                    col-12 shopall-contentfilter-pc">
+          <p>Showing 1-12 Total 66 Products</p>
+        </div>
+      </div><!--------- row ---------->
+    </div><!---------------- content filter ------------------>
+    </div>
+
+
+<!------------------------------------------ Search - Filter Mobile --------------------------------------->
+    <div class="container d-md-none">
+      <div class="row">       
+        <div class="col-sm-6
+                    col-6">
+                    <div class="email-footer--field">
+                      <input type="text" id="searchfill-product-mb" placeholder="Search product">
+                      <button><i class="fa-regular fa-magnifying-glass"></i></button> 
+                    </div>
+                    
+        </div>
+        
+        <div class="col-sm-6
+                    col-6 sorting-field">
+                    <button id="sortingbtn2">Default sorting <span><i class="fa-solid fa-sort-down fa-lg"></i></span></button>
+                    <div id="sortinglist2" class="dropdown-sorting">
+                    <a href="#">Default sorting</a>
+                    <a href="#">Sort by best selling</a>
+                    <a href="#">Sort by rating</a>
+                    <a href="#">Price: Low to High</a>
+                    <a href="#">Price: High to Low</a>
+                    <a href="#">Sort by A to Z</a>
+                    <a href="#">Sort by Z to A</a>
+                    <a href="#">Oldest To Newest</a>
+                    <a href="#">Newest To Oldest</a>
+                  </div>
+        </div>
+        
+      </div>
+    </div>
+<!------------------------------------------ Products --------------------------------------->
+
+
+ <!---------------- Main Section Desktop------------------>   
+ <div class="container-fluid main-section-desktop">
+    <div class="sort-by-divider d-none d-md-block"></div>
+    <div class="sort-by-price d-none d-md-block"></div>
+    <div class="container shopall-bg-product">
+        <div class="row">
+          <form class="col-xl-3
+                      col-lg-3
+                      col-md-4 d-none d-md-block" id="filter-desktop">
+                     
+              <div class="filter-desktop-section">
+                  <p>Seating</p>                  
+                  <div class="cat-list">
+                    <span class="count">(6)</span>
+                    <label class="check-list">Chair & Stool
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Ottoman
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Sofa
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Seating-->
+  
+                <p>Desk & Table</p>                  
+                  <div class="cat-list">
+                    <span class="count">(6)</span>
+                    <label class="check-list">Working Desk
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Accent Table
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Dining Table
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Desk-->
+  
+                <p>Organisation</p>                  
+                  <div class="cat-list">
+                    <span class="count">(6)</span>
+                    <label class="check-list">Bookshelf
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">TV Unit
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(5)</span>
+                    <label class="check-list">Cabinet
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Organisation-->
+  
+                <p>Decor</p>                  
+                  <div class="cat-list">
+                    <span class="count">(9)</span>
+                    <label class="check-list">Lamp
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(9)</span>
+                    <label class="check-list">Ceramic
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Decor-->
+  
+                <p>Materials</p>                  
+                  <div class="cat-list">
+                    <span class="count">(36)</span>
+                    <label class="check-list">Wood
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(15)</span>
+                    <label class="check-list">Leather
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="count">(15)</span>
+                    <label class="check-list">Rattan
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> <!--Filter by Organisation-->
+  
+
+                <p class="sort-by-title">SORT BY</p>  
+
+  
+                  <div class="cat-list sort-by">
+                    
+                    <label class="check-list">Best Selling
+                        <input type="checkbox" name="category" id="album">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="check-list">Price: Low To High
+                        <input type="checkbox" name="category" id="single">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="check-list">Price: High to Low
+                        <input type="checkbox" name="category" id="device">
+                        <span class="checkmark"></span>
+                    </label>
+  
+                    <label class="check-list">From A to Z
+                      <input type="checkbox" name="category" id="device">
+                      <span class="checkmark"></span>
+                  </label>
+  
+                  <label class="check-list">From Z to A
+                    <input type="checkbox" name="category" id="device">
+                    <span class="checkmark"></span>
+                </label>
+  
+                <label class="check-list">Oldest to Newest
+                  <input type="checkbox" name="category" id="device">
+                  <span class="checkmark"></span>
+              </label>
+  
+              <label class="check-list">Newest to Oldest
+                <input type="checkbox" name="category" id="device">
+                <span class="checkmark"></span>
+            </label>
+                </div> <!--Filter by Organisation-->
+  
+                <p>BY PRICE</p>  
+                <div class="slidecontainer">
+                  <input type="range" min="50" max="10000" value="0" class="slider" id="priceRange">
+                  <p>Price: <span id="priceShow"></span></p>
+                </div><!--Filter by Price-->  
+                
+                <div class="filter-button-mobile d-flex justify-content-start">
+                  <input type="reset" value="RESET" class="btn-filter-reset">
+                  <input type="submit" value="APPLY" class="btn-filter">
+                </div>   
+              </div>
+            </form>
+  
+  
+          <!------------------------ Filter-pc ------------------------------>
+  
+          <div class="col-xl-9
+                      col-lg-9
+                      col-md-8
+                      col-sm-12
+                      col-12 shopall-products ">
+            <div class="sort-by-divider-cover d-none d-md-block"></div>
+            <div class="sort-by-price-cover d-none d-md-block"></div>
+            <div class="row">
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/chair/OAK ARM.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">OAK ARM</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Chair</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount">$ 1,989.00</span>
+                                  <span class="product-price">$ 1,449.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!------------------ product-01 -------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/chair/ONYX.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">ONYX WOOD CHAIR</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Chair</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 1,499.00</span>
+                                  <span class="product-price">$ 989.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!-------------------------- product-02 -------------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          d-none d-lg-block">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/Stool/SEDONA BAR.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">SEDONA BAR STOOL</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Stool</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 650.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!----------------------- product-03 --------------------------->
+            </div><!------------------------------- product-row-01 --------------------------->
+  
+            <div class="row">
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/chair/MATTÉ WOOD_b001.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">MATTÉ WOOD CHAIR</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Chair</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount">$ 1,199.00</span>
+                                  <span class="product-price">$ 1,099.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!------------------ product-04 -------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/SOFA/WELLS LEATHER.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">WELLS LEATHER</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Sofa</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 650.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!-------------------------- product-05 -------------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          d-none d-lg-block">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/SOFA/MILOS TEAK WOOD.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">MILOS TEAK WOOD</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Sofa</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 1,089.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!----------------------- product-06 --------------------------->
+            </div><!------------------------------- product-row-02 --------------------------->
+  
+            <div class="row">
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/lamp&ceramic/SANBEGE CERAMIC.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">SANBEGE CERAMIC</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Ceramic</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 2,599.00</span>
+                                  <span class="product-price">$ 2,499.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!------------------ product-07 -------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/lamp&ceramic/DIVIT SPHERE.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">DIVIT SPHERE</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Ceramic</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 1,899.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!-------------------------- product-08 -------------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          d-none d-lg-block">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/lamp&ceramic/IGLENIX M VASE.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">IGLENIX M VASE</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Ceramic</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 2,199.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!----------------------- product-09 --------------------------->
+            </div><!------------------------------- product-row-03 --------------------------->
+  
+            <div class="row">
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/lamp&ceramic/ATAJUX.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">ATAJUX</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Lamp</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount">$ 1,299.00</span>
+                                  <span class="product-price">$ 1,059.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!------------------ product-10 -------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          col-md-6
+                          col-sm-6
+                          col-6">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/tvunit/CORTEZFLOATING.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">CORTEZFLOATING</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">TV Unit</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount">$ 2,199.00</span>
+                                  <span class="product-price">$ 1,799.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!-------------------------- product-11 -------------------------->
+  
+              <div class="col-xl-4
+                          col-lg-4
+                          d-none d-lg-block">
+                          <div class="cardproduct">
+                            <div class="product">
+                              <div class="img-overlay">
+                                <div class="badge d-none">
+                                  <span>Sale</span>
+                                </div>
+                                  <div class="overlay-button d-none d-lg-block">
+                                    <div class="zoom-button"><i class="fa-regular fa-expand"></i></div>
+                                    <div class="heart-button"><i class="fa-light fa-heart"></i></div>
+                                  </div>
+                                <img src="img/shopall/cabinet/FAYETTEBAR.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="product-name">WINEBAR</p>
+                              <div class="product-data">
+                                <div class="product-type">
+                                  <span class="product-type-name">Cabinet</span>
+                                </div>
+                                <div class="price">
+                                  <span class="product-price-discount d-none">$ 859.00</span>
+                                  <span class="product-price">$ 2,549.00</span>
+                                </div>
+                              </div>
+                            </div><!------ product-img ------->
+                            <div class="product-button">
+                              <a href="#" class="btn-addtocart">ADD TO CART</a>
+                              <a href="#" class="btn-buynow">BUY NOW</a>
+                            </div><!------ button ------->
+                          </div>
+              </div><!----------------------- product-12 --------------------------->
+            </div><!------------------------------- product-row-04 --------------------------->
+  
+            <!-------------------------------------------PAGINITION------------------------------------------>
+  
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div id="pagination">
+                    <a href=""><i class="fa-light fa-chevron-left fa-md"></i></a>
+                    <a href="" class="active">01</a>
+                    <a href="">02</a>
+                    <a href="" class="unclickable">...</a>
+                    <a href="">05</a>
+                    <a href="">06</a>
+                    <a href=""><i class="fa-light fa-chevron-right fa-md"></i></a>
+                  </div>
+                </div>
+              </div> <!-------------Paginition----------------->	
+          </div><!--------------- Product-pc ---------->
+        </div>
+      </div>
+ </div>
+        
+      <!---------------- Product ------------------>
+    
+   
+  
+ 
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<div class="container-fluid d-none d-md-block" id="footerDesktop">
+  <div class="container-fluid footer-navi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Lookbook</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="#">Seating</a></li>
+            <li><a href="#">Desk & Table</a></li>
+            <li><a href="#">Decor</a></li>
+            <li><a href="#">Organisation</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Return & Refund</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation-->
+  <div class="container footer-subscribe d-none d-lg-block">
+    <div class="row d-flex align-items-end">
+      <div class="col-xl-4 
+                  col-lg-4 email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms & Conditions</p>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4">
+                  <div class="logo-footer">
+                    <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4 media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media LG XL-->
+  <div class="container footer-subscribe d-none d-md-block d-lg-none">
+    <div class="row">
+      <div class="col-md-4
+                  offset-md-4">
+                  <div class="logo-footer">
+                    <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-end">
+      <div class="col-md-6 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms & Conditions</p>
+      </div>
+      <div class="col-md-6
+                  media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</div>
+<!-------------------------------------------Footer Mobile------------------------------------------>
+<div class="container-fluid d-md-none" id="footerMobile">
+  <div class="container-fluid footer-navi footer-navi-mb1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Lookbook</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="#">Seating</a></li>
+            <li><a href="#">Desk & Table</a></li>
+            <li><a href="#">Decor</a></li>
+            <li><a href="#">Organisation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Upper Section-->
+  <div class="container-fluid footer-navi footer-navi-mb2">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Return & Refund</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-6 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Lower Section-->
+  <div class="container footer-subscribe d-md-none">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2
+                  col-10 offset-1 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms & Conditions</p>
+      </div><!-------Email Input------>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3
+                  col-6 offset-3">
+                  <div class="logo-footer">
+                    <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div><!-------Logo------>
+    </div>
+    <div class="row">
+      <div class="col-12
+                  media-footer-mb">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</div>
+
+<!-----------------------------------------Javascript Bottom------------------------------------------------->
+
+</body>
+</html>

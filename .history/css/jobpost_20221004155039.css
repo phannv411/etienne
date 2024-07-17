@@ -1,0 +1,59 @@
+/* ------------------Breadcrumb------------------------------------- */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--primary) 1px solid;
+    padding-top: 8px;
+}
+
+
+
+
+/*---------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+
+
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+    .breadcrumbb{
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    .breadcrumbb{
+        display: block;
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

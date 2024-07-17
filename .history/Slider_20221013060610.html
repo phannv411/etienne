@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!----Fontawesome-->
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/locomotive-scroll.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        loop: true,
+        autoplayEachtime: 1500,
+        responsive:{
+          0:{
+            items: 1,
+            center: true,
+            stagePadding: 60,
+          },
+          576:{
+            items: 1,
+            center: true,
+            stagePadding: 105,
+          },
+          768:{
+            items: 1,
+            center: true,
+            stagePadding: 200,
+          },
+          992:{
+            items: 3,
+            autoplayHoverPause: true,
+          },
+          1200:{
+            items: 4,
+            autoplayHoverPause: true,
+          },
+        }
+      })
+    });
+
+    </script>
+
+
+
+
+
+  
+  
+</head>
+
+
+<body>
+
+    <!-------------------------------------------MODAL POP UP ------------------------------------------>
+    <div id="signin-popup">
+      <div class="sign-in-form">
+        <div class="popup-title">
+          <p class="display3-pc">SIGN IN</p>
+        </div>
+        <div class="x-mark">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="popup-form">
+          <div class="signin-form--label usename-input">
+                          <label for="username">Email</label>
+                          <br>
+                          <input type="text" placeholder="example@email.com" id="username">
+          </div>
+          <div class="signin-form--label password-input">
+            <label for="signin-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signin-password" placeholder="Enter password here">
+              <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+            <div class="password-element">
+              <label class="check-list"><span>Remember me</span>
+                <input type="checkbox" name="saveinfo" id="saveinfo">
+                <span class="checkmark"></span>
+              </label>
+              <a href="#">Forget password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="signin-btn">
+          <a href="Profile.html" class="btn-primary-xl">sign in</a>
+          <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+        </div>
+      </div>
+    </div><!---------------------------Sign In-form ------------------------------>
+    <div id="signup-popup">
+      <div class="sign-up-form">
+        <div class="popup-title">
+          <p class="display3-pc">SIGN UP</p>
+        </div>
+        <div class="x-mark">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="popup-form">
+          <div class="first-last-name">
+            <div class="signin-form--label firstname-input">
+              <label for="firstname">First Name*</label>
+              <br>
+              <input type="text" placeholder="Your First Name" id="firstname">
+            </div>
+            <div class="signin-form--label lastname-input">
+              <label for="lastname">Last Name*</label>
+              <br>
+              <input type="text" placeholder="Your Last Name" id="lastname">
+            </div>
+          </div>
+          <div class="signin-form--label usename-input">
+                          <label for="username">Email</label>
+                          <br>
+                          <input type="text" placeholder="example@email.com" id="username">
+          </div>
+          <div class="password-signup-confirm">
+            <div class="signin-form--label password-input">
+              <label for="signup-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signup-password" placeholder="Enter password here">
+                <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+            </div>
+            <div class="signin-form--label confirm-password-input">
+              <label for="signup-confirm-password">Confirm Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+            </div>
+          </div>
+          <p>Sign up email to receive 10% off your first order.
+            <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+        </div>
+        <div class="signin-btn">
+          <a href="#" class="btn-primary-xl">sign up</a>
+          <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+        </div>
+      </div>
+    </div><!---------------------------Sign Up-form ------------------------------>
+    
+        <!------------------------------------------- CART POP UP ------------------------------------------>
+        <div class="container-fluid cart-modal">
+          <div class="cart-modal-title">
+            <p class="display4-pc">ORDER SUMMARY</p>
+          </div>
+          <div class="x-mark">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+          <div class="cart-modal-flex">
+            <div class="container cart-modal-slide">
+              <div class="cart-checkout-slide">
+                <div class="checkout-slide">
+                    <img src="img/shopall/Stool/SEDONA BAR.jpg">
+                </div>
+                <div class="cartmodal-product-content">
+                    <div class="modal-product-data">
+                        <h5>SEDONA BAR</h5>
+                        <p>Stool</p>
+                        <p>Color: Beige</p>
+                        <div class="modal-button-remove">
+                          <button href="#" type="button">Remove</button>
+                      </div><!--removebtn-->
+                    </div><!--name--->
+    
+                    <hr>
+                    <div class="cartmodal-price-quantity">
+                        <p class="cartmodal-single-price">$ 650.00</p>
+                        <div class="modal-checkout-quantity">
+                                <div class="checkout-counter">
+                                  <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                  <input type="text" value="1">
+                                  <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                </div>
+                        </div>
+                        <p class="cartmodal-total-price">$ 650.00</p>
+                    </div><!-------------Quantity &amp; Price------------>
+                </div>
+              </div><!-------------Cardproduct-01-checkout------------>
+              <div class="cart-checkout-slide">
+                <div class="checkout-slide">
+                    <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+                </div>
+                <div class="cartmodal-product-content">
+                    <div class="modal-product-data">
+                        <h5>DINNING SYNTHETIC</h5>
+                        <p>Stool</p>
+                        <p>Color: Brown</p>
+                    </div><!--name--->
+      
+                    <div class="modal-button-remove">
+                        <button href="#" type="button">Remove</button>
+                    </div><!--removebtn-->
+                    <hr>
+                    <div class="cartmodal-price-quantity">
+                        <p class="cartmodal-single-price">$ 399.00</p>
+                        <div class="modal-checkout-quantity">
+                                <div class="checkout-counter">
+                                  <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                  <input type="text" value="1">
+                                  <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                </div>
+                        </div>
+                        <p class="cartmodal-total-price">$ 399.00</p>
+                    </div><!-------------Quantity &amp; Price------------>
+                </div>
+              </div><!-------------Cardproduct-01-checkout------------>
+              <div class="cart-checkout-slide">
+                <div class="checkout-slide">
+                    <img src="img/shopall/Stool/SEDONA BAR.jpg">
+                </div>
+                <div class="cartmodal-product-content">
+                    <div class="modal-product-data">
+                        <h5>ONYX WOOD CHAIR</h5>
+                        <p>Chair</p>
+                        <p>Color: Beige</p>
+                    </div><!--name--->
+      
+                    <div class="modal-button-remove">
+                        <button href="#" type="button">Remove</button>
+                    </div><!--removebtn-->
+                    <hr>
+                    <div class="cartmodal-price-quantity">
+                        <p class="cartmodal-single-price">$ 989.00</p>
+                        <div class="modal-checkout-quantity">
+                                <div class="checkout-counter">
+                                  <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                  <input type="text" value="1">
+                                  <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                                </div>
+                        </div>
+                        <p class="cartmodal-total-price">$ 989.00</p>
+                    </div><!-------------Quantity &amp; Price------------>
+                </div>
+              </div><!-------------Cardproduct-01-checkout------------>
+            </div>
+            <div class="container cart-modal-bottom">
+              <div class="modal-grand-total">
+                <hr>
+                <div class="grand-total-price">
+                  <h5 class="grand-text">Grand Total Incl. Tax</h5>
+                  <p class="grand-price">$ 1,087.00</p>
+                </div>
+              </div>
+              <div class="modal-cart-btn">
+                <a href="ShopAll.html" class="btn-olprimary-lg">continue shopping</a>
+                <a href="Cart-page.html" class="btn-primary-lg">Proceed to checkout</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    <!-------------------------------------------Header Desktop ------------------------------------------>
+      <header class="container-fluid d-none d-lg-block header-desktop">
+        <div class="container">
+          <div class="row d-flex align-items-center header-row">
+            <div class="left-navi
+                        col-xl-2
+                        col-lg-2">
+                        <div class="burger-menu">
+                          <div class="barline"></div>
+                        </div>
+                        <a href="ShopAll.html">SHOP</a> 
+                        
+            </div><!--Left Navi-->
+            <div class="center-navi
+                        col-xl-2 offset-xl-3
+                        col-lg-2 offset-lg-3">
+                        <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+            </div><!--Logo-->
+            <div class="right-navi
+                        col-xl-3 offset-xl-2
+                        col-lg-3 offset-lg-2">
+                        <div class="cart-section">
+                          BAG
+                          <div class="cart-count">0</div>
+                        </div>
+                        <button id="signin-modal">SIGN IN</button>                       
+            </div><!--Right Navi-->
+          </div>
+        </div>
+      </header>
+    <!-------------------------------------------Blackscreen ------------------------------------------>
+    <div class="container-fluid" id="blackscreen"></div>
+    <div class="container-fluid" id="blackscreen2"></div>
+    <div class="container-fluid" id="blackscreen3"></div>
+    
+    <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+    <div class="container-fluid" id="megamenu-desktop">
+      <div class="row d-none d-lg-block">
+        <div class="col-xl-5 offset-xl-7
+                    col-lg-5 offset-lg-7 img-megamenu">
+          <p class="display3-mb" >NATIVE IRON CHAIR</p>
+          <span>FEATURED PRODUCT</span>
+        </div>
+      </div>
+      <div class="container megamenu-content d-none d-lg-block">
+        <div class="row">
+          <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+            <div class="menu-section">
+              <span class="display4-pc">ÉTIENNE</span>
+              <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="OurStory.html">ABOUT</a></li>
+                <li><a href="Blog.html">JOURNAL</a></li>
+                <li><a href="Lookbook.html">LOOKBOOK</a></li>
+              </ul>
+            </div>
+    
+            <div class="menu-section">
+              <span class="display4-pc">SHOP</span>
+              <ul>
+                <li><a href="ShopAll.html">ALL</a></li>
+                <li><a href="Seating.html">SEATING</a></li>
+                <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+                <li><a href="Seating.html">DECOR</a></li>
+                <li><a href="Seating.html">ORGANISATION</a></li>
+              </ul>
+            </div>
+    
+            <div class="menu-section">
+              <span class="display4-pc">SUPPORT</span>
+              <ul>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="Warranty.html">WARRANTY</a></li>
+                <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+                <li><a href="Paymentsp.html">PAYMENT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!--Mega Menu List-->
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 search-field">
+            <p>Looking for anything special today?</p>
+            <div class="search-box">
+              <button class="search-btn">
+                <i class="fa-regular fa-magnifying-glass"></i>
+              </button>
+              <input type="text" class="search-input" placeholder="Enter keyword here...">          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------Header Mobile ------------------------------------------>
+    <header class="container-fluid d-lg-none header-mobile">
+      <div class="container">
+        <div class="row d-flex align-items-center header-row">
+          <div class="left-navi
+                      col-md-3
+                      col-sm-4
+                      col-4">
+                      <div class="burger-menu-mb">
+                        <div class="barlinemb"></div>
+                      </div>
+                      <a href="ShopAll.html">SHOP</a> 
+                      
+          </div><!--Left Navi-->
+          <div class="center-navi
+                      col-md-2 offset-md-2
+                      col-sm-2 offset-sm-1
+                      col-2 offset-1">
+                      <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+          </div><!--Logo-->
+          <div class="right-navi
+                      col-md-2 offset-md-3
+                      col-sm-3 offset-sm-2
+                      col-3 offset-2">
+                      <div class="cart-section">
+                        BAG
+                        <div class="cart-count">0</div>
+                      </div>                     
+          </div><!--Right Navi-->
+        </div>
+      </div>
+    </header>
+    
+    <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+    <div id="mega-menu-mb" class="d-lg-none">
+      <div class="container-fluid sub-header-mb">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8
+                        col-sm-8
+                        col-8">
+                        <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+            </div>
+            <div class="col-md-4
+                        col-sm-4
+                        col-4 left-subhead">
+                        <button id="signin-modal-mb">SIGN IN</button>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="megamenu-content-mb">
+        <div class="row">
+          <div class="col-6">
+            <div class="menu-section">
+              <span class="display4-pc">ÉTIENNE</span>
+              <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="OurStory.html">ABOUT</a></li>
+                <li><a href="Blog.html">JOURNAL</a></li>
+                <li><a href="Lookbook.html">LOOKBOOK</a></li>
+              </ul>
+            </div>
+    
+            <div class="menu-section">
+              <span class="display4-pc">SHOP</span>
+              <ul>
+                <li><a href="ShopAll.html">ALL</a></li>
+                <li><a href="Seating.html">SEATING</a></li>
+                <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+                <li><a href="Seating.html">DECOR</a></li>
+                <li><a href="Seating.html">ORGANISATION</a></li>
+              </ul>
+            </div>
+    
+            <div class="menu-section">
+              <span class="display4-pc">SUPPORT</span>
+              <ul>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="Warranty.html">WARRANTY</a></li>
+                <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+                <li><a href="Paymentsp.html">PAYMENT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="signin-mb">
+        <div class="row">
+          <div class="col-12">
+            <div class="popup-title">
+              <p class="display3-pc">SIGN IN</p>
+            </div>
+            <div class="return-mark-mb return-mark-mb-xs">
+              <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="popup-form">
+              <div class="signin-form--label usename-input">
+                              <label for="username">Email</label>
+                              <br>
+                              <input type="text" placeholder="example@email.com" id="username">
+              </div>
+              <div class="signin-form--label password-input">
+                <label for="signin-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signin-password" placeholder="Enter password here">
+                  <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+                <div class="password-element">
+                  <label class="check-list"><span>Remember me</span>
+                    <input type="checkbox" name="saveinfo" id="saveinfo">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="#">Forget password?</a>
+                </div>
+              </div>
+            </div>
+            <div class="signin-btn">
+              <a href="Profile.html" class="btn-primary-xl">sign in</a>
+              <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="signup-mb">
+        <div class="row">
+          <div class="col-12">
+            <div class="popup-title">
+              <p class="display3-pc">SIGN UP</p>
+            </div>
+            <div class="return-mark-mb return-mark-mb-xs">
+              <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="popup-form">
+              <div class="first-last-name">
+                <div class="signin-form--label firstname-input">
+                  <label for="firstname">First Name*</label>
+                  <br>
+                  <input type="text" placeholder="Your First Name" id="firstname">
+                </div>
+                <div class="signin-form--label lastname-input">
+                  <label for="lastname">Last Name*</label>
+                  <br>
+                  <input type="text" placeholder="Your Last Name" id="lastname">
+                </div>
+              </div>
+              <div class="signin-form--label usename-input">
+                              <label for="username">Email</label>
+                              <br>
+                              <input type="text" placeholder="example@email.com" id="username">
+              </div>
+              <div class="password-signup-confirm">
+                <div class="signin-form--label password-input">
+                  <label for="signup-password">Password</label>
+                  <div class="password-input--field">
+                    <input type="password" id="signup-password" placeholder="Enter password here">
+                    <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                  </div>
+                </div>
+                <div class="signin-form--label confirm-password-input">
+                  <label for="signup-confirm-password">Confirm Password</label>
+                  <div class="password-input--field">
+                    <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                    <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                  </div>
+                </div>
+              </div>
+              <p>Sign up email to receive 10% off your first order.
+                <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+            </div>
+            <div class="signin-btn">
+              <a href="#" class="btn-primary-xl">sign up</a>
+              <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-------------------------------------------Scroll To Top ------------------------------------------>
+<div id="scrollTop" data-scroll-to>
+  <a href="#toppage-pc" class="toppage-pc d-none d-md-block">Top <i class="fa-light fa-arrow-right"></i></a>
+  <a href="#toppage-mb" class="toppage-mb d-md-none"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+</div>
+
+<!-------------------------------------------Scroll To Top ------------------------------------------>
+
+<main data-scroll-container>
+  <section id="toppage">
+    <div id="toppage-pc"></div>
+    <div id="toppage-mb"></div>
+  </section>
+
+
+  
+<!-------------------------------------------Hero Banner ------------------------------------------>
+<!-- <div class="container-fluid hero-banner sectionBanner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <p class="display2-pc d-none d-md-block">A NEW FACE AND MORDERN DIRECTION IN THE INTERIOR WORLD</p>
+        <p class="display2-pc d-md-none">A NEW FACE <br> AND MORDERN DIRECTION IN THE INTERIOR WORLD</p>
+        <a href="ShopAll.html" class="btn-secondary-xl"><span>SHOP NOW</span></a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-------------------------------------------Hero Banner ------------------------------------------>
+<div class="slider">
+    <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+    <nav>
+        <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
+        <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
+    </nav>
+</div>
+  
+<!-------------------------------------------Hero Banner ------------------------------------------>
+
+
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<footer class="container-fluid d-none d-md-block" id="footerDesktop">
+  <div class="container-fluid footer-navi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#" id="signin-btn-footer">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Term.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation-->
+  <div class="container footer-subscribe d-none d-lg-block">
+    <div class="row d-flex align-items-end">
+      <div class="col-xl-4 
+                  col-lg-4 email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+      <div class="col-xl-4
+                  col-lg-4 media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media LG XL-->
+  <div class="container footer-subscribe d-none d-md-block d-lg-none">
+    <div class="row">
+      <div class="col-md-4
+                  offset-md-4">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-end">
+      <div class="col-md-6 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="col-md-6
+                  media-footer">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div>
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+<!-------------------------------------------Footer Mobile------------------------------------------>
+<footer class="container-fluid d-md-none" id="footerMobile">
+  <div class="container-fluid footer-navi footer-navi-mb1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 home-footer">
+          <span>HOME</span>
+          <ul>
+            <li><a href="OurStory.html">About</a></li>
+            <li><a href="Blog.html">Journal</a></li>
+            <li><a href="Lookbook.html">Lookbook</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 shop-footer">
+          <span>SHOP</span>
+          <ul>
+            <li><a href="Seating.html">Seating</a></li>
+            <li><a href="Seating.html">Desk &amp; Table</a></li>
+            <li><a href="Seating.html">Decor</a></li>
+            <li><a href="Seating.html">Organisation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Upper Section-->
+  <div class="container-fluid footer-navi footer-navi-mb2">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 support-footer">
+          <span>SUPPORT</span>
+          <ul>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="Return.html">Return &amp; Refund</a></li>
+            <li><a href="Warranty.html">Warranty</a></li>
+            <li><a href="Paymentsp.html">Payments</a></li>
+          </ul>
+        </div>
+        <div class="col-6 misc-footer">
+          <span>MISC</span>
+          <ul>
+            <li><a href="#" id="signin-btn-footermb">Sign in</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--Footer Navigation Lower Section-->
+  <div class="container footer-subscribe d-md-none">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2
+                  col-10 offset-1 
+                  email-footer">
+                  <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                  <div class="email-footer--field">
+                    <input type="email" id="footerMail" placeholder="example@email.com">
+                    <button><i class="fa-light fa-paper-plane"></i></button> 
+                  </div>
+                  <p>Sign up email to receive 10% off your first order. By signing up, 
+                    I agree to ours Terms &amp; Conditions</p>
+      </div><!-------Email Input------>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3
+                  col-6 offset-3">
+                  <div class="logo-footer">
+                    <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                  </div>
+      </div><!-------Logo------>
+    </div>
+    <div class="row">
+      <div class="col-12
+                  media-footer-mb">
+                  <h4>Don't miss a thing!</h4>
+                  <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+      </div>
+    </div>
+  </div><!--Footer Subscribe Media MD-->
+  <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © 2022 The Étienne. All rights reserved</p>
+  </div><!--Footer Copyright-->
+  <div class="container-fluid footer-exceed"></div>
+</footer>
+
+</main>
+
+
+<!--Bottom JavaScript-->
+
+    <!-- <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/observer.js"></script> -->
+    <!-- <script src="js/locomotive-scroll.min.js"></script> -->
+      <script src="slider.js"></script>
+
+            <!-- TweenMax -->
+            <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    
+            <!-- Pixi JS -->
+            <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    
+            <!-- Slider Plugin -->
+            <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+
+
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
+    </script>
+    <script>
+                  const images = ["../img/home-banner.jpg", "../img/img-2.jpg", "../img/img-3.jpg"];
+            // content setup
+                const texts = [
+                  ["Mirrorless ", "Take your vision into a picture"],
+                  ["Leica M6", "Capture the moment you want"],
+                  ["Camera", "Blur the background to focus your point"],
+                  ["Glowing ", "Glow your future like this phone"],
+                  ["Broken ", "Don't be the broken one"],
+                ];
+
+            rgbKineticSlider = new rgbKineticSlider({
+                slideImages: images,
+                itemsTitles: texts,
+
+                backgroundDisplacementSprite:
+                    "http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
+                cursorDisplacementSprite:
+                    "http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
+                  // cursor displacement effect
+                  cursorImgEffect: true, // enable cursor effect
+                  cursorTextEffect: false, // enable cursor text effect
+                  cursorScaleIntensity: 0.65, // cursor effect intensity
+                  cursorMomentum: 0.14, // lower is slower
+
+                  // swipe
+                  swipe: true, // enable swipe
+                  swipeDistance: window.innerWidth * 0.4, // swipe distance - ex : 580
+                  swipeScaleIntensity: 2, // scale intensity during swipping
+
+                  // slide transition
+                  slideTransitionDuration: 1, // transition duration
+                  transitionScaleIntensity: 30, // scale intensity during transition
+                  transitionScaleAmplitude: 160, // scale amplitude during transition
+
+                  // regular navigation
+                  nav: true, // enable navigation
+                  navElement: ".main-nav", // set nav class
+
+                  // image rgb effect
+                  imagesRgbEffect: true, // enable img rgb effect
+                  imagesRgbIntensity: 0.9, // set img rgb intensity
+                  navImagesRgbIntensity: 80, // set img rgb intensity for regular nav
+
+                  // texts settings
+                  textsDisplay: true, // show title
+                  textsSubTitleDisplay: true, // show subtitles
+                  textsTiltEffect: true, // enable text tilt
+                  googleFonts: ["Josefin Sans:700", "Poppins:400"], // select google font to use
+                  buttonMode: false, // enable button mode for title
+                  textsRgbEffect: true, // enable text rgb effect
+                  textsRgbIntensity: 0.03, // set text rgb intensity
+                  navTextsRgbIntensity: 15, // set text rgb intensity for regular nav
+
+                  textTitleColor: "#fff", // title color
+                  textTitleSize: 125, // title size
+                  mobileTextTitleSize: 125, // title size
+                  textTitleLetterspacing: 3, // title letterspacing
+
+                  textSubTitleColor: "white", // subtitle color ex : 0x000000
+                  textSubTitleSize: 21, // subtitle size
+                  mobileTextSubTitleSize: 21, // mobile subtitle size
+                  textSubTitleLetterspacing: 2, // subtitle letter spacing
+                  textSubTitleOffsetTop: 90, // subtitle offset top
+                  mobileTextSubTitleOffsetTop: 90, // mobile subtitle offset top
+            });
+    </script>
+
+    <script src="js/starter.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
+

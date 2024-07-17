@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* --------------------HERO BANNER --------------------*/
+.hero-banner{
+    position:relative;
+    top: -80px;
+    height: 100vh;
+    background-image: url(../img/Home-Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-banner p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-banner a{
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+/* --------------------ABOUT SECTION --------------------*/
+.about-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hero-banner p{
+        font-size: 67.5px;
+    }
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+}
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+}
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    .hero-banner p{
+        font-size: 67.5px;
+    }
+}

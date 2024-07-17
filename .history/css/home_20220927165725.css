@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* --------------------HERO BANNER --------------------*/
+.hero-banner{
+    position:relative;
+    top: -80px;
+    height: 100vh;
+    background-image: url(../img/Home-Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-banner p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-banner a{
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+/* --------------------ABOUT SECTION --------------------*/
+.about-etienne{
+    height: 900px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title p{
+    margin-bottom: 0px;
+}
+
+.about-content p{
+    margin-bottom: 24px;
+}
+
+.about-img-01{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+    width: 350px;
+    height: 260px;
+    outline: red solid 1px;
+}
+
+.about-img-01 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about-img-02{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: -9;
+    width: 255px;
+    height: 240px;
+    outline: red solid 1px;
+}
+
+.about-img-02 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-img-03{
+    position: absolute;
+    top: 14%;
+    right: 12%;
+    z-index: -8;
+    width: 255px;
+    height: 205px;
+    outline: red solid 1px;
+}
+
+.about-img-03 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-img-04{
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: -7;
+    width: 515px;
+    height: 375px;
+    outline: red solid 1px;
+}
+
+.about-img-04 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-img-05{
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: -6;
+    width: 275px;
+    height: 335px;
+    outline: red solid 1px;
+}
+
+.about-img-05 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-img-06{
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-25%);
+    z-index: -6;
+    width: 445px;
+    height: 315px;
+    outline: red solid 1px;
+}
+
+.about-img-06 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+    .about-title{
+        width: 45%;
+    }
+
+    .about-content{
+        width: 45%;
+    }
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hero-banner p{
+        font-size: 67.5px;
+    }
+
+    .about-title{
+        width: 60%;
+    }
+
+    .about-content{
+        width: 60%;
+    }
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .about-title{
+        width: 85%;
+    }
+
+    .about-content{
+        width: 85%;
+    }
+
+}
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+    .about-title{
+        width: 90%;
+    }
+
+    .about-title p{
+        font-size: 52.5px;
+    }
+
+    .about-content{
+        width: 85%;
+    }
+}
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+    .about-title p{
+        font-size: 52.5px;
+    }
+
+    .about-content{
+        width: 90%;
+    }
+
+    .hero-banner p{
+        font-size: 67.5px;
+    }
+}

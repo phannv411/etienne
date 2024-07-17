@@ -1,0 +1,13 @@
+
+
+/*----------------------------Story ---------------------------*/
+
+.main-section{
+    background-color: var(--primary);
+    height: 900px;
+}
+
+.left-section{
+    width: 50%;
+    outline: 1px red solid;
+}

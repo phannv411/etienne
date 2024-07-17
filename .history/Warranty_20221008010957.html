@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!----Fontawesome-->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/warranty.css"> 
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/popper.min.js"></script> 
+      <script src="js/bootstrap-4.4.1.js"></script>
+      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script src="js/starter.js"></script>
+  
+
+    
+</head>
+<body>
+<!-------------------------------------------MODAL POP UP ------------------------------------------>
+<div id="signin-popup">
+    <div class="sign-in-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN IN</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="signin-form--label password-input">
+          <label for="signin-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signin-password" placeholder="Enter password here">
+            <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+          <div class="password-element">
+            <label class="check-list"><span>Remember me</span>
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <span class="checkmark"></span>
+            </label>
+            <a href="">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign in</a>
+        <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+      </div>
+    </div><!---------------------------Sign In-form ------------------------------>
+  </div>
+  <div id="signup-popup">
+    <div class="sign-up-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN UP</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="first-last-name">
+          <div class="signin-form--label firstname-input">
+            <label for="firstname">First Name*</label>
+            <br>
+            <input type="text" placeholder="Your First Name" id="firstname">
+          </div>
+          <div class="signin-form--label lastname-input">
+            <label for="lastname">Last Name*</label>
+            <br>
+            <input type="text" placeholder="Your Last Name" id="lastname">
+          </div>
+        </div>
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="password-signup-confirm">
+          <div class="signin-form--label password-input">
+            <label for="signup-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-password" placeholder="Enter password here">
+              <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+          <div class="signin-form--label confirm-password-input">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+              <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+        </div>
+        <p>Sign up email to receive 10% off your first order.
+          <br> By signing up, you agree to ours Terms & Conditions</p>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign up</a>
+        <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+      </div>
+    </div><!---------------------------Sign Up-form ------------------------------>
+  </div>
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+    <div class="container-fluid d-none d-lg-block header-desktop">
+      <div class="container">
+        <div class="row d-flex align-items-center header-row">
+          <div class="left-navi
+                      col-xl-2
+                      col-lg-2">
+                      <div class="burger-menu">
+                        <div class="barline"></div>
+                      </div>
+                      <a href="#">SHOP</a> 
+                      
+          </div><!--Left Navi-->
+          <div class="center-navi
+                      col-xl-2 offset-xl-3
+                      col-lg-2 offset-lg-3">
+                      <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+          </div><!--Logo-->
+          <div class="right-navi
+                      col-xl-3 offset-xl-2
+                      col-lg-3 offset-lg-2">
+                      <div class="cart-section">
+                        BAG
+                        <div class="cart-count">0</div>
+                      </div>
+                      <button id="signin-modal">SIGN IN</button>                       
+          </div><!--Right Navi-->
+        </div>
+      </div>
+    </div>
+
+
+    <!------------------------------------------- CART POP UP ------------------------------------------>
+    <div class="container-fluid cart-modal">
+      <div class="cart-modal-title">
+        <p class="display4-pc">ORDER SUMMARY</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="cart-modal-flex">
+        <div class="container cart-modal-slide">
+          <div class="cart-checkout-slide">
+            <div class="checkout-slide">
+                <img src="img/shopall/Stool/SEDONA BAR.jpg">
+            </div>
+            <div class="cartmodal-product-content">
+                <div class="modal-product-data">
+                    <h5>SEDONA BAR</h5>
+                    <p>Stool</p>
+                    <p>Color: Beige</p>
+                    <div class="modal-button-remove">
+                      <button href="#" type="button">Remove</button>
+                  </div><!--removebtn-->
+                </div><!--name--->
+
+                <hr>
+                <div class="cartmodal-price-quantity">
+                    <p class="cartmodal-single-price">$ 650.00</p>
+                    <div class="modal-checkout-quantity">
+                            <div class="checkout-counter">
+                              <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                              <input type="text" value="1">
+                              <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                            </div>
+                    </div>
+                    <p class="cartmodal-total-price">$ 650.00</p>
+                </div><!-------------Quantity & Price------------>
+            </div>
+          </div><!-------------Cardproduct-01-checkout------------>
+          <div class="cart-checkout-slide">
+            <div class="checkout-slide">
+                <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+            </div>
+            <div class="cartmodal-product-content">
+                <div class="modal-product-data">
+                    <h5>DINNING SYNTHETIC</h5>
+                    <p>Stool</p>
+                    <p>Color: Brown</p>
+                </div><!--name--->
+  
+                <div class="modal-button-remove">
+                    <button href="#" type="button">Remove</button>
+                </div><!--removebtn-->
+                <hr>
+                <div class="cartmodal-price-quantity">
+                    <p class="cartmodal-single-price">$ 399.00</p>
+                    <div class="modal-checkout-quantity">
+                            <div class="checkout-counter">
+                              <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                              <input type="text" value="1">
+                              <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                            </div>
+                    </div>
+                    <p class="cartmodal-total-price">$ 399.00</p>
+                </div><!-------------Quantity & Price------------>
+            </div>
+          </div><!-------------Cardproduct-01-checkout------------>
+          <div class="cart-checkout-slide">
+            <div class="checkout-slide">
+                <img src="img/shopall/Stool/SEDONA BAR.jpg">
+            </div>
+            <div class="cartmodal-product-content">
+                <div class="modal-product-data">
+                    <h5>ONYX WOOD CHAIR</h5>
+                    <p>Chair</p>
+                    <p>Color: Beige</p>
+                </div><!--name--->
+  
+                <div class="modal-button-remove">
+                    <button href="#" type="button">Remove</button>
+                </div><!--removebtn-->
+                <hr>
+                <div class="cartmodal-price-quantity">
+                    <p class="cartmodal-single-price">$ 989.00</p>
+                    <div class="modal-checkout-quantity">
+                            <div class="checkout-counter">
+                              <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></i></span>
+                              <input type="text" value="1">
+                              <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                            </div>
+                    </div>
+                    <p class="cartmodal-total-price">$ 989.00</p>
+                </div><!-------------Quantity & Price------------>
+            </div>
+          </div><!-------------Cardproduct-01-checkout------------>
+        </div>
+        <div class="container cart-modal-bottom">
+          <div class="modal-grand-total">
+            <hr>
+            <div class="grand-total-price">
+              <h5 class="grand-text">Grand Total Incl. Tax</h5>
+              <p class="grand-price">$ 1,087.00</p>
+            </div>
+          </div>
+          <div class="modal-cart-btn">
+            <a href="#" class="btn-olprimary-lg">continue shopping</a>
+            <a href="#" class="btn-primary-lg">Proceed to checkout</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+    <div class="row d-none d-lg-block">
+      <div class="col-xl-5 offset-xl-7
+                  col-lg-5 offset-lg-7 img-megamenu">
+        <p class="display3-mb" >NATIVE IRON CHAIR</p>
+        <span>FEATURED PRODUCT</span>
+      </div>
+    </div>
+    <div class="container megamenu-content d-none d-lg-block">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Mega Menu List-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 search-field">
+          <p>Looking for anything special today?</p>
+          <div class="search-box">
+            <button class="search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+            <input type="text" class="search-input" placeholder="Enter keyword here...">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <div class="container-fluid d-lg-none header-mobile">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-md-3
+                    col-sm-4
+                    col-4">
+                    <div class="burger-menu-mb">
+                      <div class="barlinemb"></div>
+                    </div>
+                    <a href="#">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-md-2 offset-md-2
+                    col-sm-2 offset-sm-1
+                    col-2 offset-1">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-md-2 offset-md-3
+                    col-sm-3 offset-sm-2
+                    col-3 offset-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>                     
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </div>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+    <div class="container-fluid sub-header-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8
+                      col-sm-8
+                      col-8">
+                      <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+          </div>
+          <div class="col-md-4
+                      col-sm-4
+                      col-4 left-subhead">
+                      <button id="signin-modal-mb">SIGN IN</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="megamenu-content-mb">
+      <div class="row">
+        <div class="col-6">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">SEATING</a></li>
+              <li><a href="#">DESK & TABLE</a></li>
+              <li><a href="#">DECOR</a></li>
+              <li><a href="#">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">WARRANTY</a></li>
+              <li><a href="#">RETURN & REFUND</a></li>
+              <li><a href="#">PAYMENT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signin-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN IN</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="signin-form--label password-input">
+              <label for="signin-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signin-password" placeholder="Enter password here">
+                <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+              <div class="password-element">
+                <label class="check-list"><span>Remember me</span>
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+                <a href="">Forget password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign in</a>
+            <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signup-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN UP</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="first-last-name">
+              <div class="signin-form--label firstname-input">
+                <label for="firstname">First Name*</label>
+                <br>
+                <input type="text" placeholder="Your First Name" id="firstname">
+              </div>
+              <div class="signin-form--label lastname-input">
+                <label for="lastname">Last Name*</label>
+                <br>
+                <input type="text" placeholder="Your Last Name" id="lastname">
+              </div>
+            </div>
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="password-signup-confirm">
+              <div class="signin-form--label password-input">
+                <label for="signup-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-password" placeholder="Enter password here">
+                  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+              <div class="signin-form--label confirm-password-input">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+            </div>
+            <p>Sign up email to receive 10% off your first order.
+              <br> By signing up, you agree to ours Terms & Conditions</p>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign up</a>
+            <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+<!---------------------------- WARRANTY-title -------------------------------->
+<div class="container-fluid" id="warranty-title">
+	<div class="container" >
+		<p class="display4-pc d-none d-sm-block">WARRANTY</p>
+		<p class="display4-mb d-sm-none">WARRANTY</p>
+		
+	</div>
+</div>
+<!---------------------------- WARRANTY-title -------------------------------->
+
+
+<!---------------------------------------Breadcrumb ----------------------------------------->
+<div class="container-fluid breadcrumbb-bg">
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-12
+                      col-lg-12
+                      col-md-12
+                      col-sm-12 breadcrumbb ">
+                      <ul>
+                        <li><a href="">Home</a></li>   
+                        <li class="actived">Warranty</li>
+                      </ul>
+          </div>
+		  
+        </div>
+      </div>
+</div><!---------------------------------------Breadcrumb ----------------------------------------->
+
+<!---------------------------------------Warranty-content ----------------------------------------->
+<div class="container warranty-content">
+    <div class="row">
+        
+		
+		<div class="col-12 content-desktop d-none d-lg-block">
+			<div class="row">
+				<div class="col-xl-5
+							col-lg-5 ">
+					<p class="display4-pc ">"5 YEARS PROTECTION 
+						ON YOUR FURNITURE"</p>
+				</div>
+				<div class="col-xl-7
+							col-lg-7  ">
+					<span>Sit back and Relax. You are backed by the best warranty in the industry. Virtually any defect in the construction or craftsmanship of your furniture is protected with The Brick’s 5 year Furniture Protection Plan. You're covered right from the original date of purchase, including the costs of repairs. There are no hidden fees, charges, or deductibles for any services performed. PLUS you will have the Full Circle 100% Value Back Product Protection; which means if you do not require service during your warranty period you will receive a credit towards another purchase*</span>		
+				</div>
+			</div>
+		</div> <!---------------------------Desktop --------------------------->
+		<div class="col-12 content-mobile d-lg-none">
+			<div class="row">
+				<div class="col-12  ">
+					<p class="display4-mb ">"5 YEARS PROTECTION 
+						ON YOUR FURNITURE"</p>
+				</div>
+				<div class="col-12  ">
+					<span>Sit back and Relax. You are backed by the best warranty in the industry. Virtually any defect in the construction or craftsmanship of your furniture is protected with The Brick’s 5 year Furniture Protection Plan. You're covered right from the original date of purchase, including the costs of repairs. There are no hidden fees, charges, or deductibles for any services performed. PLUS you will have the Full Circle 100% Value Back Product Protection; which means if you do not require service during your warranty period you will receive a credit towards another purchase*</span>		
+				</div>
+			</div>
+		</div><!---------------------------Mobile --------------------------->
+
+		<div class="col-12 warranty-content-body">
+			<h3>Full Furniture Protection</h3>
+			<hr class="line">
+			<p>Every day you put furniture through a rigorous routine. The Brick provides you with comprehensive coverage for defects in the construction of your furniture resulting when used under normal, daily use. With this Plan, your furniture is protected and will provide you with the comfort in knowing that we will repair your furniture in the event you require service.
+			</p>
+			<p>The extended Furniture protection also extends coverage to wood furniture components. Please refer to your Furniture Warranty certificate by your invoice purchase date to understand your extended warranty coverage.</p>
+
+		</div>
+
+		<div class=" col-12 warranty-content-body">
+			<h3>Accidental Stains</h3>
+			<hr class="line">
+			<p>Go ahead and live your life to the fullest. Whether you have little ones or like to entertain, investing in this Plan makes perfect sense. The Brick provides you with single-incident* coverage for accidental stains from water, food, beverages, and cosmetics. Contact us as soon as the accident occurs, and we will assist you in applying your coverage with several cleaning options or repair if necessary.</p>
+		</div>
+
+		<div class="col-12 warranty-content-body">
+			<h3>Rips and Tears</h3>
+			<hr class="line">
+			<div class="warranty-content-body-1">
+				<div class="row d-flex justify-content-center">
+					<div class="col-xl-6
+								col-lg-6">
+						<p>Rips, and tears on all fabrics, including vinyl, bonded, and faux leathers, may occur with normal use. This Plan covers a single-incident* repair of surface fabrics</p>
+					</div>
+					<div class="col-xl-6
+								col-lg-6 ">
+						<div class="warranty-content-body-frame">
+							<p>Bonded, faux and fabric leather products are covered under the 1st year manufacturer’s warranty for cracking and peeling.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 warranty-content-body">
+			<h3>As-Is Purchases</h3>
+			<hr class="line">
+			<p>All as-is furniture purchases carry the same warranty as new merchandise with the exception of existing defects and/or damage on the item (such as scratches, dents, or missing pieces), which will be noted on your invoice at the time of purchase. Extended warranties can also be purchased for as-is items, but will exclude coverage of existing defects. The Brick will only cover up to the purchase price of the item, not its original value.</p>
+		</div>
+
+		
+    </div>
+</div><!---------------------------------------Warranty-content ----------------------------------------->
+
+
+<!-------------------Blog Feature Desktop------------------------->
+<div class="d-none d-lg-block">
+	<div class="container-fluid coverage-title">
+		<div class="col-12">
+			<p class="display4-pc">COVERAGE</p>			
+		</div>
+	</div>
+	<div class="container-fluid blog-ft-pc ">
+		
+		<div class="left-part">
+		  <div class="left-title">
+			<p class="display4-pc">WARRANTY</p>
+		  </div>
+		  <div class="left-text">
+			<div class="top-left breadcrumbb">
+				<p>5 YEARS COVERAGE</p>
+			</div>
+			<div class="bottom-left">
+			  <div class="blog-ft-title">
+				<h1>Protect Your Furniture Investment Today</h1>
+			  </div>
+			  <div class="blog-ft-content">
+				<p>You can get this incredible furniture coverage even when shopping online. Look for the option to add The Brick’s 5 Year Furniture Protection Plan during the checkout process.
+					Please Note: When purchasing a furniture protection plan online, the plan will cover all furniture products in your order.</p>
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="right-part">
+		  <div class="top-right">
+			<p>WARRANTY</p>
+		  </div>
+		  <div class="bottom-right">
+			<img src="img/blog/Dining-Table.jpg" alt="blog-ft">
+		  </div>
+		</div>
+		
+	</div>
+</div>
+<!-------------------Blog Feature Desktop------------------------->
+  
+  <!-------------------Blog Feature Mobile------------------------->
+  <div class="container-fluid coverage-title d-lg-none">
+	<div class="col-12">
+		<p class="display4-mb">COVERAGE</p>			
+	</div>
+</div>
+  <div class="container-fluid blog-ft-mb d-lg-none">
+	<div class="top-part">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-6 top-left-mb breadcrumbb">
+			<p>5 YEARS COVERAGE</p>
+		  </div>
+		  <div class="col-6 top-right-mb">
+			<p>WARRANTY</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="img-ft-mb">
+	  <img src="img/blog/Dining-Table.jpg" alt="blog-ft">
+	</div>
+	<div class="container blog-ft-content-mb">
+	  <div class="row">
+		<div class="col-12">
+			<h2>Protect Your Furniture Investment Today</h2>
+			<p>You can get this incredible furniture coverage even when shopping online. Look for the option to add The Brick’s 5 Year Furniture Protection Plan during the checkout process.
+				Please Note: When purchasing a furniture protection plan online, the plan will cover all furniture products in your order.</p>
+			
+		</div>
+	  </div>
+	</div>
+</div><!-------------------Blog Feature Mobile------------------------->
+
+<!--------------------------full-coverage------------------------------------->
+<div class="container full-coverage">
+	<div class="row">
+		<div class="col-12">
+			<h3>Full Coverage Details</h3>
+			<hr class="line">
+			<p>The Brick’s 5 Year Furniture Protection Plan covers a single-incident* repair of:</p>
+		</div>
+	</div>
+</div><!--------------------------full-coverage------------------------------------->
+
+<!--------------------------Upholstery Coverage------------------------------------->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-6
+					col-lg-6 
+					col-md-12
+					col-sm-12
+					col-12 title-upholstery-coverage">
+				
+				
+				<table class="left-table">
+					<tr class="table-title">
+					  <th class="left-colum">Upholstery Coverage</th>
+					  <th class="right-colum title-mid-right">Leather & Faux, Fabric</th>
+					</tr>
+					<tr>
+					  <td class="left-colum data-nd">• <span>Electronic components</span></td>
+					  <td class="right-colum data-nd"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>All moving parts</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Mechanism failure</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Defective construction</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Faulty joints and springs</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Accidental food and beverage stain</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Accidental human and pet biological stains</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Pen ink, crayon, marker</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Nail polish and cosmetics</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Failed stitching</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+					
+					<tr>
+					  <td class="left-colum">• <span>Seam separation</span></td>
+					  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+
+					<tr>
+						<td class="left-colum">• <span>Accidental rip or cut</span></td>
+						<td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+
+					<tr>
+						<td class="left-colum">• <span>Accidental cigarette burn</span></td>
+						<td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+
+					<tr>
+						<td class="left-colum">• <span>Cracking and peeling of finish
+							(excluding bonded and faux leather)</span></td>
+						<td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+					</tr>
+
+					  
+					
+				</table>
+				
+		</div>
+		<!-- ------------------------------------------------------------------------ -->
+
+		<div class="offset-xl-1 col-xl-5
+					offset-lg-1 col-lg-5 title-upholstery-coverage">
+					
+					<table class="right-table">
+						<tr class="table-title-right">
+						  <th class="left-colum">Accent Tables, Working Desks
+							Furniture Coverage</th>
+						  <th class="right-colum title-mid-right">Wood and Wood 
+							Type Finishes</th>
+						</tr>
+						<tr>
+						  <td class="left-colum data-nd">• <span>All moving parts</span></td>
+						  <td class="right-colum data-nd"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span> Defective construction</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>Faulty joints and springs</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>Accidental food and beverage stain</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>Pen ink, crayon, marker</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>Nail polish and cosmetics</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>racking and peeling of finish</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						
+						<tr>
+						  <td class="left-colum">• <span>Changes in luster</span></td>
+						  <td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						</tr>
+						<tr>
+							<td class="left-colum">• <span>Heat and liquid rings</span></td>
+							<td class="right-colum"><i class="fa-solid fa-check"></i></td>				 
+						  </tr>
+						
+					  
+						
+					</table>
+
+		</div>
+	</div>
+</div><!--------------------------Upholstery Coverage------------------------------------->
+
+<!--------------------------The following------------------------------------->
+<div class="container the-following">
+	<div class="row">
+		<div class="col-12">
+			<h3>The following are not covered under warranty</h3>
+			<hr class="line">
+		</div>
+		
+		<div class="col-xl-5
+					col-lg-5 
+					col-md-5
+					col-sm-12
+					col-12 the-following-title ">
+					<p> • Wear and Tear</p>
+					<p> • Abuse and neglect</p>
+					<p> • Physical damage from pets</p>
+				
+		</div>
+		<div class="col-xl-7
+					col-lg-7 
+					col-md-7
+					col-sm-12
+					col-12 the-following-title">
+					<p> • Delivery/Transportation</p>
+					<p> • Odors</p>
+					<p> • Cracking and peeling of bonded and faux leather</p>
+				
+				
+		</div>
+		<div class="col-12 single-incident">
+			<p>*Single-incident repair means a single incident of the above coverage. Should you need to make a claim, you must do so at the time the incident occurs. Otherwise coverage may not apply.</p>
+		</div>
+		<div class="col-12 your-product-warranty">
+			<p>We hope your product won’t need repair, but if it does The Brick has made requesting service as easy as possible.</p>
+		</div>
+	</div>
+</div><!--------------------------The following------------------------------------->
+
+
+
+
+
+
+
+<!------------------------------------------- ADD A COMMENT --------------------------------------------->
+<div class="container-fluid add-comment">
+    <div class="container ">
+      <div class="row">
+        <div class="col-6 add-comment-title-left d-none d-xl-block">
+          <p class="display4-pc">Making a warranty claim</p>
+        </div>
+        <div class="col-6 add-comment-title-right d-none d-xl-block">
+          <h4>WHAT HAPPENED?</h4>
+        </div>
+      </div>
+    </div><!--------Title Desktop-------->
+    <div class="container d-xl-none">
+		<div class="row">
+		  <div class="col-12 add-comment-title-left-mb">
+			<p class="display4-mb">Making a warranty claim</p>
+		  </div>
+		</div>
+	</div><!--------Title Mobile-------->
+</div>
+<div class="container-fluid disclaimer">
+    <div class="container contact-disclaimer">
+      <div class="row">
+        <div class="col-12">
+          <p>Your email address will not be publish. Required fields are marked *</p>
+        </div>
+      </div>
+    </div>
+</div><!--------Disclaimer-------->
+  
+  <!-----------------------------------Add review Desktop--------------------------------->
+  
+<form class="container add-review d-none d-lg-block">
+    <div class="row">
+        <div class="col-xl-4
+                    col-lg-4 review-form--label">
+                    <p>Your Name*</p>
+                    <input type="text" placeholder="Full name">
+        </div>
+        <div class="col-xl-4 
+                    col-lg-4 review-form--label">
+                    <p>Your Email*</p>
+                    <input type="email" placeholder="example@email.com">
+        </div>
+        <div class="col-xl-4 
+                    col-lg-4 review-form--label">
+                    <p>Phone Number (Optional)</p>
+                    <input type="email" placeholder="+33-000-000-000">
+        </div>
+		  
+		<div class="col-xl-6
+					col-lg-6 review-form--label warranty-mid-title">
+					<p>Product Type*</p>
+					<input type="text" placeholder="Eg. Onyx Wood Chair">
+		</div>
+		<div class="col-xl-6
+					col-lg-6 review-form--label warranty-mid-title">
+					<p>Order Number</p>
+					<input type="text" placeholder="Eg. TBA7166">
+		</div>
+
+
+        <div class="col-xl-12
+                    col-lg-12 review-form--label subject-contact">
+                    <p>Claim Subject (Optional)</p>
+                    <input type="email" placeholder="Eg. Check my warranty on...">                
+        </div>
+          
+    </div>
+    <div class="row review-content">
+        
+        <div class="col-xl-12
+                  col-lg-12 review-form--label">
+                  <p>Claim Message*</p>
+                  <textarea name="review" id="review" cols="30" rows="5" placeholder="Add more details to your inquiry" maxlength="1000"></textarea>
+                  <div id="the-count">
+                    <span id="current">0</span>
+                    <span id="maximum">/ 2000</span>
+                  </div>
+                  <label class="check-list">Save my name, email in this browser for the next time I comment
+                    <input type="checkbox" name="saveinfo" id="saveinfo">
+                    <span class="checkmark"></span>
+                  </label>
+        </div>
+        <div class="col-xl-12 submit-review-btn">
+            <a href="#" class="btn-primary-xl-right">SUBMIT REVIEW<i class="fa-regular fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </form><!-----------------------------------Add review Desktop--------------------------------->
+  
+  <!-----------------------------------Add review Mobile--------------------------------->
+  
+  <form class="container add-review d-lg-none">
+    <div class="row">
+        <div class="col-6 review-form--label">
+                    <p>Your Name*</p>
+                    <input type="text" placeholder="Full name">
+        </div>
+		<div class="col-6 review-form--label">
+					<p>Phone Number (Optional)</p>
+					<input type="text" placeholder="+1-000-000-000">
+		</div>
+        
+        <div class="col-6 review-form--label form-label--email">
+                    <p>Your Email*</p>
+                    <input type="email" placeholder="example@email.com">
+        </div>
+		<div class="col-6 review-form--label">
+					<p>Order Number</p>
+					<input type="text" placeholder="Eg. TBA7166">
+		</div>
+
+        <div class="col-12 review-form--label">
+					<p>Product Type*</p>
+					<input type="text" placeholder="Eg. Onyx Wood Chair">
+		</div>
+
+        <div class="col-12 review-form--label">
+                    <p>Claim Subject (Optional)</p>
+                    <input type="text" placeholder="Eg. Start a project">
+        </div>
+        
+        
+  </div>
+  <div class="row review-content">
+    <div class="col-xl-12
+                col-lg-12 review-form--label">
+                <p>Message*</p>
+                <textarea name="review" id="review" cols="30" rows="5" placeholder="Add more details to your inquiry" maxlength="1000"></textarea>
+                <div id="the-count">
+                  <span id="current">0</span>
+                  <span id="maximum">/ 2000</span>
+                </div>
+                <label class="check-list">Save my name, email in this browser for the next time I comment
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+    </div>
+    <div class="col-xl-12 submit-review-btn">
+      <a href="#" class="btn-primary-xl-right">SUBMIT REVIEW<i class="fa-regular fa-arrow-right-long"></i></a>
+    </div>
+  </div>
+  </form><!-----------------------------------Add review Mobile--------------------------------->
+
+
+
+
+
+<!----------------------------------link-contact ---------------------------------------------->
+<div class="conteiner-fluid" id="contact-join-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 contact-careers">
+				<h5>CONTACT</h5>
+			</div>
+			<div class="col-xl-8
+						col-lg-8
+						col-md-12
+						col-sm-12
+						col-12 title-join-us">
+				<p class="display4-pc">NEED ANY FURTHER SUPPORT? <br>
+                    FEEL FREE TO CONTACT US
+                    
+					</p>
+			</div>
+			<div class="offset-xl-1 col-xl-3
+						offset-lg-1 col-lg-3
+						col-md-12
+						col-sm-12
+						col-12 button-join-us">
+				
+				<a href="#" class="btn-secondary-xl-right">CONTACT US<i class="fa-regular fa-arrow-right-long"></i></a>
+			</div>
+		</div>
+	</div>
+  </div><!----------------------------------link-contact ---------------------------------------------->
+
+
+
+
+
+
+  
+  <!-------------------------------------------Footer Desktop ------------------------------------------>
+<div class="container-fluid d-none d-md-block" id="footerDesktop">
+    <div class="container-fluid footer-navi">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation-->
+    <div class="container footer-subscribe d-none d-lg-block">
+      <div class="row d-flex align-items-end">
+        <div class="col-xl-4 
+                    col-lg-4 email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4 media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media LG XL-->
+    <div class="container footer-subscribe d-none d-md-block d-lg-none">
+      <div class="row">
+        <div class="col-md-4
+                    offset-md-4">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-end">
+        <div class="col-md-6 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div>
+        <div class="col-md-6
+                    media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <div class="container-fluid d-md-none" id="footerMobile">
+    <div class="container-fluid footer-navi footer-navi-mb1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="#">Seating</a></li>
+              <li><a href="#">Desk & Table</a></li>
+              <li><a href="#">Decor</a></li>
+              <li><a href="#">Organisation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Upper Section-->
+    <div class="container-fluid footer-navi footer-navi-mb2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-6 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Lower Section-->
+    <div class="container footer-subscribe d-md-none">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2
+                    col-10 offset-1 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms & Conditions</p>
+        </div><!-------Email Input------>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3
+                    col-6 offset-3">
+                    <div class="logo-footer">
+                      <a href=""><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div><!-------Logo------>
+      </div>
+      <div class="row">
+        <div class="col-12
+                    media-footer-mb">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                      <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </div>
+  
+    
+</body>
+</html>

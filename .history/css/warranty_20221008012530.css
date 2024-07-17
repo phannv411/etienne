@@ -1,0 +1,1191 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+/* --------------WARRANTY-title ------------------------- */
+#warranty-title p{
+    text-align: center;
+    margin-bottom: 0px;
+    
+
+}
+#warranty-title{
+    padding-top: 20px;
+    height: 80px;
+}
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+
+
+
+
+
+/* -------------Warranty-content------------------ */
+.warranty-content h4{
+    color: var(--primary);
+    margin-bottom: 30px;
+    margin-top: 40px;
+    
+}
+.warranty-content span{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.warranty-content p{
+    margin-bottom: 0px;
+}
+/* --------------- */
+.warranty-content-body{
+    margin-top: 30px;
+}
+.warranty-content-body h3{
+    margin-bottom: 16px;
+}
+.warranty-content-body p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.line{
+    margin: 0px;
+    background-color: var(--shading2);
+    
+}
+/* ----------------- */
+.warranty-content-body-frame p{
+    margin: 0px;
+}
+.warranty-content-body-frame{
+    border: var(--text) 1px solid;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.content-desktop{
+    margin-top: 48px;
+}
+.content-mobile{
+    margin-top: 40px;
+}
+
+
+
+/*----------------------------Blog Feature Mobile---------------------------*/
+.blog-ft-mb{
+    padding: 0px 0px 30px 0px;
+    border-bottom: 1px solid var(--shading2);
+    background-color: var(--primary);
+}
+
+.blog-ft-mb .top-part{
+    overflow: hidden;
+    height: 40px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.top-part .top-left-mb{
+    width: 50%;
+    border-right: 1px solid var(--shading2);
+}
+
+
+.top-part .top-right-mb p{
+    margin-top: 8px;
+    font-family: subfont;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px;
+}
+.top-part .top-left-mb p{
+    margin-top: 8px;
+    font-family: subfont;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+}
+
+.img-ft-mb{
+    padding: 30px 0px;
+    height: 400px;
+}
+
+.img-ft-mb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.blog-ft-content-mb h2{
+    color: var(--secondary);
+    margin-bottom: 0px;
+}
+
+.blog-ft-content-mb p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--white);
+}
+.top-left-mb{
+    padding-top: 0px;
+}
+
+
+
+
+
+/*----------------------------Blog Feature Desktop---------------------------*/
+.blog-ft-pc{
+    padding: 0;
+    height: 700px;
+    display: flex;
+    background-color: var(--primary);
+}
+
+.left-part, .right-part{
+    width: 50%;
+}
+
+.left-part{
+    height: inherit;
+    display: flex;
+}
+
+.left-part .left-title{
+    height: inherit;
+    width: 80px;
+    white-space: nowrap;
+    display: flex;
+    align-items: end;
+    border-right: 1px solid var(--shading2);
+}
+
+.left-part .left-title p{
+    color: var(--secondary);
+    transform: rotate(-90deg) translate(90px, -52px);
+}
+
+.left-part .left-text{
+    width: 100%;
+}
+
+.left-part .top-left{
+    padding-top: 8px;
+    padding-left: 30px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+}
+.left-text .top-left p{
+    font-family: subfont;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bottom-left{
+    height: 650px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-left .blog-ft-title{
+    width: 80%;
+}
+
+
+.bottom-left .blog-ft-title h1{
+    color: var(--secondary);
+}
+
+.bottom-left .blog-ft-content{
+    width: 80%;
+}
+
+.bottom-left .blog-ft-content p{
+    color: var(--dark);
+    margin-bottom: 24px;
+}
+
+.right-part{
+    border-left: 1px solid var(--shading2);
+    height: 100%;
+}
+
+
+.right-part .top-right{
+    text-align: right;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+}
+
+.right-part .top-right p{
+    font-family: subfont;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bottom-right{
+    height: 660px;
+    width: 100%;
+    padding: 30px;
+}
+
+.bottom-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-ft-content p{
+    color: var(--white) !important;
+}
+/* --------------------------------- */
+.coverage-title{
+    height: 80px;
+    background-color: var(--primary);
+    padding-top: 20px;
+    border-bottom: var(--shading2) 1px solid;
+    margin-top: 48px;
+}
+.coverage-title p{
+    color: var(--white);
+    margin-bottom: 0px;
+    text-align: center;
+}
+/* -----------full-coverage------------ */
+.full-coverage h3{
+    margin-bottom: 16px;
+}
+.full-coverage p{
+    margin-bottom: 0px;
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.full-coverage{
+    margin-top: 48px;
+    
+}
+
+
+
+
+
+ /*--------------ADD A COMMENT-----------------------*/
+ .add-comment{
+    padding: 0px;
+    border-top: 1px solid var(--shading2);
+    margin-top: 30px;
+    
+}
+
+.add-comment-title-left{
+    height: 80px;
+    border-right: 1px solid var(--shading2);
+}
+
+
+.add-comment-title-right{
+    height: 80px;
+}
+
+
+.disclaimer{
+    height: 40px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.disclaimer p{
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--shading1);
+}
+
+
+
+  /*-----------------------------------Add review-------------------------------*/
+
+
+.add-review input{
+    padding: 16px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--primary);
+    transition: all ease .3s;
+}
+.warranty-mid-title{
+    margin-top: 30px;
+}
+
+
+.add-review input:active, .add-review input:focus, .add-review input:focus-visible{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+.add-review input::placeholder{
+    color: var(--shading1);
+}
+
+
+.submit-review-btn{
+    margin-top: 40px;
+}
+
+/* ------------------- */
+
+
+
+.review-form--label textarea{
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--shading2);
+    color: var(--primary);
+}
+
+
+
+.review-form--label textarea::placeholder{
+    color: var(--shading2);
+}
+
+
+.review-form--label textarea:active, .review-form--label textarea:focus, .review-form--label textarea:focus-visible, .review-form--label textarea:focus-within{
+    border: 2px solid var(--shading2);
+    outline: none;
+}
+
+
+
+#the-count{
+    float: right;
+    color: #999999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.review-content .button-secondary{
+    margin-top: 25px;
+}
+
+/*---------Checkbox-------------*/
+.check-list {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--shading1);
+    transition: all ease .3s;
+}
+
+.check-list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    transition: all ease .3s;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: var(--shading2) solid 1px;
+}
+
+
+.check-list input:checked ~ .checkmark {
+    background-color: var(--primary);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-list input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-list .checkmark:after {
+    left: 6px;
+    top: 1.5px;
+    width: 5px;
+    height: 13px;
+    border: solid var(--secondary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.check-list:hover input ~ .checkmark {
+    background-color: rgb(129, 131, 92, .6);
+    transition: all ease .3s;
+}
+
+
+
+
+/* ------------------Upholstery Coverage---------------------------- */
+.title-upholstery-coverage{
+    margin-top: 48px;
+}
+.title-upholstery-coverage i{
+    color: var(--primary);
+}
+
+.title-small-upholstery-coverage p{
+    font-family: subfont;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.left-nd{
+    padding-left: 15px;
+}
+
+/* --------------------------- */
+
+
+.line-upholstery-coverage{
+    background-color: var(--dark);
+    padding: 0px;
+    margin: 0px;
+}
+.content-upholstery-coverage p{
+    margin-bottom: 0px;
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-top: 16px
+
+}
+.icon-upholstery-coverage{
+    text-align: center;
+}
+
+
+.icon-upholstery-coverage i{
+    text-align: center !important;
+    margin-top: 17px
+       
+}
+.icon-upholstery-coverage .space-icon{
+    margin-top: 21px;
+}
+
+
+/* ------------------------ */
+
+/* --------------------------------------------- */
+.left-table{
+    width: 100%;
+}
+.left-table .left-colum{
+    width: 70%;
+    
+}
+
+.left-table .right-colum{
+    width: 30%;
+}
+
+.left-table td.right-colum{
+    text-align: center;
+    padding-bottom: 16px;
+}
+td.right-colum i{
+    line-height:22px;
+    position: relative;
+    top: 8px;
+}
+
+.table-title{
+    border-bottom: 2px solid var(--dark);
+    height: 80px;
+    
+}
+
+.title-mid-right{
+    text-align: center;
+}
+
+
+/* ----------------------------------------------- */
+.right-table{
+    width: 100%;
+}
+.right-table .left-colum{
+    width: 65%;
+}
+
+.right-table .right-colum{
+    width: 35%;
+}
+
+.right-table td.right-colum{
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.table-title-right {
+    border-bottom: 2px solid var(--dark);
+    height: 80px;
+}
+td.data-nd{
+    padding-top: 16px;
+}
+
+
+
+/* ---------------The following------------------------- */
+.the-following h3{
+    margin-bottom: 16px;
+    margin-top: 40px;
+}
+.the-following-title{
+    margin-top: 16px;
+}
+.the-following-title p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.the-following-title ul{
+    list-style-type: none;
+}
+.the-following p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.single-incident{
+    margin-top: 16px;
+}
+.your-product-warranty{
+    margin-top: 48px;
+    
+}
+.the-following-title i{
+    color: var(--primary);
+}
+.title-upholstery-coverage span{
+    font-family: bodyfont;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+        /* -----------Link Contact ---------- */
+        #contact-join-us{
+            background-image: url(../img/contact-us/link-contact-us.jpg);
+            height: 550px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+    
+        .contact-careers{
+            margin-bottom: 0px;
+            color: var(--white);
+        }
+    
+        .title-join-us{
+            color: var(--white);
+            margin-bottom: 0px;
+            margin-top: 16px;
+        }
+    
+    
+        .button-join-us{
+            text-align: right;
+            margin-top: 90px;
+        }
+    /* -------------Warranty-content------------------ */
+    .content-desktop p{
+        margin-top: 24px;
+    }
+
+    /*---------------Blog Feature Desktop-----------*/
+    .blog-ft-pc{
+        border-bottom: var(--shading2) 1px solid;
+    }
+
+    /*-----------ADD A COMMENT----------------------------*/
+    
+    .add-comment-title-left p{
+        margin-top: 20px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .subject-contact{
+        margin-top: 30px;
+    }
+    .review-content{
+        margin-top: 30px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+    }
+    .add-review input:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+    .review-form--label textarea:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+    
+    
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+     /* -----------Link Contact ---------- */
+     #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .title-join-us p.display3-pc{
+        white-space: nowrap;
+    }
+
+    .button-join-us{
+        text-align: right;
+        margin-top: 64px;
+    }
+    /* -------------Warranty-content------------------ */
+    .content-desktop p{
+        margin-top: 24px;
+    }
+
+
+    /*---------------Blog Feature Desktop-----------*/
+    .blog-ft-pc{
+        border-bottom: var(--shading2) 1px solid;
+    }
+     /*-----------ADD A COMMENT-----------------*/
+     
+    .add-comment-title-left p{
+        margin-top: 20px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+    .add-comment-title-left-mb{
+        margin-top: 20px;
+        font-family: displayfont !important;
+        font-size: 52.5px !important;
+        text-align: center;
+    }
+    .add-comment-title-left-mb p{
+        font-family: displayfont;
+        font-size: 52.5px !important;
+    }
+
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .subject-contact{
+        margin-top: 30px;
+    }
+    .review-content{
+        margin-top: 30px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+    }
+    .add-review input:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+    .review-form--label textarea:hover{
+        background-color: rgba(224, 224, 214, .8);
+        border: 1px solid var(--shading2);
+        transition: all ease .3s;
+    }
+
+    /* -------Upholstery Coverage------ */
+    .icon-upholstery-coverage i{
+        text-align: center !important;
+        margin-top: 19px
+        
+    }
+    .icon-upholstery-coverage .space-icon{
+        margin-top: 40px;
+    }
+    /* ------------------------ */
+    .title-upholstery-coverage{
+        margin-top: 40px;
+    }
+    
+}
+
+
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+   /* -----------Link Contact ---------- */
+   #contact-join-us{
+    background-image: url(../img/contact-us/link-contact-us.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--white);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+
+
+
+.button-join-us{
+    margin-top: 30px;
+}
+    /* -------------Warranty-content------------------ */
+    .content-mobile p{
+        margin-bottom: 16px;
+    }
+    /* --------------Blog Feature Mobile-------------- */
+    .coverage-title{
+        padding-top: 24px;
+        margin-top: 40px;
+    }
+
+
+     /*-----------ADD A COMMENT----------------------------*/
+     
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+    }
+
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 56px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+    .add-comment-title-left-mb{
+        margin-top: 20px;
+        font-family: displayfont !important;
+        font-size: 40.5px;
+        text-align: center;
+    }
+    /* -------Upholstery Coverage------ */
+    .icon-upholstery-coverage i{
+        text-align: center !important;
+        margin-top: 18px
+        
+    }
+    .icon-upholstery-coverage .space-icon{
+        margin-top: 11px;
+    }
+    /* ------------------------ */
+    
+    
+    .title-upholstery-coverage{
+        margin-top: 40px;
+    }
+
+
+    /* -------------full-coverage------------ */
+    .full-coverage{
+        margin-top: 40px;
+        
+    }
+
+    /*-----------The following-------------------  */
+
+    .your-product-warranty{
+        margin-top: 40px;
+        
+    }
+}
+
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+   
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* -------------Warranty-content------------------ */
+    .content-mobile p{
+        margin-bottom: 16px;
+    }
+
+    /* ------------Blog Feature Mobile-------------------- */
+    .coverage-title{
+        padding-top: 24px;
+        margin-top: 40px;
+    }
+
+     /*-----------ADD A COMMENT----------------------------*/
+     
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+        font-family: titlefont;
+        font-size: 18px;
+    }
+    .add-comment-title-left-mb{
+        margin-top: 20px;
+        font-family: displayfont !important;
+        font-size: 40.5px;
+        text-align: center;
+    }
+    /*-------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 48px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+     /* -------Upholstery Coverage------ */
+     .icon-upholstery-coverage i{
+        text-align: center !important;
+        margin-top: 19px
+        
+    }
+    
+    .title-upholstery-coverage{
+        margin-top: 40px;
+    }
+
+    /* -------------full-coverage------------ */
+    .full-coverage{
+        margin-top: 40px;
+        
+    }
+    
+    /*-----------The following-------------------  */
+
+    .your-product-warranty{
+        margin-top: 40px;
+        
+    }
+    .the-following-title{
+        margin-top: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .the-following h3{
+        margin-bottom: 16px;
+        margin-top: 40px;
+    }
+    
+    .the-following-title p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+    .the-following-title ul{
+        list-style: square;
+        margin: 0px;
+        
+    }
+    .the-following p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .single-incident{
+        margin-top: 16px;
+    }
+
+    input::placeholder{
+        font-size: 16px;
+    }
+    
+}
+
+
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+    /* --------------warranty-title------------------------- */  
+    #warranty-title{
+        padding-top: 25px;
+        height: 80px;
+    }
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* -------------Warranty-content------------------ */
+    .content-mobile p{
+        margin-bottom: 16px;
+    }
+    /* -----------------------Blog Feature Mobile----------- */
+    .coverage-title{
+        padding-top: 24px;
+        margin-top: 40px;
+    }
+     /*-----------ADD A COMMENT----------------------------*/
+     
+    .add-comment-title-left p{
+        margin-top: 20px;
+        font-family: displayfont;
+        font-size: 40.5px;
+    }
+    .add-comment-title-right h4{
+        margin-top: 24px;
+        text-align: right;
+        font-family: titlefont;
+        font-size: 18px;
+    }
+    .add-comment-title-left-mb{
+        margin-top: 20px;
+        font-family: displayfont !important;
+        font-size: 40.5px;
+        text-align: center;
+    }
+    .contact-disclaimer{
+        padding: 0px;
+    }
+    /*-----------------------------------Add review-------------------------------*/
+    .add-review{
+        
+        padding-bottom: 48px;
+    }
+    .review-form--label p{
+        font-family: subfont;
+        color: var(--primary);
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+    /* -------Upholstery Coverage------ */
+    
+    
+    /* ------------------------ */
+    
+    .title-upholstery-coverage{
+        margin-top: 40px;
+    }
+
+    /* -------------full-coverage------------ */
+    .full-coverage{
+        margin-top: 40px;
+        
+    }
+    /*-----------The following-------------------  */
+
+    .your-product-warranty{
+        margin-top: 40px;
+        
+    }
+    .the-following-title{
+        margin-top: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .the-following h3{
+        margin-bottom: 16px;
+        margin-top: 40px;
+    }
+    
+    .the-following-title p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+    .the-following-title i{
+        color: var(--primary);
+    }
+
+    .the-following p{
+        font-family: bodyfont;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .single-incident{
+        margin-top: 16px;
+    }
+    
+    input::placeholder{
+        font-size: 16px;
+    }
+
+}

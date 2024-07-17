@@ -1,0 +1,124 @@
+
+.hero-container{
+    background-color: #FDF0EE;
+}
+
+.hero-section{
+    height: 900px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content{
+    width: 40%;
+}
+
+.hero-slider{
+    width: 60% !important;
+}
+
+.hero-banner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-banner img{
+    width: 100%;
+}
+
+/* --------------Slider Dots--------------- */
+
+.owl-theme .owl-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    margin-bottom: 0px;
+    
+}
+
+.owl-theme .owl-dots::before{
+    content: '01';
+    font-family: titlefont;
+    font-size: 20px;
+    position: relative;
+    left: -16px;
+    top: -5px;
+    color: var(--white);
+}
+
+
+.owl-theme .owl-dots::after{
+    content: '03';
+    font-family: titlefont;
+    font-size: 20px;
+    position: relative;
+    right: -16px;
+    top: -5px;
+    color: var(--white);
+}
+
+.owl-theme .owl-dots .owl-dot{
+    margin-top: 80px;
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background-color: var(--white) !important;
+    width: 60px !important;
+    height: 4px !important;
+    margin: 8px 0px !important;
+    border-radius: 0% !important;
+    outline: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    outline: none !important;
+    background: var(--dark) !important;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span{
+    outline: none !important;
+    background: var(--shading1) !important
+} 
+
+
+/* --------------Slider Navs--------------- */
+.owl-theme .owl-nav{
+    padding: 0px 60px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav .owl-prev{
+    outline: none;
+    color: var(--white) !important;
+    font-size: 24px !important;
+    float: left;
+    padding: 5px !important;
+    transition: all ease .3s;
+}
+
+.owl-theme .owl-nav .owl-prev:hover{
+    background-color: var(--dark) !important;
+    padding: 5px 5px 6px 5px !important;
+    transition: all ease .3s;
+}
+
+.owl-theme .owl-nav .owl-next{
+    outline: none;
+    color: var(--white) !important;
+    font-size: 24px !important;
+    float: right;
+    transition: all ease .3s;
+}
+
+.owl-theme .owl-nav .owl-next:hover{
+    background-color: var(--dark) !important;
+    padding: 5px 5px 6px 5px !important;
+    transition: all ease .3s;
+}

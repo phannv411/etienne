@@ -1,0 +1,1116 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: var(--secondary)!important; 
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+.sub1-pc{
+    font-family: subfont;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--shading2);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+/*--BREADCRUMB--*/
+.breadcrumbb-bg{
+    border-bottom: 1px solid var(--shading2);
+}
+.breadcrumbb{
+    height: 40px;
+    padding-top: 8px;
+}
+.hr-md hr{
+    border: 0.1px solid var(--shading2);
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/*-------------------- 2022 SEPTEMBER LOOKBOOK-PC -------------*/
+
+.sep-lookbook{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 40px;
+}
+
+
+
+.sep-lookbook-phai{
+    padding-top: 60px;
+}
+
+    
+/*----------------------------CAROUSEL---------------------------*/
+/*----------------------------box slider-------------------------*/
+
+
+
+
+
+
+/* --------------Slider Dots--------------- */
+
+.owl-theme .owl-dots{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+
+.owl-theme .owl-dots::before{
+    content: '01';
+    font-family: subfont;
+    font-size: 20px;
+    position: relative;
+    left: -16px;
+    top: -4px;
+}
+
+.owl-theme .owl-dots::after{
+    content: '15';
+    font-family: subfont;
+    font-size: 20px;
+    position: relative;
+    right: -16px;
+    top: -3px;
+}
+
+
+.owl-theme .owl-dots .owl-dot{
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: var(--white) !important;
+    width: 30px !important;
+    height: 4px !important;
+    margin: 8px 0px !important;
+    border-radius: 0% !important;
+    outline: none !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    outline: none !important;
+    background: var(--dark) !important;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    outline: none !important;
+    background: var(--shading1) !important
+}
+
+.lookbook-card{
+    transition: all ease .3s;
+}
+
+.lookbook-box{
+	width: 420px;
+    height: 620px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+
+
+
+
+.detail-box{
+    width: 420px;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--PRODUCTS IN THIS LOOKBOOK--*/
+.lookbookproduct-main-header{
+    margin-top: 48px;
+    height: 80px;
+    padding-top: 18px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+.lookbookproduct-main-header p{
+    color: var(--dark);
+    text-align: center;
+}
+/*---------------- Card Product -------------*/
+.cardproduct{
+    margin:0px;
+    padding:0px;
+    border: 1px var(--shading2) solid;
+    margin-top:30px;
+}
+
+.product{
+    padding:15px;
+}
+
+.product .img-overlay .badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.product .img-overlay{
+    position: relative;
+}
+
+.product .img-overlay .overlay-button{
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .4s;
+}
+
+
+
+.overlay-button .zoom-button, .overlay-button .heart-button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1.5px solid var(--shading1);
+    text-align: center;
+    padding-top: 7.5px;
+    color: var(--shading1);
+    transition: all ease-out .3s;
+    cursor: pointer;
+}
+
+.overlay-button .heart-button{
+    margin-top: 10px;
+}
+
+.overlay-button{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+
+
+
+.product-name{
+    font-family: titlefont;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    color: var(--dark);
+}
+
+.product-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-type{
+    margin-top: 8px;
+}
+
+.product-type-name{
+    font-family:subfont;
+    font-size: 14px;
+    color: var(--shading1);
+}
+
+/*--------------- Product-Price ---------*/
+
+.price{
+    margin-top: 8px;
+
+}
+.product-price-discount{    
+    font-family:subfontlight;
+    font-size: 14px;
+    color: var(--shading1);
+    text-decoration-line: line-through; 
+}
+
+.product-price{
+    font-family:subfont;
+    font-size: 14px;
+    text-align: right;
+    color: var(--shading1);
+    padding-left: 4px;
+}
+
+
+
+/*-------Product-Button ---------*/
+.product-button{
+    margin:0px;
+    padding:0px;
+    height:40px;
+    border-top: 1px var(--shading2) solid;
+}
+
+.btn-addtocart{
+    display:block;
+    float:left;
+    width:50%;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    color: var(--primary);
+    font-family:subfont;
+    font-size: 14px;
+    padding-top: 10px;
+    height: inherit;
+    transition: all ease .3s;
+}
+
+.btn-buynow{
+    display:block;
+    float: right;
+    width:50%;
+    border: none;
+    border-left: 1px var(--shading2) solid;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary);
+    font-family:subfont;
+    font-size: 14px;
+    height: inherit;
+    padding-top: 10px;
+    transition: all ease .3s;
+}
+
+.shopall-btn{
+    margin-top: 56px !important;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+
+.shopall-btn a{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+
+
+
+/*--------------------------------------------------------- Extra Large --------------------------------------------------*/
+@media (min-width:1200px) {
+/*---------------- CAROUSEL -------------*/
+.detail-box-stroke::before{
+    content: '';
+    display: block;
+    background-color: var(--dark);
+    width: 30px;
+    height: 2px;
+    position: relative;
+    top: 4px;
+}
+
+.detail-box-trai{
+    margin-left: 30px;
+}
+.detail-box-phai p{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------- Card Product -------------*/
+    .btn-addtocart:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+
+    .btn-buynow:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+ /*---------------- Card Product -------------*/
+
+    .dropdown-sorting a:hover {
+        background-color: var(--dark);
+        color: var(--secondary);
+        text-decoration: none;
+    }
+  
+    .check-list:hover input ~ .checkmark {
+        background-color: rgb(129, 131, 92, .6);
+        
+    }
+
+
+    .slider{
+        opacity: 0.5;
+    }
+
+    .slidecontainer:hover .slider{
+        opacity: 1; 
+    }
+
+    .slidecontainer input[type=submit]:hover{
+        background-color: var(--dark);
+        color:var(--secondary);
+        transition: all ease .3s;
+    }    
+
+    .btn-filter-reset:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+    .btn-filter:hover{
+        text-decoration: none;
+        color: var(--secondary);
+        background-color: var(--dark);
+        transition: all ease .3s;
+    }
+
+    .cardproduct:hover .product .img-overlay .overlay-button{
+        visibility: visible;
+        opacity: 1;
+        transition: all ease .4s;
+    }
+    .zoom-button:hover, .heart-button:hover{
+        background-color: var(--shading1);
+        border: 1.5px solid var(--shading1);
+        color: var(--secondary);
+        transition: all ease-out .3s;
+    }
+
+/* --------------Slider Dots-hover--------------- */
+.lookbook-card:hover .lookbook-box img{
+    transform: scale(1.05);
+    transition: all ease .3s;
+}
+
+.lookbook-card:hover{
+    transform: translateY(-30px);
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+
+
+}
+/*----------------------------------------------------------------- Large ---------------------------------*/
+@media (max-width:1199px) and (min-width:992px) {
+/*---------------- CAROUSEL -------------*/
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px !important;
+}
+
+.detail-box-stroke::before{
+    content: '';
+    display: block;
+    background-color: var(--dark);
+    width: 30px;
+    height: 2px;
+    position: relative;
+    top: 4px;
+}
+
+.detail-box{
+    width: 350px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.detail-box-trai{
+    margin-left: 16px;
+}
+
+.detail-box-phai p{
+    margin-left: 16px;
+}
+
+.lookbook-box{
+    width: 350px;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+/*---------------- Card Product -------------*/
+.btn-addtocart:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+
+.btn-buynow:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+/*---------------- Card Product -------------*/
+
+.dropdown-sorting a:hover {
+    background-color: var(--dark);
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.check-list:hover input ~ .checkmark {
+    background-color: rgb(129, 131, 92, .6);
+    
+}
+
+.slider{
+    opacity: 0.5;
+}
+
+.slidecontainer:hover .slider{
+    opacity: 1; 
+}
+
+.slidecontainer input[type=submit]:hover{
+    background-color: var(--dark);
+    color:var(--secondary);
+    transition: all ease .3s;
+}    
+
+.btn-filter-reset:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+.btn-filter:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--dark);
+    transition: all ease .3s;
+}
+.cardproduct:hover .product .img-overlay .overlay-button{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease .4s;
+}
+.zoom-button:hover, .heart-button:hover{
+    background-color: var(--shading1);
+    border: 1.5px solid var(--shading1);
+    color: var(--secondary);
+    transition: all ease-out .3s;
+}
+
+/* --------------Slider Dots-hover--------------- */
+.lookbook-card:hover .lookbook-box img{
+    transform: scale(1.05);
+    transition: all ease .3s;
+}
+
+.lookbook-card:hover{
+    transform: translateY(-30px);
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*-------------------------------------------------- Medium ---------------------------------------------------*/
+@media (max-width:991px) and (min-width:768px) {
+
+
+
+  /* -------------------Title september-------------------------------- */
+  #lookbookdetail--september{
+    padding: 40px 15px 20px 15px;
+
+}
+
+.lookbookdetail--maintitle-september p{
+    margin-bottom: 0px;
+}
+
+
+
+
+    /* -----------------Metadata-MD ------------------------- */
+    .lookbook-metadata-md{
+        
+        height: 80px;
+        border-top: 1px solid var(--shading2);
+        border-bottom: 1px solid var(--shading2);
+    }
+
+    .metadata-md .meta h5{
+        font-family: subfont;
+        color: var(--primary);
+        font-size: 16px;
+        margin-bottom: 4px;
+        margin-left: 0px;
+        text-transform: uppercase;
+        
+    }
+
+    .metadata-md .meta p{
+        margin-bottom: 0px;
+        color: var(--primary);
+    }
+
+    .metadata-md{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .lookbook-media-md{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+        
+    }
+    .icon-blog{
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .icon-blog i{
+        font-size: 20px;
+        color: var(--white);
+    }
+
+
+    /* -----------------content ------------------------ */
+    
+    .img-september--lookbookdetail{
+        height: 600px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img-september--lookbookdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .lookbookdetail--title-september p{
+        margin-bottom: 30px;
+    }
+
+   
+
+
+
+
+/*----------------------------CAROUSEL---------------------------*/
+/*-------------BOX SLIDER------------*/
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px !important;
+}
+
+.detail-box-stroke::before{
+    content: '';
+    display: block;
+    background-color: var(--dark);
+    width: 15px;
+    height: 2px;
+    position: relative;
+    top: 4px;
+}
+
+.detail-box{
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.detail-box-trai{
+    margin-left: 15px;
+}
+
+.detail-box-phai p{
+    margin-left: 16px;
+    font-size: 16px;
+}
+.detail-box-trai p.display4-pc{
+    font-size: 40.5px;
+    line-height: 41px;
+}
+.lookbook-box{
+    width: 400px;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+
+
+/*---------------- Card Product -------------*/
+.btn-filter-reset{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*----------------------------------- Small ---------------------------*/
+@media (max-width:767px) and (min-width:576px) {
+   /* ------------------Title september-------------------------------- */
+   #lookbookdetail--september{
+    padding: 40px 15px 20px 15px;
+
+}
+
+.lookbookdetail--maintitle-september p{
+    margin-bottom: 0px;
+}
+
+
+
+/* -----------------content -------------------------- */
+    .img-september--lookbookdetail{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 550px;
+        width: 100%;
+    }
+    .img-september--lookbookdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .lookbookdetail--title-september p{
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+    /* -----Media MOBILE-SM--------------------- */
+    .lookbook-metadata-md{
+        
+        height: 80px;
+        border-top: 1px solid var(--shading2);
+        border-bottom: 1px solid var(--shading2);
+    }
+
+    .metadata-md .meta h5{
+        font-family: subfont;
+        color: var(--primary);
+        font-size: 16px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+    }
+
+    .metadata-md .meta p{
+        margin-bottom: 0px;
+        font-size: 16px;
+        color: var(--primary);
+    }
+
+    .metadata-md{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lookbook-media-md{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+        
+    }
+    .icon-blog{
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .icon-blog i{
+        font-size: 20px;
+        color: var(--white);
+    }
+
+
+
+
+/*----------------------------CAROUSEL---------------------------*/
+/*-------------BOX SLIDER------------*/
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px !important;
+}
+
+.detail-box-stroke::before{
+    content: '';
+    display: block;
+    background-color: var(--dark);
+    width: 15px;
+    height: 2px;
+    position: relative;
+    top: 4px;
+}
+
+.detail-box{
+    width: 550px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.detail-box-trai{
+    margin-left: 15px;
+}
+
+.detail-box-phai p{
+    margin-left: 16px;
+    font-size: 16px;
+}
+.detail-box-trai p.display4-pc{
+    font-size: 40.5px;
+    line-height: 41px;
+}
+.lookbook-box{
+    width: 550px;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- Card Product -------------*/
+.lookbookproduct-main-header p{
+    font-size: 40.5px;
+}
+.btn-filter-reset{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.dropdown-sorting {
+    width: 240px;
+}
+
+.dropdown-sorting a{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*------------------------------ Extra Small -----------------------*/
+@media (max-width:575px) {
+/* -------------------Title september-------------------------------- */
+#lookbookdetail--september{
+    padding: 40px 15px 20px 15px;
+
+}
+
+.lookbookdetail--maintitle-september p{
+    margin-bottom: 0px !important;
+}
+
+ /* -----------------content ------------------------ */
+    .img-september--lookbookdetail{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 500px;
+        width: 100%;
+    }
+    .img-september--lookbookdetail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .lookbookdetail--title-september p{
+        margin-bottom: 30px;
+    }
+
+
+
+ 
+    
+
+
+
+
+
+
+/* -----Media MOBILE-XS--------------------- */
+
+    .lookbook-metadata-md{
+        
+        height: 80px;
+        border-top: 1px solid var(--shading2);
+        border-bottom: 1px solid var(--shading2);
+    }
+
+    .metadata-md .meta h5{
+        font-family: subfont;
+        color: var(--primary);
+        font-size: 16px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        margin-right: 15px;
+    }
+
+    .metadata-md .meta p{
+        margin-bottom: 0px;
+        font-size: 16px;
+        color: var(--primary);
+        margin-right: 15px;
+    }
+
+    .metadata-md{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lookbook-media-md{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+        
+    }
+    .icon-blog{
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .icon-blog i{
+        font-size: 20px;
+        color: var(--white);
+    }
+
+
+/*----------------------------CAROUSEL---------------------------*/
+/*-------------BOX SLIDER------------*/
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px !important;
+}
+
+.detail-box-stroke::before{
+    content: '';
+    display: block;
+    background-color: var(--dark);
+    width: 15px;
+    height: 2px;
+    position: relative;
+    top: 4px;
+}
+
+.detail-box{
+    width: 450px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.detail-box-trai{
+    margin-left: 15px;
+}
+
+.detail-box-phai p{
+    margin-left: 16px;
+    font-size: 16px;
+}
+.detail-box-trai p.display4-pc{
+    font-size: 40.5px;
+    line-height: 41px;
+}
+.lookbook-box{
+    width: 450px;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------- Card Product -------------*/
+.lookbookproduct-main-header p{
+    font-size: 40.5px;
+}
+.btn-filter-reset{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.dropdown-sorting {
+    width: 210px;
+}
+
+.dropdown-sorting a{
+    font-size: 16px;
+}
+
+}

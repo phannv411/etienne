@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: var(--secondary)!important; 
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+.sub1-pc{
+    font-family: subfont;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--shading2);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+/*-------------------- 2022 SEPTEMBER LOOKBOOK-PC -------------*/
+
+.sep-lookbook{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 40px;
+}
+
+.sep-lookbook-trai, .sep-lookbook-phai{
+    outline: 1px solid red;
+}
+
+.sep-lookbook-phai{
+    padding-top: 60px;
+}
+
+    
+/*----------------------------CAROUSEL---------------------------*/
+/*----------------------------box slider-------------------------*/
+
+
+
+
+
+
+/* --------------Slider Dots--------------- */
+
+.owl-theme .owl-dots{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+
+.owl-theme .owl-dots::before{
+    content: '01';
+    font-family: subfont;
+    font-size: 20px;
+    position: relative;
+    left: -16px;
+    top: -4px;
+}
+
+.owl-theme .owl-dots::after{
+    content: '15';
+    font-family: subfont;
+    font-size: 20px;
+    position: relative;
+    right: -16px;
+    top: -3px;
+}
+
+
+.owl-theme .owl-dots .owl-dot{
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: var(--white) !important;
+    width: 30px !important;
+    height: 4px !important;
+    margin: 8px 0px !important;
+    border-radius: 0% !important;
+    outline: none !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    outline: none !important;
+    background: var(--dark) !important;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    outline: none !important;
+    background: var(--shading1) !important
+}
+
+.lookbook-card{
+    transition: all ease .3s;
+}
+
+.lookbook-box{
+	width: 420px;
+    height: 620px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.lookbook-box img{
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+.lookbook-card:hover .lookbook-box img{
+    transform: scale(1.05);
+    transition: all ease .3s;
+}
+
+.lookbook-card:hover{
+    transform: translateY(-30px);
+    transition: all ease .3s;
+}
+
+
+
+
+.detail-box{
+    width: 420px;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- Extra Large -------------*/
+@media (min-width:1200px) {
+    .detail-box-stroke::before{
+        content: '';
+        display: block;
+        background-color: var(--dark);
+        width: 30px;
+        height: 2px;
+        position: relative;
+        top: 4px;
+    }
+
+    .detail-box-trai{
+        margin-left: 30px;
+    }
+    .detail-box-phai p{
+        margin-left: 30px;
+    }
+    
+    
+}
+    
+/*-------------------- Large -------------*/
+ @media (max-width:1199px) and (min-width:992px) {
+    .owl-theme .owl-dots .owl-dot span{
+        width: 20px !important;
+    }
+
+    .detail-box-stroke::before{
+        content: '';
+        display: block;
+        background-color: var(--dark);
+        width: 30px;
+        height: 2px;
+        position: relative;
+        top: 4px;
+    }
+
+    .detail-box{
+        width: 350px;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .detail-box-phai p{
+        margin-left: 30px;
+    }
+
+    .lookbook-box{
+        width: 350px;
+        height: 500px;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    
+    .lookbook-box img{
+        text-align: center; 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all ease .3s;
+    }
+
+}
+    
+/*-------------------- Medium -------------*/
+@media (max-width:991px) and (min-width:768px) {
+ 
+
+}
+    
+/*-------------------- Small -------------*/
+@media (max-width:767px) and (min-width:576px) {
+
+        
+}
+    
+/*-------------------- Extra Small -------------*/
+@media (max-width:575px) {
+ 
+    
+    
+    
+   
+    
+}

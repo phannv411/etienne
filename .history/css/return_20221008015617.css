@@ -1,0 +1,250 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+/* --------------WARRANTY-title ------------------------- */
+#warranty-title p{
+    text-align: center;
+    margin-bottom: 0px;
+    
+
+}
+#warranty-title{
+    padding-top: 20px;
+    height: 80px;
+}
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+
+
+
+/* -----------link-contact ---------- */
+#contact-join-us{
+    background-image: url(../img/Recruit-Pic.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--secondary);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+
+
+/* -----------------RETURN & REFUND-content----------------- */
+.return-content p{
+    font-family: bodyfont;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.return-content span{
+    font-family: titlefont;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.return-content h4{
+    margin-bottom: 14px;
+    margin-top: 40px;
+}
+.return-content h5{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.size-fit{
+    font-family: titlefont !important;
+    font-size: 16px;
+}
+
+
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+    /* -----------link-contact ---------- */
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+    
+    
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+    /* -----------link-contact ---------- */
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+    
+    
+}
+
+
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+
+
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* ------------------ */
+    .size-fit{
+        font-family: titlefont !important;
+        font-size: 18px;
+    }
+    
+}
+
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+   /* -----------Link Contact ---------- */
+   #contact-join-us{
+    background-image: url(../img/contact-us/link-contact-us.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--white);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.button-join-us{
+    margin-top: 30px;
+}
+    /* ------------------ */
+    
+    .size-fit{
+        font-family: titlefont !important;
+        font-size: 18px;
+    }
+    
+}
+
+
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+    /* --------------warranty-title------------------------- */  
+    #warranty-title{
+        padding-top: 25px;
+        height: 80px;
+    }
+     /* -----------Link Contact ---------- */
+     #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+
+    .button-join-us{
+        margin-top: 30px;
+    }
+    
+   /* ------------------ */
+   
+   .size-fit{
+    font-family: titlefont !important;
+    font-size: 18px;
+}
+
+    
+}

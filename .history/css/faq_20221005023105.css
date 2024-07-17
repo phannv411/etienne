@@ -1,0 +1,485 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+/* --------------Title-FAQ --------------------------*/
+
+#Title-faq-title p{
+    text-align: center;
+    margin-bottom: 0px;  
+}
+#Title-faq-title{
+    padding-top: 20px;
+    height: 80px;
+}
+.Title-faq-title-mb span{
+    font-family: subfont;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+.Title-faq-title-mb{
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+/* ----------------------FAQs------------------------------------ */
+.faq-left a{
+    font-family: subfont;
+    font-size: 16px;
+    color: var(--text);
+    text-decoration: none;
+    transition: all ease .3s;
+}
+
+
+
+.title-green {
+    color: var(--primary);
+    font-family: subfont;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.title-green a{
+    color: var(--primary);
+}
+
+.faq-left h3{
+    margin-bottom: 0px;
+}
+.faq-left{
+    border: 1px solid var(--shading2);
+    margin-top: 48px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 332px;
+
+}
+/* -----faq-right-------------- */
+.faq-right{
+    margin-top: 48px;
+}
+
+
+#accordionExample .card{
+    border: 1px solid var(--shading2);
+    background-color: transparent;
+    margin-bottom: 30px;
+    border-radius: 0px;
+}
+
+
+#accordionExample .card-header{
+    background-color: transparent;
+    border-bottom: 1px solid var(--shading2);
+    transition: all ease .3s;
+}
+
+
+
+
+#accordionExample .card-header .btn-link{
+    font-family: titlefont;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+#accordionExample .card-header .btn-link::before{
+    content:'';
+    display: block;
+    background-color: var(--primary);
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+#accordionExample .card-header .collapsed::after{
+    content:'';
+    display: block;
+    background-color: var(--primary);
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+
+
+  
+/* -----------------------pagination ------------------------------------ */
+#pagination{
+    margin-top: 18px !important;
+    margin-bottom: 48px !important;
+}
+
+
+
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+    /* ------------faq-item-left Desktop----------------- */
+    .faq-title-left {
+        margin-top: 24px;
+    }
+
+    .faq-left a:hover{
+        color: var(--primary);
+        transition: all ease .3s;
+    }
+
+    #accordionExample .card-header:hover{
+        background-color: rgba(161, 162, 133, .15);
+        transition: all ease .3s;
+    }
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+   
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--primary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+    /* ------------faq-item-left Desktop--------------- */
+    .faq-left{
+        height: 380px;
+    }
+    .faq-title-left {
+        margin-top: 24px;
+    }
+
+    .faq-left a:hover{
+        color: var(--primary);
+        transition: all ease .3s;
+    }
+
+    #accordionExample .card-header:hover{
+        background-color: rgba(161, 162, 133, .15);
+        transition: all ease .3s;
+    }
+    
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--primary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* -----------faq-item MD  ---------- */
+    .faq-mobile{
+        border: 1px solid var(--shading2);
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-top: 48px;
+        height: 200px;
+    }
+    .faq-mobile h3{
+        margin-bottom: 0px;
+    }
+    .faq-mobile a{
+        font-family: subfont;
+        font-size: 18px;
+        color: var(--text);
+        text-decoration: none;
+    }
+    .title-green {
+        color: var(--primary) !important;
+        
+    }
+    .faq-mobile-flex{
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+    .faq-title-left a{
+        margin-top: 0px !important;
+        
+        
+    }
+    .faq-title-mobile{
+        margin-top: 30px;
+    }
+    /* ----------faq-right-------------- */
+    #accordionExample .card-header .btn-link{
+        font-family: titlefont;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--secondary);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+    
+    /* -----------------------pagination -------------------- */
+    .pagination-faq a{
+        margin: 0px 5px !important;
+    }
+
+    /* -----------faq-item MD  ---------- */
+    .faq-mobile{
+        border: 1px solid var(--shading2);
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-top: 48px;
+        height: 252px;
+    }
+    .faq-mobile h3{
+        margin-bottom: 0px;
+    }
+    .faq-mobile a{
+        font-family: subfont;
+        font-size: 18px;
+        color: var(--text);
+        text-decoration: none;
+    }
+    .title-green {
+        color: var(--primary) !important;
+        
+    }
+    .faq-mobile-flex{
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+    .faq-title-left a{
+        margin-top: 0px !important;
+        
+        
+    }
+    .faq-title-mobile{
+        margin-top: 30px;
+    }
+    /* ----------faq-right-------------- */
+    #accordionExample .card-header .btn-link{
+        font-family: titlefont;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    #accordionExample .card-header .btn{
+        width: 90%;
+    }
+
+
+}
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    /* -----------Link Contact ---------- */
+    #contact-join-us{
+        background-image: url(../img/contact-us/link-contact-us.jpg);
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-careers{
+        margin-bottom: 0px;
+        color: var(--white);
+    }
+    .title-join-us{
+        color: var(--white);
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+    /* -----------------------pagination ------------------ */
+    .pagination-faq a{
+        margin: 0px 3px !important;
+    }
+    /* -----------faq-item MD  ---------- */
+    .faq-mobile{
+        border: 1px solid var(--shading2);
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-top: 48px;
+        height: 252px;
+    }
+    .faq-mobile h3{
+        margin-bottom: 0px;
+    }
+    .faq-mobile a{
+        font-family: subfont;
+        font-size: 18px;
+        color: var(--text);
+        text-decoration: none;
+    }
+    .title-green {
+        color: var(--primary) !important;
+        
+    }
+    .faq-mobile-flex{
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+    .faq-title-left a{
+        margin-top: 0px !important;
+        
+        
+    }
+    .faq-title-mobile{
+        margin-top: 30px;
+    }
+
+    /* ----------faq-right-------------- */
+    #accordionExample .card-header .btn-link{
+        font-family: titlefont;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    
+    #accordionExample .card-header .btn{
+        width: 90%;
+    }
+
+    
+}

@@ -1,0 +1,105 @@
+/*---------------------Designer List Mobile---------------------*/
+#designer-list-mb{
+    height: 750px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.owl-carousel .owl-stage-outer{
+    min-height: 750px;
+}
+
+
+.card-down{
+    position: relative;
+    top: 60px;
+}
+
+.designer-trilogy{
+    position: relative;
+}
+
+.designer-mb-card{
+    width: 250px;
+    padding: 60px 0px;
+    margin-left: 60px;
+}
+
+.designer-card1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.designer-img-mb{
+    width: 250px;
+    height: 375px;
+    transform: rotate(-5deg);
+}
+
+.designer-img-mb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(46, 46, 46, .8);
+}
+
+.designer-info-mb p{
+    color: var(--white);
+    white-space: nowrap;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 25%;
+    left: -20%;
+    transform: rotate(5deg);
+}
+
+.designer-info-mb span{
+    font-family: subfont;
+    font-size: 18px;
+    color: var(--secondary);
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    transform: rotate(5deg);
+}
+
+.designer-mb-bottom{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.designer-mb-bottom h5{
+    color: var(--white);
+}
+
+.designer-mb-bottom p{
+    color: var(--secondary);
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+

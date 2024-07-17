@@ -1,0 +1,225 @@
+/* ------------------Breadcrumb------------------------------------- */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    padding-top: 8px;
+}
+
+/* ------------------Jobpost Title------------------------------------- */
+.jobpost-title{
+    padding: 30px 0px 16px 0px;
+}
+
+
+/* -----------------Metadata -------------------------------------- */
+.blog-metadata{
+    
+    height: 80px;
+    border-top: 1px solid var(--shading2);
+    border-bottom: 1px solid var(--shading2);
+}
+
+.metadata .meta h5{
+    font-family: subfont;
+    color: var(--dark);
+    font-size: 16px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.metadata .meta p{
+    margin-bottom: 0px;
+    color: var(--primary);
+}
+
+.metadata{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.blog-media ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+}
+.blog-media ul li{
+    margin-left: 16px;
+    
+}
+.blog-media ul li a{
+    font-family: subfont;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--shading1);
+    height: 80px;    
+}
+
+.blog-media ul li a:hover{
+    color: var(--primary);
+}
+
+.blog-media ul li a::after{
+    content: '';
+    height: 1.5px;
+    width: 0%;
+    background-color: var(--primary);
+    display: block;
+    transition: all ease .5s;
+}
+
+.blog-media ul li a:hover::after{
+    width: 100%;
+    transition: all ease .5s;
+}
+ 
+
+.blog-media{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-end;
+}
+
+.jobpost-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.jobpost-content h1{
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+
+
+}
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+    /* -----------------Metadata MD------------------------- */
+    .blog-metadata-md{
+        
+        height: 80px;
+        border-top: 1px solid var(--shading2);
+        border-bottom: 1px solid var(--shading2);
+    }
+
+    .metadata-md .meta h5{
+        font-family: subfont;
+        color: var(--dark);
+        font-size: 16px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+    }
+
+    .metadata-md .meta p{
+        margin-bottom: 0px;
+        color: var(--primary);
+    }
+
+    .metadata-md{
+        padding-right: 30px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog-media-md{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+        
+    }
+    .icon-blog{
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .icon-blog i{
+        font-size: 20px;
+        color: var(--white);
+    }
+
+}
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+    .breadcrumbb{
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .jobpost-title p{
+        font-size: 52.5px;
+        line-height: 52px;
+    }
+
+
+    
+
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    .breadcrumbb{
+        display: block;
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .jobpost-title{
+        padding: 20px 30px 0px 30px;
+    }
+
+    .jobpost-title p{
+        font-size: 40.5px;
+        line-height: 41px;
+    }
+
+
+}

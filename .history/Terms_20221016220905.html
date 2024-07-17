@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms and Conditions</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" href="css/terms.css">
+	<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+
+
+
+	<!----Fontawesome-->
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+
+
+
+	<script>
+		$(document).ready(function(){
+		  $("#megamenu-desktop").hide();
+		  $("#mega-menu-mb").hide();
+		  $("#blackscreen").hide();
+	 
+		  $(".burger-menu").click(function(){
+			$("#megamenu-desktop").slideToggle(700,'swing');
+			$("#blackscreen").fadeToggle(600,'swing');
+		  })
+	
+		  $(".burger-menu-mb").click(function(){
+			$("#mega-menu-mb").slideToggle(700,'swing');
+		  })
+	
+		  $("#blackscreen").click(function(){
+			$("#megamenu-desktop").slideUp(700,'swing');
+			$("#blackscreen").fadeOut(600,'swing');
+		  })
+	
+		})
+	
+	</script>
+	
+
+
+  </head>
+  <body>
+ <!-------------------------------------------MODAL POP UP ------------------------------------------>
+ <div id="signin-popup">
+    <div class="sign-in-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN IN</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="signin-form--label password-input">
+          <label for="signin-password">Password</label>
+          <div class="password-input--field">
+            <input type="password" id="signin-password" placeholder="Enter password here">
+            <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+          </div>
+          <div class="password-element">
+            <label class="check-list"><span>Remember me</span>
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <span class="checkmark"></span>
+            </label>
+            <a href="#">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signin-btn">
+        <a href="Profile.html" class="btn-primary-xl">sign in</a>
+        <p>Don't have an account? <button id="signup-btn">Sign up</button></p>
+      </div>
+    </div>
+  </div><!---------------------------Sign In-form ------------------------------>
+  <div id="signup-popup">
+    <div class="sign-up-form">
+      <div class="popup-title">
+        <p class="display3-pc">SIGN UP</p>
+      </div>
+      <div class="x-mark">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup-form">
+        <div class="first-last-name">
+          <div class="signin-form--label firstname-input">
+            <label for="firstname">First Name*</label>
+            <br>
+            <input type="text" placeholder="Your First Name" id="firstname">
+          </div>
+          <div class="signin-form--label lastname-input">
+            <label for="lastname">Last Name*</label>
+            <br>
+            <input type="text" placeholder="Your Last Name" id="lastname">
+          </div>
+        </div>
+        <div class="signin-form--label usename-input">
+                        <label for="username">Email</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="username">
+        </div>
+        <div class="password-signup-confirm">
+          <div class="signin-form--label password-input">
+            <label for="signup-password">Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-password" placeholder="Enter password here">
+              <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+          <div class="signin-form--label confirm-password-input">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <div class="password-input--field">
+              <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+              <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+            </div>
+          </div>
+        </div>
+        <p>Sign up email to receive 10% off your first order.
+          <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+      </div>
+      <div class="signin-btn">
+        <a href="#" class="btn-primary-xl">sign up</a>
+        <p>Already have an account? <button id="signin-btn">Sign In</button></p>
+      </div>
+    </div>
+  </div><!---------------------------Sign Up-form ------------------------------>
+  
+      <!------------------------------------------- CART POP UP ------------------------------------------>
+      <div class="container-fluid cart-modal">
+        <div class="cart-modal-title">
+          <p class="display4-pc">ORDER SUMMARY</p>
+        </div>
+        <div class="x-mark">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-modal-flex">
+          <div class="container cart-modal-slide">
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/Stool/SEDONA BAR.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>SEDONA BAR</h5>
+                      <p>Stool</p>
+                      <p>Color: Beige</p>
+                      <div class="modal-button-remove">
+                        <button href="#" type="button">Remove</button>
+                    </div><!--removebtn-->
+                  </div><!--name--->
+  
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 650.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 650.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/Stool/DINNING SYNTHETIC.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>DINNING SYNTHETIC</h5>
+                      <p>Stool</p>
+                      <p>Color: Brown</p>
+                  </div><!--name--->
+    
+                  <div class="modal-button-remove">
+                      <button href="#" type="button">Remove</button>
+                  </div><!--removebtn-->
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 399.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 399.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+            <div class="cart-checkout-slide">
+              <div class="checkout-slide">
+                  <img src="img/shopall/chair/ONYX.jpg">
+              </div>
+              <div class="cartmodal-product-content">
+                  <div class="modal-product-data">
+                      <h5>ONYX WOOD CHAIR</h5>
+                      <p>Chair</p>
+                      <p>Color: Beige</p>
+                  </div><!--name--->
+    
+                  <div class="modal-button-remove">
+                      <button href="#" type="button">Remove</button>
+                  </div><!--removebtn-->
+                  <hr>
+                  <div class="cartmodal-price-quantity">
+                      <p class="cartmodal-single-price">$ 989.00</p>
+                      <div class="modal-checkout-quantity">
+                              <div class="checkout-counter">
+                                <span class="down" onClick="decreaseCount(event, this)"><i class="fa-regular fa-angle-down fa-lg"></i></span>
+                                <input type="text" value="1">
+                                <span class="up" onClick="increaseCount(event, this)"><i class="fa-regular fa-angle-up fa-lg"></i></span>
+                              </div>
+                      </div>
+                      <p class="cartmodal-total-price">$ 989.00</p>
+                  </div><!-------------Quantity &amp; Price------------>
+              </div>
+            </div><!-------------Cardproduct-01-checkout------------>
+          </div>
+          <div class="container cart-modal-bottom">
+            <div class="modal-grand-total">
+              <hr>
+              <div class="grand-total-price">
+                <h5 class="grand-text">Grand Total Incl. Tax</h5>
+                <p class="grand-price">$ 1,087.00</p>
+              </div>
+            </div>
+            <div class="modal-cart-btn">
+              <a href="ShopAll.html" class="btn-olprimary-lg">continue shopping</a>
+              <a href="Cart-page.html" class="btn-primary-lg">Proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+  <!-------------------------------------------Header Desktop ------------------------------------------>
+    <header class="container-fluid d-none d-lg-block header-desktop">
+      <div class="container">
+        <div class="row d-flex align-items-center header-row">
+          <div class="left-navi
+                      col-xl-2
+                      col-lg-2">
+                      <div class="burger-menu">
+                        <div class="barline"></div>
+                      </div>
+                      <a href="ShopAll.html">SHOP</a> 
+                      
+          </div><!--Left Navi-->
+          <div class="center-navi
+                      col-xl-2 offset-xl-3
+                      col-lg-2 offset-lg-3">
+                      <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+          </div><!--Logo-->
+          <div class="right-navi
+                      col-xl-3 offset-xl-2
+                      col-lg-3 offset-lg-2">
+                      <div class="cart-section">
+                        BAG
+                        <div class="cart-count">0</div>
+                      </div>
+                      <button id="signin-modal">SIGN IN</button>                       
+          </div><!--Right Navi-->
+        </div>
+      </div>
+    </header>
+  <!-------------------------------------------Blackscreen ------------------------------------------>
+  <div class="container-fluid" id="blackscreen"></div>
+  <div class="container-fluid" id="blackscreen2"></div>
+  <div class="container-fluid" id="blackscreen3"></div>
+  
+  <!-------------------------------------------Megamenu Desktop ------------------------------------------>
+  <div class="container-fluid" id="megamenu-desktop">
+    <div class="row d-none d-lg-block">
+      <div class="col-xl-5 offset-xl-7
+                  col-lg-5 offset-lg-7 img-megamenu">
+        <p class="display3-mb" >NATIVE IRON CHAIR</p>
+        <span>FEATURED PRODUCT</span>
+      </div>
+    </div>
+    <div class="container megamenu-content d-none d-lg-block">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7  d-flex justify-content-between">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="OurStory.html">ABOUT</a></li>
+              <li><a href="Blog.html">JOURNAL</a></li>
+              <li><a href="Lookbook.html">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="ShopAll.html">ALL</a></li>
+              <li><a href="Seating.html">SEATING</a></li>
+              <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+              <li><a href="Seating.html">DECOR</a></li>
+              <li><a href="Seating.html">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Warranty.html">WARRANTY</a></li>
+              <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+              <li><a href="Paymentsp.html">PAYMENT</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Mega Menu List-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 search-field">
+          <p>Looking for anything special today?</p>
+          <div class="search-box">
+            <button class="search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+            <input type="text" class="search-input" placeholder="Enter keyword here...">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------Header Mobile ------------------------------------------>
+  <header class="container-fluid d-lg-none header-mobile">
+    <div class="container">
+      <div class="row d-flex align-items-center header-row">
+        <div class="left-navi
+                    col-md-3
+                    col-sm-4
+                    col-4">
+                    <div class="burger-menu-mb">
+                      <div class="barlinemb"></div>
+                    </div>
+                    <a href="ShopAll.html">SHOP</a> 
+                    
+        </div><!--Left Navi-->
+        <div class="center-navi
+                    col-md-2 offset-md-2
+                    col-sm-2 offset-sm-1
+                    col-2 offset-1">
+                    <a href="Home.html"><img src="img/Logo Header.svg" alt="Logo"></a>
+        </div><!--Logo-->
+        <div class="right-navi
+                    col-md-2 offset-md-3
+                    col-sm-3 offset-sm-2
+                    col-3 offset-2">
+                    <div class="cart-section">
+                      BAG
+                      <div class="cart-count">0</div>
+                    </div>                     
+        </div><!--Right Navi-->
+      </div>
+    </div>
+  </header>
+  
+  <!-------------------------------------------Megamenu Mobile ------------------------------------------>
+  <div id="mega-menu-mb" class="d-lg-none">
+    <div class="container-fluid sub-header-mb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8
+                      col-sm-8
+                      col-8">
+                      <input type="text" class="search-input-mb" placeholder="SEARCH..."> 
+          </div>
+          <div class="col-md-4
+                      col-sm-4
+                      col-4 left-subhead">
+                      <button id="signin-modal-mb">SIGN IN</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="megamenu-content-mb">
+      <div class="row">
+        <div class="col-6">
+          <div class="menu-section">
+            <span class="display4-pc">ÉTIENNE</span>
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="OurStory.html">ABOUT</a></li>
+              <li><a href="Blog.html">JOURNAL</a></li>
+              <li><a href="Lookbook.html">LOOKBOOK</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SHOP</span>
+            <ul>
+              <li><a href="ShopAll.html">ALL</a></li>
+              <li><a href="Seating.html">SEATING</a></li>
+              <li><a href="Seating.html">DESK &amp; TABLE</a></li>
+              <li><a href="Seating.html">DECOR</a></li>
+              <li><a href="Seating.html">ORGANISATION</a></li>
+            </ul>
+          </div>
+  
+          <div class="menu-section">
+            <span class="display4-pc">SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Warranty.html">WARRANTY</a></li>
+              <li><a href="Return.html">RETURN &amp; REFUND</a></li>
+              <li><a href="Paymentsp.html">PAYMENT</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signin-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN IN</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="signin-form--label password-input">
+              <label for="signin-password">Password</label>
+              <div class="password-input--field">
+                <input type="password" id="signin-password" placeholder="Enter password here">
+                <button id="password-eye"><i class="fa-light fa-eye-slash"></i></button> 
+              </div>
+              <div class="password-element">
+                <label class="check-list"><span>Remember me</span>
+                  <input type="checkbox" name="saveinfo" id="saveinfo">
+                  <span class="checkmark"></span>
+                </label>
+                <a href="#">Forget password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="signin-btn">
+            <a href="Profile.html" class="btn-primary-xl">sign in</a>
+            <p>Don't have an account? <button id="signup-btn-mb">Sign up</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="signup-mb">
+      <div class="row">
+        <div class="col-12">
+          <div class="popup-title">
+            <p class="display3-pc">SIGN UP</p>
+          </div>
+          <div class="return-mark-mb return-mark-mb-xs">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="popup-form">
+            <div class="first-last-name">
+              <div class="signin-form--label firstname-input">
+                <label for="firstname">First Name*</label>
+                <br>
+                <input type="text" placeholder="Your First Name" id="firstname">
+              </div>
+              <div class="signin-form--label lastname-input">
+                <label for="lastname">Last Name*</label>
+                <br>
+                <input type="text" placeholder="Your Last Name" id="lastname">
+              </div>
+            </div>
+            <div class="signin-form--label usename-input">
+                            <label for="username">Email</label>
+                            <br>
+                            <input type="text" placeholder="example@email.com" id="username">
+            </div>
+            <div class="password-signup-confirm">
+              <div class="signin-form--label password-input">
+                <label for="signup-password">Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-password" placeholder="Enter password here">
+                  <button id="password-eye2"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+              <div class="signin-form--label confirm-password-input">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <div class="password-input--field">
+                  <input type="password" id="signup-confirm-password" placeholder="Enter password again">
+                  <button id="password-eye3"><i class="fa-light fa-eye-slash"></i></button> 
+                </div>
+              </div>
+            </div>
+            <p>Sign up email to receive 10% off your first order.
+              <br> By signing up, you agree to ours Terms &amp; Conditions</p>
+          </div>
+          <div class="signin-btn">
+            <a href="#" class="btn-primary-xl">sign up</a>
+            <p>Already have an account? <button id="signin-btn-mb">Sign In</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-------------------------------------------Scroll To Top ------------------------------------------>
+<div id="scrollTop">
+	<a href="#toppage-pc" class="toppage-pc d-none d-md-block">Top <i class="fa-light fa-arrow-right"></i></a>
+	<a href="#toppage-mb" class="toppage-mb d-md-none"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+  </div>
+
+<!-------------------///////////////******Main Section*****\\\\\\\\\\\\\\\\\ ------------------------------->
+<main data-scroll-container>
+    <section id="toppage">
+		<div id="toppage-pc"></div>
+		<div id="toppage-mb"></div>
+	  </section>
+      
+<!---------------------------- Terms and Conditions-title  -------------------------------->
+<div class="container-fluid" id="terms-title">
+	<div class="container" >
+		<p class="display4-pc d-none d-sm-block">Terms &amp; Conditions</p>
+		<p class="display4-mb d-sm-none">Terms &amp; Conditions</p>
+		
+	</div>
+</div>
+<!---------------------------- Terms and Conditions-title -------------------------------->
+
+
+<!---------------------------------------Breadcrumb ----------------------------------------->
+<div class="container-fluid breadcrumbb-bg">
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-12
+                      col-lg-12
+                      col-md-12
+                      col-sm-12 breadcrumbb ">
+                      <ul>
+                        <li><a href="Home.html">Home</a></li>   
+                        <li class="actived"> Terms &amp; Conditions</li>
+                      </ul>
+          </div>
+		  
+        </div>
+      </div>
+</div><!---------------------------------------Breadcrumb ----------------------------------------->
+
+<!---------------------------------------Terms and Conditions-content ----------------------------------------->
+<div class="container terms-content">
+    <div class="row">
+        <div class="col-12"> 
+            <div class=" conditions-content">
+                <h3>GENERAL</h3>
+                <p>These standard terms and conditions form the entire agreement between Velvet Home &amp; Living and the Customer regarding the subject matter hereof.  No alteration or variation shall be of any force or effect unless such change is reduced to writing and signed by both parties. All provisions and clauses of this contract are severable from each other. Any provision or clause of this contract which becomes unenforceable due to voidness, invalidity, illegality, unlawfulness or for any other reason whatsoever, shall to the extent that it is so unenforceable, be treated as not forming part of the contract.  The remaining provisions and clauses of this contract shall remain of full force and effect.</p>
+            </div>
+            <div class="terms-content-nd">
+                <h3>QUOTATIONS</h3>
+                <p>Quotations which are provided to the Customer by Velvet Home &amp; Living, will be capable of acceptance within a period of 7 (seven) days from the date of the relevant quotation. Thereafter, Velvet Home &amp; Living will be entitled to either withdraw or alter the quotation.</p>
+            </div>
+            <div class="terms-content-nd">
+                <h3>ACCEPTANCE OF CONTRACT</h3>
+                
+                <p>A contract shall come into existence when the Customer provides Velvet Home &amp; Living with written notice (including email) of its acceptance of a quotation given by the Company, within the stipulated 7 (seven) days thereof, or alternatively when the Company accepts in writing (including email) any order placed by a Customer.</p>
+                <p>
+                    The Customer’s order or acceptance of a quote is binding and in the event that the Customer decides to cancel the order or accepted quote, the Customer accepts that a reasonable cancellation fee may be charged.
+                </p>
+                <p>In the event that an order or accepted quote relates to Products that Velvet Home &amp; Living have been expressly or implicitly required to procure, create or alter in order to satisfy the Customer’s requirements, the order or accepted quote may not be cancelled by the Customer.</p>
+                <p>The Customer acknowledges that the Company’s sales representatives have no authority to vary any of these terms or conditions of sale and the Company will not be liable or bound by any statements, warranties or representations made by such sales representatives, unless such variations have been expressly stated in writing and signed by a duly authorised representative of Velvet Home &amp; Living.</p>
+                <p>The Customer may only cancel a contract if Velvet Home &amp; Living agree to this in writing. Furthermore, the customer may be required to pay reasonable charges based on expenses already incurred.</p>
+
+            </div>
+            <div class="terms-content-nd">
+                <h3>PURCHASE PRICE &amp; PAYMENT</h3>
+                <p>The purchase price of the Products shall be paid to Velvet Home &amp; Living in full upon presentation of the relevant tax invoice.  Goods remain the property of the Company until paid in full.</p>
+                <p>Payments made by EFT (Electronic Funds Transfer) require a 48 hour period in order for the funds to clear and to allocate them to the relevant order/s. Goods will only be released for collection or delivery once the receipt of funds has been confirmed.</p>
+                <p>Due to the high risk of fraud prevalent in South Africa, Velvet Home &amp; Living does not accept cheque payments.</p>
+                <p>If the Customer fails to make any payment on due date, all amounts owing by the Customer, whether or not the date for payment has arrived, will immediately become due and payable by the Customer. In such a case, the Customer shall also immediately forfeit all discounts of whatsoever nature which may have been granted to it by Velvet Home &amp; Living.</p>
+            </div>
+            <div class="terms-content-nd">
+                <h3>DELIVERY</h3>
+                <p>The Customer is responsible for the costs related to the delivery of the Product/s.</p>
+                <p>Velvet Home &amp; Living will provide the Customer with a delivery quotation immediately on receipt of the quotation from the transportation company.</p>
+                <p>While Velvet Home &amp; Living endeavours to organise country wide delivery, delivery to all locations cannot be guaranteed.</p>
+                <p>Delivery charges are payable in full at the time of the order being placed.</p>
+                <p>The Customer acknowledges that a delivery date given in advance is an estimation of delivery date and while Velvet Home &amp; Living will endeavour to ensure that delivery is completed as soon as is reasonably possible after the estimated delivery date, it shall not be liable for delays resulting from any cause beyond its control.</p>
+                <p>Risk in and to the Product/s pass to the Customer upon delivery.</p>
+                <p>Upon receipt of the Product/s the Customer will inspect the Product/s and must inform Velvet Home &amp; Living of any errors by way of written notice within 7 (seven) days of receipt of the Product/s by the Customer. In the event that the Customer fails to notify the company of any such claim within the specified time period, such failure shall constitute a waiver of any such claim.</p>
+                <p>Any Product/s delivered to the Customer in error will only be considered for return by Velvet Home &amp; Living if the Product/s are undamaged.</p>
+
+            </div>
+            <div class="terms-content-nd">
+                <h3>RETURNS AND REFUNDS</h3>
+                <p>Products sold may only be returned and refunded within 7 (seven) days of invoice date, upon presentation of the invoice and on condition that the product/s are returned undamaged and in their original condition. Notwithstanding the above, products that have been discounted or are on sale, are sold voetstoots and may not be exchanged or returned. </p>
+
+            </div>
+            <div class="terms-content-nd">
+                <h3>WARRANTIES</h3>
+                <p>The colour, texture and composition of fabric or wood may vary from the products displayed in store or on this website due to dye lot variations and natural timber variations. Due to the many variations in monitors and browsers, colour samples may appear different on different monitors. Computer monitors are not all calibrated equally and colour reproduction on the Internet is not precise. Reclaimed wood is unique, and no two products are the same. The wood will display holes, nail marks, scuffing and are part of the intrinsic beauty of the product. Solid timber products have natural markings, cracks and colour variations due to the nature of the product; these are the characteristics of a natural product and not defects or signs of damage. </p>
+                <p class="size-bold">Leather Furniture</p>
+                <p>Dye lots may vary as the hide has not been corrected to remove imperfections.  The leather develops a patina during its expected useful lifetime. Colour variations may occur due to multiple hides required to make up the item.</p>
+                <p>Marks, tick bite scars, scratches, stretch marks and scuff marks are characteristic of full grain leather and are therefore not defects. Cattle branding marks may also be visible and are not considered defects. Exposure to too much sunlight may lead to fading and drying.</p>
+                <p class="size-bold">Velvet Home &amp; Living will only be liable to honour a warranty if:</p>
+                <p>The defect existed at the time of delivery and manifested during the warranty period;</p>
+                <p>The defect did not arise due to normal wear and tear or misuse/abuse by the Customer;</p>
+                <p>The product concerned is used for the purpose intended and in a domestic/residential environment. (unless a waiver is given in writing by Velvet Home &amp; Living)</p>
+                <p>The Customer duly complied with the care instructions and maintenance and the Customer provides the original invoice.</p>
+                <p class="size-bold">Upholstered Furniture </p>
+                <p>Upholstered furniture is warranted for a period of 2 years from date of delivery/collection in respect of the frame and craftsmanship. The warranty does not extend to the fabric or leather used to upholster the product as this is subject to wear and tear associated with use. Furthermore, usage and treatment in the Customer’s environment is beyond the control of Velvet Home &amp; Living. Exposure to sunlight can lead to fading.</p>
+                <p>Warranties do not apply to:</p>
+                <p>Defects or damage arising from negligence, abuse or misuse, including (but not limited to) improper maintenance, exposure to water, direct sunlight, coastal air, chemicals, accidents, any use for which the product was not designed nor does it cover ordinary wear and tear and failure to comply with Velvet Home &amp; Living’s care instructions or specifications. Extreme use is considered damage caused by more than normal wear and tear this includes:</p>
+                <p class=""> Solvent and/or other spills
+                </p>
+                <p class="">Ink, Pen or crayon marks</p>
+                <p class=""> Paint</p>
+                <p class="">Body fluids (human or animal)</p>
+                <p class=""> Improper cleaning techniques</p>
+                <p class=""> Placing furniture outdoors in direct sunlight or in close proximity to an open heat source -heaters, fire places, braai stands.</p>
+                <p>Timber Warranty</p>
+                <p>Timber products are warranted for a period of 1 year from date of delivery/collection in respect of frame and workmanship. Should the original product be altered in any way, the warranty will be void. Since Teak wood has an oil content, any Teak furniture used for indoors should not be placed on a carpet.</p>
+                <p class="size-bold">Outdoor / All-weather Rattan</p>
+                <p>Velvet Home &amp; Living warrants that under normal use and proper care, our products are free from defects of cracking, peeling and breaking for one year from date of delivery. Our outdoor products are manufactured from High Density Polyethylene (HDPE) and unlike PVC which is toxic Polyethylene is an eco-friendly material that can be recycled. </p>
+                <p>The warranty above does not cover failure or damage caused by improper applications, unreasonable use or abusive use which is beyond our control; or cost associated with the replacement of the fabric, including labour and installation. </p>
+                <p>Velvet Home &amp; Living also warrants that under normal use and proper handling, the product has no significant colour fading within one year of outdoor use from date of delivery. </p>
+                <p>Condition of displayed products</p>
+                <p>f the subject of the sale is a product that is on display in the Velvet Home &amp; Living showroom as seen and chosen by the Customer, then the product is sold to the Customer in the specific condition in which it is, and the Customer agrees to accept the chosen product in that condition.</p>
+                <p>Limitation of Liability</p>
+                <p>Velvet Home &amp; Living will only be liable for damages that may be suffered by the Customer as a result of gross negligence or a wilful or intentional act or omission on the part of Velvet Home &amp; Living.</p>
+                <p>Exchanges and Returns</p>
+                <p>Velvet Home &amp; Living will exchange any damaged or flawed products returned in an unused condition within 7 days of purchase or delivery together with the proof of purchase. Product exchanges requiring delivery will be transported to the original delivery address within South Africa. Velvet Home &amp; Living will check the condition of products presented for exchange or returned. Products are deemed to have been supplied in good condition as checked by the Customer at the time of purchase, delivery or collection. Velvet Home &amp; Living cannot be held responsible for goods where product characteristics and/or imperfections were pointed out prior to purchase.</p>
+
+            </div>
+            <div class="terms-content-nd">
+                <h3>IMAGES &amp; PUBLICATIONS </h3>
+                <p>All graphical images relating to Velvet Home &amp; Living and its products, including but not limited to photos, logos and banners, displayed in publications or appearing on this website are the property of Velvet Home &amp; Living.  Any unauthorised use, reproduction or distribution thereof is strictly prohibited.</p>
+            </div>
+            <div class="terms-content-nd">
+                <h3>NOTICES AND DOMICILIUM</h3>
+                <p>The parties choose as respective addresses for service of any documents, the addresses set out in the relevant order.</p>
+            </div>
+            <div class="terms-content-nd">
+                <h3>JURISDICTION</h3>
+                <p>In terms of relevant legislation, the Customer consents to the jurisdiction of the Magistrates Court in any action to be instituted against the Customer by Velvet Home &amp; Living in terms of the contract. However, it shall be entirely within the discretion of Velvet Home &amp; Living as to whether to proceed in such Magistrates Court or any other court having jurisdiction.</p>
+                <p>In terms of relevant legislation, the Customer consents to the jurisdiction of the Magistrates Court in any action to be instituted against the Customer by Velvet Home &amp; Living in terms of the contract. However, it shall be entirely within the discretion of Velvet Home &amp; Living as to whether to proceed in such Magistrates Court or any other court having jurisdiction.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ------------------------------Terms and Conditions-content-------------------------------------- -->
+
+
+
+
+
+
+
+
+<!----------------------------------Link Contact ---------------------------------------------->
+<div class="conteiner-fluid" id="contact-join-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 contact-careers">
+				<h5>CONTACT</h5>
+			</div>
+			<div class="col-xl-8
+						col-lg-8
+						col-md-12
+						col-sm-12
+						col-12 title-join-us">
+				<p class="display3-pc">NEED ANY FURTHER SUPPORT?<br> FEEL FREE TO CONTACT US</p>
+			</div>
+			<div class="offset-xl-1 col-xl-3
+						offset-lg-1 col-lg-3
+						col-md-12
+						col-sm-12
+						col-12 button-join-us">
+				
+				<a href="Contact.html" class="btn-secondary-xl-right">CONTACT US<i class="fa-regular fa-arrow-right-long"></i></a>
+			</div>
+		</div>
+	</div>
+  </div><!----------------------------------Link Contact ---------------------------------------------->
+
+
+<!-------------------------------------------Footer Desktop ------------------------------------------>
+<footer class="container-fluid d-none d-md-block" id="footerDesktop">
+    <div class="container-fluid footer-navi">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3 col-md-3 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="OurStory.html">About</a></li>
+              <li><a href="Blog.html">Journal</a></li>
+              <li><a href="Lookbook.html">Lookbook</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="Seating.html">Seating</a></li>
+              <li><a href="Seating.html">Desk &amp; Table</a></li>
+              <li><a href="Seating.html">Decor</a></li>
+              <li><a href="Seating.html">Organisation</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-3 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Return.html">Return &amp; Refund</a></li>
+              <li><a href="Warranty.html">Warranty</a></li>
+              <li><a href="Paymentsp.html">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li class="d-md-none d-lg-block"><a href="#" id="signin-btn-footer">Sign in</a></li>
+				      <li class="d-lg-none"><a href="#" id="signin-btn-footermd">Sign in</a></li>
+              <li><a href="Career.html">Career</a></li>
+              <li><a href="Privacy.html">Privacy Policy</a></li>
+              <li><a href="Terms.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation-->
+    <div class="container footer-subscribe d-none d-lg-block">
+      <div class="row d-flex align-items-end">
+        <div class="col-xl-4 
+                    col-lg-4 email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms &amp; Conditions</p>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4">
+                    <div class="logo-footer">
+                      <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+        <div class="col-xl-4
+                    col-lg-4 media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media LG XL-->
+    <div class="container footer-subscribe d-none d-md-block d-lg-none">
+      <div class="row">
+        <div class="col-md-4
+                    offset-md-4">
+                    <div class="logo-footer">
+                      <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-end">
+        <div class="col-md-6 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms &amp; Conditions</p>
+        </div>
+        <div class="col-md-6
+                    media-footer">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </footer>
+  <!-------------------------------------------Footer Mobile------------------------------------------>
+  <footer class="container-fluid d-md-none" id="footerMobile">
+    <div class="container-fluid footer-navi footer-navi-mb1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 home-footer">
+            <span>HOME</span>
+            <ul>
+              <li><a href="OurStory.html">About</a></li>
+              <li><a href="Blog.html">Journal</a></li>
+              <li><a href="Lookbook.html">Lookbook</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 shop-footer">
+            <span>SHOP</span>
+            <ul>
+              <li><a href="Seating.html">Seating</a></li>
+              <li><a href="Seating.html">Desk &amp; Table</a></li>
+              <li><a href="Seating.html">Decor</a></li>
+              <li><a href="Seating.html">Organisation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Upper Section-->
+    <div class="container-fluid footer-navi footer-navi-mb2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 support-footer">
+            <span>SUPPORT</span>
+            <ul>
+              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="Return.html">Return &amp; Refund</a></li>
+              <li><a href="Warranty.html">Warranty</a></li>
+              <li><a href="Paymentsp.html">Payments</a></li>
+            </ul>
+          </div>
+          <div class="col-6 misc-footer">
+            <span>MISC</span>
+            <ul>
+              <li><a href="#" id="signin-btn-footermb">Sign in</a></li>
+              <li><a href="Career.html">Career</a></li>
+              <li><a href="Privacy.html">Privacy Policy</a></li>
+              <li><a href="Terms.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--Footer Navigation Lower Section-->
+    <div class="container footer-subscribe d-md-none">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2
+                    col-10 offset-1 
+                    email-footer">
+                    <label for="footerMail" class="display4-pc">STAY IN TOUCH</label>
+                    <div class="email-footer--field">
+                      <input type="email" id="footerMail" placeholder="example@email.com">
+                      <button><i class="fa-light fa-paper-plane"></i></button> 
+                    </div>
+                    <p>Sign up email to receive 10% off your first order. By signing up, 
+                      I agree to ours Terms &amp; Conditions</p>
+        </div><!-------Email Input------>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3
+                    col-6 offset-3">
+                    <div class="logo-footer">
+                      <a href="Home.html"><img src="img/Logo Footer.svg" alt=""></a>
+                    </div>
+        </div><!-------Logo------>
+      </div>
+      <div class="row">
+        <div class="col-12
+                    media-footer-mb">
+                    <h4>Don't miss a thing!</h4>
+                    <p>Follow us on</p>
+                      <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div><!--Footer Subscribe Media MD-->
+    <div class="container-fluid d-flex align-items-center justify-content-center copyright">
+          <p>Copyright © 2022 The Étienne. All rights reserved</p>
+    </div><!--Footer Copyright-->
+    <div class="container-fluid footer-exceed"></div>
+  </footer>
+</main>
+	
+
+
+  <!-----------------------------------------Javascript Bottom------------------------------------------------->
+  <script src="js/locomotive-scroll.min.js"></script>
+
+  <script>
+      (function () {
+          var scroll = new LocomotiveScroll();
+      })();
+  </script>
+
+  <script src="js/starter.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  </body>
+</html>

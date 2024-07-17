@@ -1,0 +1,212 @@
+body{
+    background-color: #ebe6d7;
+}
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+
+/* --------------policy-title-------------------------- */
+#policy-title p{
+    text-align: center;
+    margin-bottom: 0px;
+    
+
+}
+#policy-title{
+    padding-top: 20px;
+    height: 80px;
+}
+
+
+/* ------------------Breadcrumb------------------------------------ */
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: var(--shading2) 1px solid;
+    border-top: var(--shading2) 1px solid;
+    padding-top: 8px;
+    
+}
+
+/* ----------------------Body title policy---------------------------- */
+.body-title-policy h4{
+    margin-bottom: 0px;
+    margin-top: 48px;
+}
+.body-title-policy h5{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.body-title-policy p{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.body-title-policy{
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+/* ---------- */
+.size-fit-policy {
+    font-family: titlefont !important;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.size-fit-policy span{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin: 0px;
+}
+/* ---------- */
+.from-policy p{
+    margin: 0px !important;
+}
+.from-policy span{
+    margin: 0px;
+}
+.from-policy{
+    margin-top: 16px;
+}
+/* --------------- */
+.from-2-policy span{
+    font-family: bodyfont;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/* -----------JOIN US TO.... ---------- */
+#contact-join-us{
+    background-image: url(../img/contact-us/Recruit-Pic.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-careers{
+    margin-bottom: 0px;
+    color: var(--secondary);
+}
+.title-join-us{
+    color: var(--white);
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+     
+    
+}
+
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+    .button-join-us{
+        text-align: right;
+        margin-top: 40px;
+    }
+}
+
+
+
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+    #contact-join-us{
+        
+        height: 500px;
+        
+    }
+    .button-join-us{
+        margin-top: 30px;
+        
+    }
+    #contact-join-us{
+        margin-top: 24px;
+    }
+    .from-policy .size-fit-policy {
+        font-family: titlefont !important;
+        font-size: 18px !important;
+        margin-bottom: 0px;
+    }
+
+}
+
+
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+    .button-join-us{
+        margin-top: 30px;
+    }
+    #contact-join-us{
+        
+        height: 550px;
+        
+    }
+    #contact-join-us{
+        margin-top: 24px;
+    }
+    .from-policy .size-fit-policy {
+        font-family: titlefont !important;
+        font-size: 18px !important;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+    /* --------------policy-title-------------------------------- */
+    
+    
+    #policy-title{
+        padding-top: 25px;
+        height: 80px;
+    }
+    .button-join-us{
+        margin-top: 30px;
+    }
+    #contact-join-us{
+        
+        height: 550px;
+        
+    }
+    #contact-join-us{
+        margin-top: 24px;
+    }
+    .from-policy .size-fit-policy {
+        font-family: titlefont !important;
+        font-size: 18px !important;
+        margin-bottom: 0px;
+    }
+}

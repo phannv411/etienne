@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------Breadcrumb-------------------------*/
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbb ul{
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbb li {
+    list-style-type: none;
+    display: inline;
+    color: var(--primary);
+}
+
+.breadcrumbb ul .actived{
+    font-family: subfont;
+}
+
+.breadcrumbb ul li+li:before {
+    padding: 4px;
+    color: var(--dark);
+    content: "/\00a0";
+  }
+
+.breadcrumbb ul li a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+.breadcrumbb ul li a:hover {
+    color: var(--shading1);
+    text-decoration: none
+  }
+
+
+/*---------------------Detail Desktop---------------------*/
+.product-detail-desktop{
+    padding-left: 0;
+    padding-right: 0;
+    height: 780px;
+    position: relative;
+}
+
+.outline{
+    outline: 1px solid blue;
+}
+
+.product-detail-desktop .detail-left{
+    height: 780px;
+    border-right: 1px solid var(--shading2);
+}
+
+.product-detail-desktop .detail-right{
+    height: 780px;
+}
+
+.detail-left .product-img{
+    height: 655px;
+}
+
+.detail-left .product-thumbnail{
+    height: 125px;
+}
+
+.product-detail-desktop::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--shading2);
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+  /*-----------------------------------MEDIA QUERY-------------------------------*/
+
+/*---------------------Extra Large---------------------*/
+@media (min-width: 1200px) {
+
+
+
+}
+
+
+/*-----------------------Large-------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+
+
+
+}
+
+/*-----------------------Medium------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+
+}
+
+
+/*------------------------Small------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+
+
+}
+
+
+/*---------------------Extra Small---------------------*/
+@media (max-width: 575px) {
+
+
+
+}

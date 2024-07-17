@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color: #EBE6D7 !important;
+}
+
+/*----------------------------CSS Font ---------------------------*/
+@font-face{
+    font-family: displayfont;
+    src: url(../font/NeueWorld-CondensedRegular.ttf),
+        url(../font/NeueWorld-CondensedRegular.eot),
+        url(../font/NeueWorld-CondensedRegular.woff);
+}
+
+@font-face{
+    font-family: titlefont;
+    src: url(../font/Priego-Bold.ttf),
+        url(../font/Priego-Bold.eot),
+        url(../font/Priego-Bold.woff);
+}
+
+
+@font-face{
+    font-family: bodyfont;
+    src: url(../font/Manrope-Regular.ttf),
+        url(../font/Manrope-Regular.eot),
+        url(../font/Manrope-Regular.woff);
+}
+
+@font-face{
+    font-family: subfont;
+    src: url(../font/Priego-SemiBold.ttf),
+        url(../font/Priego-SemiBold.eot),
+        url(../font/Priego-SemiBold.woff);
+}
+
+@font-face{
+    font-family: titlefont-light;
+    src: url(../font/SpaceGrotesk-Light.ttf),
+        url(../font/SpaceGrotesk-Light.eot),
+        url(../font/SpaceGrotesk-Light.woff);
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------Breadcrumb-------------------------*/
+.breadcrumbb-bg{
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+    border-top: 1px solid var(--shading2);
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbb ul{
+    padding: 0;
+}
+
+.breadcrumbb li {
+    list-style-type: none;
+    display: inline;
+    color: var(--primary);
+}
+
+.breadcrumbb ul .actived{
+    font-family: subfont;
+}
+
+.breadcrumbb ul li+li:before {
+    padding: 8px;
+    color: var(--dark);
+    content: "/\00a0";
+  }
+
+.breadcrumbb ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.breadcrumbb ul li a:hover {
+    color: #e5ff00;
+    text-decoration: underline;
+  }

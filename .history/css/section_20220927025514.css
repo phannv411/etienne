@@ -1,0 +1,101 @@
+/*----------------------------Color Guide ---------------------------*/
+:root{
+    --primary: #616432;
+    --secondary: #EBE6D7;
+    --shading1: #81835C;
+    --shading2: #A1A285;
+    --shading3: #E0E0D6;
+    --white: #ffffff;
+    --dark: #2E2E2E;
+    --text: #717171;
+    --disable: #B8BEC5;
+    --danger: #FF5A4F;
+    --success: #84DFC1;
+    --warning: #FFD596;
+}
+
+
+/*----------------------------Story ---------------------------*/
+
+.ourstory{
+    background-color: var(--primary);
+    height: 900px;
+    padding: 30px 0px 0px 0px;
+    border-bottom: 1px solid var(--shading2);
+}
+
+.ourstory-left{
+    width: 50%;
+    height: 100%;
+    border-top: 1px solid var(--shading2);
+    display: block;
+    float: left;
+}
+.ourstory-right{
+    width: 50%;
+    height: 100%;
+    border-top: 1px solid var(--shading2);
+    border-left: 1px solid var(--shading2);
+    display: block;
+    float: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.ourstory-title{
+    width: 80px;
+    height: 100%;
+    border-right: 1px solid var(--shading2);
+    
+}
+.ourstory-upper{
+    margin-top: 30px;
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+    border-top: 1px solid var(--shading2);
+    margin-bottom: 30px;
+}
+
+.ourstory-upper-left{
+    width: 50%;
+    height: 40px;
+    border-right: 1px solid var(--shading2);
+    display: block;
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.ourstory-upper-right{
+    width: 50%;
+    height: 40px;
+    display: block;
+    float: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    
+}
+.ourstory-lower{
+    margin-top: 30px;
+    height: 40px;
+    border-top: 1px solid var(--shading2);
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.ourstory-1{
+    padding-left: 30px;
+    height: 40px;
+    border-bottom: 1px solid var(--shading2);
+ 
+}
+
+.ourstory-imgs{
+    height:400px;
+    margin-bottom: 30px;
+    background-color: var(--secondary);
+    margin-left: 30px;
+    margin-right: 30px;
+}
